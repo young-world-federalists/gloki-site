@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T14:34:08Z",
+  "title": "Design System: Gloki",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(26% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(49% 0.000 90)",
+          "oklch(61% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Zone Wash",
+        "canonical": "oklch(97.0% 0.014 255)",
+        "tonalRamp": [
+          "oklch(15% 0.014 255)",
+          "oklch(26% 0.014 255)",
+          "oklch(38% 0.014 255)",
+          "oklch(49% 0.014 255)",
+          "oklch(61% 0.014 255)",
+          "oklch(72% 0.014 255)",
+          "oklch(84% 0.014 255)",
+          "oklch(95% 0.014 255)"
+        ]
+      },
+      "wash-2": {
+        "role": "neutral",
+        "displayName": "Deep Wash",
+        "canonical": "oklch(94.0% 0.029 260)",
+        "tonalRamp": [
+          "oklch(15% 0.029 260)",
+          "oklch(26% 0.029 260)",
+          "oklch(38% 0.029 260)",
+          "oklch(49% 0.029 260)",
+          "oklch(61% 0.029 260)",
+          "oklch(72% 0.029 260)",
+          "oklch(84% 0.029 260)",
+          "oklch(95% 0.024 260)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(21.0% 0.032 265)",
+        "tonalRamp": [
+          "oklch(15% 0.032 265)",
+          "oklch(26% 0.032 265)",
+          "oklch(38% 0.032 265)",
+          "oklch(49% 0.032 265)",
+          "oklch(61% 0.032 265)",
+          "oklch(72% 0.032 265)",
+          "oklch(84% 0.032 265)",
+          "oklch(95% 0.022 265)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(37.3% 0.031 260)",
+        "tonalRamp": [
+          "oklch(15% 0.031 260)",
+          "oklch(26% 0.031 260)",
+          "oklch(38% 0.031 260)",
+          "oklch(49% 0.031 260)",
+          "oklch(61% 0.031 260)",
+          "oklch(72% 0.031 260)",
+          "oklch(84% 0.031 260)",
+          "oklch(95% 0.021 260)"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(44.6% 0.026 257)",
+        "tonalRamp": [
+          "oklch(15% 0.026 257)",
+          "oklch(26% 0.026 257)",
+          "oklch(38% 0.026 257)",
+          "oklch(49% 0.026 257)",
+          "oklch(61% 0.026 257)",
+          "oklch(72% 0.026 257)",
+          "oklch(84% 0.026 257)",
+          "oklch(95% 0.021 257)"
+        ]
+      },
+      "solve": {
+        "role": "primary",
+        "displayName": "Solve Blue",
+        "canonical": "oklch(62.3% 0.188 260)",
+        "tonalRamp": [
+          "oklch(15% 0.128 260)",
+          "oklch(26% 0.128 260)",
+          "oklch(38% 0.158 260)",
+          "oklch(49% 0.188 260)",
+          "oklch(61% 0.188 260)",
+          "oklch(72% 0.143 260)",
+          "oklch(84% 0.078 260)",
+          "oklch(95% 0.023 260)"
+        ]
+      },
+      "solve-text": {
+        "role": "primary",
+        "displayName": "Solve Ink",
+        "canonical": "oklch(48.8% 0.217 264)",
+        "tonalRamp": [
+          "oklch(15% 0.122 264)",
+          "oklch(26% 0.187 264)",
+          "oklch(38% 0.217 264)",
+          "oklch(49% 0.217 264)",
+          "oklch(61% 0.212 264)",
+          "oklch(72% 0.142 264)",
+          "oklch(84% 0.077 264)",
+          "oklch(95% 0.022 264)"
+        ]
+      },
+      "build": {
+        "role": "secondary",
+        "displayName": "Build Teal",
+        "canonical": "oklch(51.1% 0.086 186)",
+        "tonalRamp": [
+          "oklch(15% 0.041 186)",
+          "oklch(26% 0.051 186)",
+          "oklch(38% 0.066 186)",
+          "oklch(49% 0.086 186)",
+          "oklch(61% 0.086 186)",
+          "oklch(72% 0.086 186)",
+          "oklch(84% 0.086 186)",
+          "oklch(95% 0.071 186)"
+        ]
+      },
+      "build-text": {
+        "role": "secondary",
+        "displayName": "Build Teal (text alias)",
+        "canonical": "oklch(51.1% 0.086 186)",
+        "tonalRamp": [
+          "oklch(15% 0.041 186)",
+          "oklch(26% 0.051 186)",
+          "oklch(38% 0.066 186)",
+          "oklch(49% 0.086 186)",
+          "oklch(61% 0.086 186)",
+          "oklch(72% 0.086 186)",
+          "oklch(84% 0.086 186)",
+          "oklch(95% 0.071 186)"
+        ]
+      },
+      "contribute": {
+        "role": "tertiary",
+        "displayName": "Contribute Amber",
+        "canonical": "oklch(66.6% 0.157 58)",
+        "tonalRamp": [
+          "oklch(15% 0.102 58)",
+          "oklch(26% 0.072 58)",
+          "oklch(38% 0.092 58)",
+          "oklch(49% 0.117 58)",
+          "oklch(61% 0.142 58)",
+          "oklch(72% 0.157 58)",
+          "oklch(84% 0.107 58)",
+          "oklch(95% 0.027 58)"
+        ]
+      },
+      "contribute-text": {
+        "role": "tertiary",
+        "displayName": "Contribute Ink",
+        "canonical": "oklch(55.5% 0.146 49)",
+        "tonalRamp": [
+          "oklch(15% 0.096 49)",
+          "oklch(26% 0.081 49)",
+          "oklch(38% 0.106 49)",
+          "oklch(49% 0.131 49)",
+          "oklch(61% 0.146 49)",
+          "oklch(72% 0.146 49)",
+          "oklch(84% 0.101 49)",
+          "oklch(95% 0.026 49)"
+        ]
+      },
+      "status-good": {
+        "role": "status",
+        "displayName": "Status Good",
+        "canonical": "oklch(50.8% 0.105 166)",
+        "tonalRamp": [
+          "oklch(15% 0.050 166)",
+          "oklch(26% 0.060 166)",
+          "oklch(38% 0.080 166)",
+          "oklch(49% 0.100 166)",
+          "oklch(61% 0.105 166)",
+          "oklch(72% 0.105 166)",
+          "oklch(84% 0.105 166)",
+          "oklch(95% 0.070 166)"
+        ]
+      },
+      "status-plan": {
+        "role": "status",
+        "displayName": "Status Plan",
+        "canonical": "oklch(55.5% 0.146 49)",
+        "tonalRamp": [
+          "oklch(15% 0.096 49)",
+          "oklch(26% 0.081 49)",
+          "oklch(38% 0.106 49)",
+          "oklch(49% 0.131 49)",
+          "oklch(61% 0.146 49)",
+          "oklch(72% 0.146 49)",
+          "oklch(84% 0.101 49)",
+          "oklch(95% 0.026 49)"
+        ]
+      },
+      "status-later": {
+        "role": "status",
+        "displayName": "Status Later",
+        "canonical": "oklch(44.6% 0.026 257)",
+        "tonalRamp": [
+          "oklch(15% 0.026 257)",
+          "oklch(26% 0.026 257)",
+          "oklch(38% 0.026 257)",
+          "oklch(49% 0.026 257)",
+          "oklch(61% 0.026 257)",
+          "oklch(72% 0.026 257)",
+          "oklch(84% 0.026 257)",
+          "oklch(95% 0.021 257)"
+        ]
+      },
+      "focus": {
+        "role": "focus",
+        "displayName": "Focus Ring",
+        "canonical": "oklch(55.5% 0.146 49)",
+        "tonalRamp": [
+          "oklch(15% 0.096 49)",
+          "oklch(26% 0.081 49)",
+          "oklch(38% 0.106 49)",
+          "oklch(49% 0.131 49)",
+          "oklch(61% 0.146 49)",
+          "oklch(72% 0.146 49)",
+          "oklch(84% 0.101 49)",
+          "oklch(95% 0.026 49)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The single h1; the key phrase set in Solve Ink. Fixed at 1.9rem under 760px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s. Fixed at 1.6rem under 760px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Station h3s with a numbered ink tag; terminal h3s step up to 1.6rem in their line's text colour."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The one paragraph under the h1, 46ch; 0.98rem / 1.45 under 760px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All prose at a 46ch measure; 500 for the status board's first column, 600 for the who phrase."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Figcaptions (0.85rem), fine print and footer (0.9–0.95rem) in Muted Ink."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "The nameplate and the table head: uppercase display face at 0.8rem with 0.06em tracking."
+      }
+    },
+    "shadows": [
+      {
+        "name": "interchange-lift",
+        "value": "0 10px 24px -14px rgba(17, 24, 39, 0.45)",
+        "purpose": "The interchange only; the one surface that lies over the map."
+      }
+    ],
+    "motion": [
+      {
+        "name": "draw",
+        "value": "1.3s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "purpose": "Lines draw themselves on load (stroke-dashoffset 1 → 0 with pathLength=1); staggered 0.15s, 0.3s, 0.9s; the dashed line animates to its --dash pattern."
+      },
+      {
+        "name": "arrive",
+        "value": "0.6s ease-out 1.1s forwards",
+        "purpose": "Diagram labels and stations fade in after the lines."
+      },
+      {
+        "name": "station-lit",
+        "value": "background-color 300ms ease-out",
+        "purpose": "A route station fills with ink when its stop enters view (IntersectionObserver, rootMargin -30% bottom)."
+      },
+      {
+        "name": "button",
+        "value": "transform 160ms ease-out, background-color 160ms ease-out",
+        "purpose": "Button hover lift and fill."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; stroke-dashoffset: 0",
+        "purpose": "Under prefers-reduced-motion everything is drawn and still; scroll-behavior auto."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-narrow",
+        "value": "420px"
+      },
+      {
+        "name": "desktop",
+        "value": "760px"
+      },
+      {
+        "name": "container",
+        "value": "74rem"
+      }
+    ],
+    "strokes": [
+      {
+        "name": "line",
+        "value": "stroke-width: 10 (SVG units); stroke-linecap: round; stroke-linejoin: round",
+        "purpose": "Every line in the diagram; the CSS route bar is 10px with 5px corners."
+      },
+      {
+        "name": "line-planned",
+        "value": "stroke-dasharray: var(--dash); --dash: 0.03 0.022 (desktop paths), 0.12 0.09 (mobile paths), in pathLength=1 units",
+        "purpose": "The Contribute line; dashed means planned."
+      },
+      {
+        "name": "station",
+        "value": "20px disc, fill paper, 4px ink ring; lit = ink fill",
+        "purpose": "Stations in the SVG (r=10, stroke 4) and in the CSS route."
+      },
+      {
+        "name": "section-rule",
+        "value": "3px solid ink",
+        "purpose": "Header bottom, terminal separators, footer top, board and screenshot borders."
+      },
+      {
+        "name": "table-rule",
+        "value": "2px solid ink",
+        "purpose": "Row rules inside the status board; input borders."
+      },
+      {
+        "name": "interchange-border",
+        "value": "5px solid ink",
+        "purpose": "The interchange."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink pill for the one action on the page, Join the waitlist; hover turns Solve Ink and lifts 1px.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Join the waitlist</button>",
+      "css": ".ds-btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; min-height:48px; padding:0 1.3rem; background:var(--ink, #111827); color:var(--paper, #ffffff); font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:1.05rem; letter-spacing:0.02em; border:0; border-radius:999px; cursor:pointer; transition:transform 160ms ease-out, background-color 160ms ease-out; } .ds-btn-primary:hover { background:var(--solve-text, #1d4ed8); transform:translateY(-1px); } .ds-btn-primary:active { transform:translateY(0); } .ds-btn-primary:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Ink-outlined pill for the secondary Join this line links; hover fills with the wash.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#join\">Join this line</a>",
+      "css": ".ds-btn-ghost { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:0 1.3rem; background:transparent; color:var(--ink, #111827); border:2px solid var(--ink, #111827); font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:1.05rem; letter-spacing:0.02em; border-radius:999px; text-decoration:none; cursor:pointer; transition:transform 160ms ease-out, background-color 160ms ease-out; } .ds-btn-ghost:hover { background:var(--wash, #eff6ff); transform:translateY(-1px); } .ds-btn-ghost:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Nameplate",
+      "kind": "chip",
+      "refersTo": "plate",
+      "description": "The diagram's label grammar: ink bar, white uppercase display type; line variants take the line's text colour.",
+      "html": "<span class=\"ds-plate\">Line map · beta</span> <span class=\"ds-plate ds-plate--solve\">first invitees</span> <span class=\"ds-plate ds-plate--build\">Build democracy</span> <span class=\"ds-plate ds-plate--contribute\">planned line</span>",
+      "css": ".ds-plate { display:inline-block; background:var(--ink, #111827); color:var(--paper, #ffffff); font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; line-height:1; padding:0.45em 0.7em 0.4em; border-radius:2px; margin-right:0.4rem; } .ds-plate--solve { background:var(--solve-text, #1d4ed8); } .ds-plate--build { background:var(--build, #0f766e); } .ds-plate--contribute { background:var(--contribute-text, #b45309); }"
+    },
+    {
+      "name": "Email Field",
+      "kind": "input",
+      "refersTo": "input-email",
+      "description": "The waitlist's one field: 48px, 2px ink border, 8px corners, display-face label.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-email\">Your email</label><input class=\"ds-input\" id=\"ds-email\" type=\"email\" placeholder=\"you@example.org\"></div>",
+      "css": ".ds-field { display:grid; gap:0.3rem; max-width:22rem; } .ds-field-label { font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-size:0.95rem; color:var(--ink, #111827); } .ds-input { font-family:'Cabin', 'Gill Sans', 'Segoe UI', sans-serif; font-size:1.05rem; color:var(--ink, #111827); height:48px; padding:0 0.9rem; border:2px solid var(--ink, #111827); border-radius:8px; background:var(--paper, #ffffff); width:100%; } .ds-input::placeholder { color:var(--ink-muted, #4b5563); opacity:1; } .ds-input:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Line Radio",
+      "kind": "input",
+      "refersTo": "input-email",
+      "description": "Which line is yours: native radios with a line swatch before each label; the planned line's swatch is dashed.",
+      "html": "<fieldset class=\"ds-doors\"><legend class=\"ds-doors-legend\">Which line is yours?</legend><label class=\"ds-door\"><input type=\"radio\" name=\"ds-tag\" checked><span class=\"ds-swatch\"></span>Solve global issues</label><label class=\"ds-door\"><input type=\"radio\" name=\"ds-tag\"><span class=\"ds-swatch ds-swatch--build\"></span>Build digital democracy</label><label class=\"ds-door\"><input type=\"radio\" name=\"ds-tag\"><span class=\"ds-swatch ds-swatch--contribute\"></span>Contribute to a new internet <small>(planned)</small></label></fieldset>",
+      "css": ".ds-doors { display:grid; gap:0.35rem; font-family:'Cabin', 'Gill Sans', 'Segoe UI', sans-serif; color:var(--ink-soft, #374151); border:1px solid #767676; padding:0.5rem 0.75rem 0.75rem; } .ds-doors-legend { font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-size:0.95rem; color:var(--ink, #111827); padding:0 0.2em; } .ds-door { display:flex; align-items:center; gap:0.6rem; min-height:44px; cursor:pointer; } .ds-door input { width:20px; height:20px; margin:0; accent-color:var(--ink, #111827); } .ds-door input:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; } .ds-swatch { width:26px; height:8px; border-radius:4px; background:var(--solve, #3b82f6); flex:none; } .ds-swatch--build { background:var(--build, #0f766e); } .ds-swatch--contribute { background:repeating-linear-gradient(90deg, var(--contribute, #d97706) 0 6px, transparent 6px 10px); } .ds-door small { color:var(--ink-muted, #4b5563); font-size:0.9rem; }"
+    },
+    {
+      "name": "Line Nav",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "The header's line names: display face, 44px targets, a line-coloured bar before each (dashed for the planned line), closed by a 3px ink rule.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Lines\"><a class=\"ds-nav-link ds-nav--solve\" href=\"#line-solve\">Solve global issues</a><a class=\"ds-nav-link ds-nav--build\" href=\"#line-build\">Build digital democracy</a><a class=\"ds-nav-link ds-nav--contribute\" href=\"#line-contribute\">Contribute a node</a><a class=\"ds-nav-link\" href=\"#join\">Join</a></nav>",
+      "css": ".ds-nav { display:flex; gap:0.25rem 1.1rem; flex-wrap:wrap; font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-size:0.95rem; padding-bottom:0.9rem; border-bottom:3px solid var(--ink, #111827); } .ds-nav-link { color:var(--ink, #111827); text-decoration:none; padding:0.55rem 0.1rem; display:inline-flex; align-items:center; gap:0.45rem; min-height:44px; } .ds-nav-link::before { content:''; width:18px; height:6px; border-radius:3px; background:var(--ink, #111827); } .ds-nav--solve::before { background:var(--solve, #3b82f6); } .ds-nav--build::before { background:var(--build, #0f766e); } .ds-nav--contribute::before { background:repeating-linear-gradient(90deg, var(--contribute, #d97706) 0 4px, transparent 4px 7px); } .ds-nav-link:hover { text-decoration:underline; text-underline-offset:0.3em; } .ds-nav-link:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Interchange",
+      "kind": "card",
+      "refersTo": "interchange",
+      "description": "The form's container where the three lines meet: 28px pill-box, 5px ink border, the page's only shadow, headed by the YOU plate.",
+      "html": "<div class=\"ds-interchange\"><h2 class=\"ds-interchange-h\"><span>You · interchange</span></h2><p class=\"ds-interchange-p\">We write when your line opens. One email at a time, and you can leave with one click.</p></div>",
+      "css": ".ds-interchange { position:relative; background:var(--paper, #ffffff); border:5px solid var(--ink, #111827); border-radius:28px; padding:1rem 1.25rem 0.9rem; max-width:30rem; box-shadow:0 10px 24px -14px rgba(17,24,39,0.45); font-family:'Cabin', 'Gill Sans', 'Segoe UI', sans-serif; color:var(--ink-soft, #374151); } .ds-interchange-h { margin:0 0 0.5rem; font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:1.1rem; letter-spacing:0.06em; text-transform:uppercase; line-height:1.1; } .ds-interchange-h span { display:inline-block; background:var(--ink, #111827); color:var(--paper, #ffffff); padding:0.35em 0.6em 0.3em; border-radius:2px; } .ds-interchange-p { margin:0; font-size:0.9rem; color:var(--ink-muted, #4b5563); }"
+    },
+    {
+      "name": "Station Route",
+      "kind": "custom",
+      "refersTo": "plate",
+      "description": "The journey as one vertical Solve line with ink-ringed stations; a lit station fills with ink as it enters view.",
+      "html": "<ol class=\"ds-route\"><li class=\"ds-stop ds-stop--lit\"><h3 class=\"ds-stop-h\"><span class=\"ds-n\">1</span> Create a key</h3><p class=\"ds-stop-p\">Gloki has no passwords. One tap makes your key and signs you in.</p></li><li class=\"ds-stop\"><h3 class=\"ds-stop-h\"><span class=\"ds-n\">2</span> Save your key</h3><p class=\"ds-stop-p\">It is the only way back into your account.</p></li></ol>",
+      "css": ".ds-route { list-style:none; margin:0; padding:0; position:relative; font-family:'Cabin', 'Gill Sans', 'Segoe UI', sans-serif; color:var(--ink-soft, #374151); } .ds-route::before { content:''; position:absolute; left:15px; top:14px; bottom:14px; width:10px; border-radius:5px; background:var(--solve, #3b82f6); } .ds-stop { position:relative; padding:0 0 2.2rem 3.4rem; display:grid; gap:0.35rem; } .ds-stop:last-child { padding-bottom:0.5rem; } .ds-stop::before { content:''; position:absolute; left:6px; top:2px; width:20px; height:20px; border-radius:50%; background:var(--paper, #ffffff); border:4px solid var(--ink, #111827); transition:background-color 300ms ease-out; } .ds-stop--lit::before, .ds-stop:hover::before { background:var(--ink, #111827); } .ds-stop-h { margin:0; display:flex; align-items:center; gap:0.6rem; font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:1.25rem; line-height:1.1; color:var(--ink, #111827); } .ds-n { font-size:0.8rem; color:var(--paper, #ffffff); background:var(--ink, #111827); border-radius:2px; padding:0.3em 0.5em 0.25em; letter-spacing:0.06em; } .ds-stop-p { margin:0; max-width:46ch; font-size:1.0625rem; line-height:1.55; }"
+    },
+    {
+      "name": "Status Word",
+      "kind": "chip",
+      "refersTo": "board-head",
+      "description": "The status board's three states: a dot and a word in display face; Planned shows a dashed ring instead of a dot.",
+      "html": "<span class=\"ds-st ds-st--test\">In test</span> <span class=\"ds-st ds-st--plan\">Planned</span> <span class=\"ds-st ds-st--later\">Later</span>",
+      "css": ".ds-st { display:inline-flex; align-items:center; gap:0.45rem; font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-size:0.95rem; white-space:nowrap; margin-right:1rem; } .ds-st::before { content:''; width:10px; height:10px; border-radius:50%; background:currentColor; } .ds-st--test { color:var(--status-good, #047857); } .ds-st--plan { color:var(--status-plan, #b45309); } .ds-st--plan::before { background:transparent; border:2.5px dashed currentColor; width:7px; height:7px; } .ds-st--later { color:var(--status-later, #4b5563); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Line Map",
+    "overview": "**Creative North Star: \"The Line Map\"**\n\nGloki's landing page is a transit diagram, not a brochure. The ground is white paper; everything on it is either a line, a station, or a nameplate. Three coloured lines are the three ways in (Solve, Build, Contribute); they run straight or at 45°, cross a pale blue zone band, and meet at one interchange, which is the reader, holding the only form on the page. The system borrows Beck's discipline (a fixed stroke, round caps, black-ringed white stations, uppercase plates) and nothing else of his: the roundel is the brand mark's cousin, never a TfL copy.\n\nThe tone is plain and literal. Headings are a single rounded humanist display face at one weight; body copy is a quiet humanist sans held to a 46-character measure; colour appears only where it means something (a line, its plate, a status). Density is low and the rhythm is editorial: more air above a heading than below it, one idea per station. Depth is almost absent; the one shadow on the page belongs to the interchange and nothing else.\n\nConfirmed rejections, from the build and from PRODUCT.md: no hero-plus-three-cards, no device mockup, no stock photography, no hype words, and no brand blue behind or inside body-size text.",
+    "keyCharacteristics": [
+      "White paper, black ink, three line colours, one pale wash: the whole palette.",
+      "A 10-unit round-capped stroke is the line; a 20px white disc with a 4px ink ring is the station.",
+      "The nameplate (black bar, white uppercase display type, 2px corners) labels every control.",
+      "Dashed stroke means a planned line; the dash is the honesty marker, not decoration.",
+      "One authored moment: the lines draw themselves on load, then stations light as they enter view."
+    ],
+    "rules": [
+      {
+        "name": "The Stroke-Not-Text Rule",
+        "body": "`solve` (#3b82f6) and `contribute` (#d97706) are strokes and swatches only. Any character set in a line's colour uses that line's `-text` value, and no body-size text is ever white on brand blue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Value Line Rule",
+        "body": "Every line colour exists as a pair: a stroke value for the diagram and a text value for words and plates. Adding a line means adding both and checking both against paper and wash.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Wash Rule",
+        "body": "Tinted ground is one pale blue, used for zone bands and alternating sections; there is no second tint and no grey.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Weight Rule",
+        "body": "Hammersmith One ships at 400 only; hierarchy comes from size and the plate, never from weight.",
+        "section": "typography"
+      },
+      {
+        "name": "The 46ch Rule",
+        "body": "Prose never runs wider than 46 characters; the diagram, not the paragraph, is what spans the viewport.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ink-Rule Rule",
+        "body": "Separation is a black rule, never a shadow or a grey line. The interchange is the one surface allowed to float, because it is the one surface that lies over the map.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** draw with the line grammar: 10-unit round-capped strokes, straight or at 45°, 20px stations with a 4px ink ring, and a nameplate for every label.",
+      "**Do** use the dashed stroke (18/14, or the repeating-gradient swatch) for anything planned and not yet real; the dash is how the page tells the truth.",
+      "**Do** set every line's words in its `-text` value and check it against both paper and wash (AA, 4.5:1 or better).",
+      "**Do** hold prose to 46ch in Cabin 400 at 1.0625rem / 1.55, and keep all headings in Hammersmith One at 400.",
+      "**Do** separate with ink rules (3px between sections, 2px inside tables) and alternate paper and wash for section ground.",
+      "**Do** keep every target 44px or taller, the focus ring 3px Contribute Ink at 3px offset, and the h1 singular."
+    ],
+    "donts": [
+      "**Don't** set text in `solve` (#3b82f6) or `contribute` (#d97706), and don't put white text on brand blue at body size; use `solve-text` and `contribute-text`.",
+      "**Don't** add a shadow to anything but the interchange; depth here is an ink rule.",
+      "**Don't** introduce a second tint, a grey rule, a gradient fill, or a bold weight of the display face.",
+      "**Don't** replace the diagram with cards, a device mockup, or photography; the map is the hero and the form sits inside it.",
+      "**Don't** copy TfL: no bar-and-circle roundel, no Johnston; the station ring and the plate are the whole borrowing."
+    ]
+  }
+}

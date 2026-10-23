@@ -225,7 +225,7 @@ The system is flat. Hierarchy is drawn with ink rules (3px section rules, 2px ta
 
 ## Shapes
 
-Round-capped strokes and hard-edged plates. Lines are 10-unit strokes with round caps and joins, running straight or at exactly 45°; the planned line is the same stroke dashed 18/14. Stations are 20px white discs with a 4px ink ring that fills with ink when lit. Nameplates have barely-rounded 2px corners (3px rx inside the SVG). Controls are 8px (inputs, the brand mark); panels are 12px (status board, screenshot frames); the interchange is a 28px pill-box with a 5px ink border (22px under 760px); buttons are fully round pills. Swatches that stand for a line (nav, radios, route bars) are short rounded bars at half their height, and the Contribute swatch is always a repeating dash.
+Round-capped strokes and hard-edged plates. Lines are 10-unit strokes with round caps and joins, running straight or at exactly 45°; the planned line is the same stroke dashed in path-length units (`--dash`: 0.03 0.022 on the desktop paths, 0.12 0.09 on the mobile paths, about a 36/26px dash on both), so it dashes whether or not the draw-on runs. Stations are 20px white discs with a 4px ink ring that fills with ink when lit. Nameplates have barely-rounded 2px corners (3px rx inside the SVG). Controls are 8px (inputs, the brand mark); panels are 12px (status board, screenshot frames); the interchange is a 28px pill-box with a 5px ink border (22px under 760px); buttons are fully round pills. Swatches that stand for a line (nav, radios, route bars) are short rounded bars at half their height, and the Contribute swatch is always a repeating dash.
 
 ## Components
 
@@ -257,7 +257,7 @@ The nameplate, the diagram's label grammar, used for every control label on the 
 - **Brand:** the mark at 36px with 8px corners, "Gloki" in display face at 1.35rem, and the title plate (hidden under 760px).
 
 ### The Line Diagram
-The signature. Two inline SVGs (1200×600 desktop, 360×160 mobile), aria-hidden, drawn entirely from the tokens: paper ground, a wash zone band, three `.line` paths (`stroke-width: var(--line-w)`, round caps), `.station` discs, `.plate-rect` nameplates with `.terminal` text (18px uppercase display, paper), `.label` text (15px display, ink) and `.small` text (13.5px body face, Muted Ink). Each path carries `pathLength="1"`; on load the lines draw in over 1.3s on `cubic-bezier(0.16, 1, 0.3, 1)` with 0.15s, 0.3s and 0.9s stagger (the trunk last), the dashed line animating to its dash pattern, and the labels and stations fade in at 1.1s over 0.6s. Under `prefers-reduced-motion`, everything is drawn and still. The route list on the Stations section repeats the grammar in CSS: a 10px Solve bar and 20px stations whose rings fill with ink (300ms) as each stop enters view.
+The signature. Two inline SVGs (1200×600 desktop, 360×160 mobile), aria-hidden, drawn entirely from the tokens: paper ground, a wash zone band, three `.line` paths (`stroke-width: var(--line-w)`, round caps), `.station` discs, `.plate-rect` nameplates with `.terminal` text (18px uppercase display, paper), `.label` text (15px display, ink) and `.small` text (13.5px body face, Muted Ink). Each path carries `pathLength="1"`; on load the lines draw in over 1.3s on `cubic-bezier(0.16, 1, 0.3, 1)` with 0.15s, 0.3s and 0.9s stagger (the trunk last), the dashed line animating to its `--dash` pattern, and the labels and stations fade in at 1.1s over 0.6s. Under `prefers-reduced-motion`, everything is drawn and still. The route list on the Stations section repeats the grammar in CSS: a 10px Solve bar and 20px stations whose rings fill with ink (300ms) as each stop enters view.
 
 ### Status
 - **Style:** display face at 0.95rem, a 10px dot before the word in `currentColor`. In test is Status Good; Planned is Status Plan with a 7px dashed ring instead of a dot; Later is Status Later.
@@ -266,7 +266,7 @@ The signature. Two inline SVGs (1200×600 desktop, 360×160 mobile), aria-hidden
 
 ### Do:
 - **Do** draw with the line grammar: 10-unit round-capped strokes, straight or at 45°, 20px stations with a 4px ink ring, and a nameplate for every label.
-- **Do** use the dashed stroke (18/14, or the repeating-gradient swatch) for anything planned and not yet real; the dash is how the page tells the truth.
+- **Do** use the dashed stroke (`--dash` on a `pathLength="1"` path, or the repeating-gradient swatch) for anything planned and not yet real; the dash is how the page tells the truth.
 - **Do** set every line's words in its `-text` value and check it against both paper and wash (AA, 4.5:1 or better).
 - **Do** hold prose to 46ch in Cabin 400 at 1.0625rem / 1.55, and keep all headings in Hammersmith One at 400.
 - **Do** separate with ink rules (3px between sections, 2px inside tables) and alternate paper and wash for section ground.

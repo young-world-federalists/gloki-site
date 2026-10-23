@@ -20,11 +20,11 @@
   --ink-soft: #374151;      /* body text, 10.3:1 */
   --ink-muted: #4b5563;     /* captions, 7.6:1 */
   --solve: #3b82f6;         /* brand blue: strokes and fills only (3.7:1 is fine for a 6px line, not for text) */
-  --solve-text: #1d4ed8;    /* 6.3:1 on white */
-  --build: #0f766e;         /* 5.5:1 */
+  --solve-text: #1d4ed8;    /* 6.7:1 on white */
+  --build: #0f766e;         /* 5.5:1 on white */
   --build-text: #0f766e;
   --contribute: #d97706;    /* 3.1:1 for the stroke */
-  --contribute-text: #b45309; /* 4.6:1 */
+  --contribute-text: #b45309; /* 5.0:1 on white, 4.6:1 on the wash */
   --status-good: #047857;
   --status-plan: #b45309;
   --status-later: #4b5563;
