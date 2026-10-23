@@ -25,6 +25,12 @@ SIGNATURE: On load the lines draw themselves once (stroke-dashoffset, ~1.2s ease
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 
+## Adaptations (cited at the finish review)
+
+- The interchange is a pill-box (28px radius, 5px ink border), not a circle: the Persuade rule wants the action in its working form, and a circle cannot hold a labelled field, a button and a three-way radio legibly. A roundel survives as the YOU plate at its head.
+- The hook is the page's one h1 in display type on white, not a reversed nameplate: one h1 and AA contrast; a 3.6rem reversed plate would be a poster.
+- Nav is the three line names plus Join (fix 8 applied). Lines enter from beyond the left edge of the viewport; diagonals are 45°; the trunk leaves the box edge.
+
 ## Unresolved
 
-Buttondown username; whether one list with a door tag or a list per door; the domain's DNS; who answers "Partner with us".
+Buttondown username; whether one list with a door tag or a list per door; the domain's DNS; who answers "Partner with us"; the status-board wording for "your own agent holding your data" (shown as Planned until Eston confirms what the beta's agent does).

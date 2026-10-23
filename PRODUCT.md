@@ -80,7 +80,7 @@ Three things a neighbouring product cannot truthfully copy together:
 - No communities in the beta; "join a community" collapses into "join Gloki", one membership.
 - English only for the beta (Eston, 2026-10-23); fr/sw pages are a later step through the native-review
   packet.
-- Open decisions: the Buttondown username; whether one list with tags or one list per door; the
+- Open decisions: what "your own agent holds your data" means in the beta (the page lists it as Planned until confirmed); the Buttondown username; whether one list with tags or one list per door; the
   domain's DNS owner; who answers the "Partner with us" contact.
 - Terminology: "vouch" (people who know you confirm you are a real person), "agent" (the thing that
   holds your data), "node" (a small server that keeps a copy of the network), "mandate" (a decision a

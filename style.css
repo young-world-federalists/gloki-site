@@ -94,9 +94,9 @@ h3 { font-size: 1.25rem; }
 .nav { display: flex; gap: 0.25rem 1.1rem; flex-wrap: wrap; font-family: var(--display); font-size: 0.95rem; }
 .nav a { color: var(--ink); text-decoration: none; padding: 0.55rem 0.1rem; display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; }
 .nav a::before { content: ''; width: 18px; height: 6px; border-radius: 3px; background: var(--ink); }
-.nav a[href='#stations']::before { background: var(--solve); }
-.nav a[href='#lines']::before { background: linear-gradient(90deg, var(--solve) 33%, var(--build) 33% 66%, var(--contribute) 66%); }
-.nav a[href='#status']::before { background: repeating-linear-gradient(90deg, var(--ink) 0 4px, transparent 4px 7px); }
+.nav .nav--solve::before { background: var(--solve); }
+.nav .nav--build::before { background: var(--build); }
+.nav .nav--contribute::before { background: repeating-linear-gradient(90deg, var(--contribute) 0 4px, transparent 4px 7px); }
 .nav a:hover { text-decoration: underline; text-underline-offset: 0.3em; }
 .nav .short { display: none; }
 
@@ -166,7 +166,7 @@ h3 { font-size: 1.25rem; }
 .field input[type='email']::placeholder { color: var(--ink-muted); opacity: 1; }
 .doors { display: grid; gap: 0.35rem; }
 .doors legend { font-family: var(--display); font-size: 0.95rem; color: var(--ink); padding: 0; margin-bottom: 0.3rem; }
-.door { display: flex; align-items: center; gap: 0.6rem; min-height: 36px; cursor: pointer; }
+.door { display: flex; align-items: center; gap: 0.6rem; min-height: 44px; cursor: pointer; }
 .door input { width: 20px; height: 20px; margin: 0; accent-color: var(--ink); }
 .door .swatch { width: 26px; height: 8px; border-radius: 4px; background: var(--solve); flex: none; }
 .door .swatch--build { background: var(--build); }
@@ -180,7 +180,7 @@ h3 { font-size: 1.25rem; }
   border: 0; border-radius: 999px; cursor: pointer; text-decoration: none;
   transition: transform 160ms ease-out, background-color 160ms ease-out;
 }
-a.button, a.button:hover, .button:hover { color: var(--paper); }
+a.button:not(.button--ghost), .button:not(.button--ghost):hover { color: var(--paper); }
 .button:hover { background: var(--solve-text); transform: translateY(-1px); }
 .button:active { transform: translateY(0); }
 .button--ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
@@ -203,7 +203,7 @@ section > .wrap > h2 { margin-bottom: 0.75rem; }
 .stop h3 { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
 .stop .n { font-family: var(--display); font-size: 0.8rem; color: var(--paper); background: var(--ink); border-radius: 2px; padding: 0.3em 0.5em 0.25em; letter-spacing: 0.06em; }
 .stop p { margin: 0; }
-.stop--proof { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 0.35rem 2rem; align-items: start; }
+.stop--proof { display: grid; grid-template-columns: minmax(0, var(--measure)) 220px; gap: 0.35rem 2rem; align-items: start; }
 .termrow { display: none; }
 .stop--proof .text { grid-column: 1; }
 .stop--proof figure { grid-column: 2; grid-row: 1 / span 3; margin: 0.4rem 0 0; }
@@ -250,12 +250,13 @@ section > .wrap > h2 { margin-bottom: 0.75rem; }
 
 @media (min-width: 760px) {
   .hero { padding-block: 2rem 3.5rem; }
-  .hero .wrap { grid-template-columns: minmax(0, 1fr); }
-  .diagram--mobile { display: none; }
+  .hero .wrap { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto; }
+  .diagram--mobile, .termrow { display: none; }
   .diagram--desktop { display: block; }
-  .stage { position: relative; aspect-ratio: 1200 / 600; }
+  .stage { position: relative; aspect-ratio: 1200 / 600; grid-column: 1; grid-row: 3; }
   .stage svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-  .stage .interchange { position: absolute; left: 50%; top: 9%; width: 31.5%; max-width: 30rem; }
+  /* The interchange sits in the same grid cell as the diagram, at the convergence point: pure CSS, works with script off. */
+  .hero .interchange { grid-column: 1; grid-row: 3; align-self: start; justify-self: start; position: relative; z-index: 1; margin-left: 50%; margin-top: 4.5%; width: 31.5%; max-width: 30rem; }
   .form { grid-template-columns: minmax(0, 1fr); }
   .form .row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.6rem; }
   .form .row .button { justify-self: start; }
@@ -270,10 +271,15 @@ section > .wrap > h2 { margin-bottom: 0.75rem; }
   .nav { width: 100%; justify-content: space-between; gap: 0.2rem; }
   .nav .long { display: none; }
   .nav .short { display: inline; }
-  .nav a { min-height: 40px; padding-block: 0.35rem; }
-  h1 { font-size: 2.05rem; }
+  .nav a { min-height: 44px; padding-block: 0.3rem; }
+  .top { padding-block: 0.4rem 0; }
+  .hero { padding-block: 0.9rem 2rem; }
+  .hero .wrap { gap: 0.6rem; }
+  h1 { font-size: 1.9rem; }
   h2 { font-size: 1.6rem; }
-  .lede { font-size: 1rem; }
+  .lede { font-size: 0.98rem; line-height: 1.45; }
+  .termrow { margin: 0.2rem 0 0; }
+  .diagram--mobile { margin-bottom: -0.6rem; }
   .interchange { border-radius: 22px; }
   .stop--proof { grid-template-columns: minmax(0, 1fr); }
   .stop--proof figure { grid-column: 1; grid-row: auto; }
