@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gloki — you get in because people who know you vouch for you</title>
+  <meta name="description" content="Gloki is a network for deciding things together across borders. Four people who know you confirm you are real: no ID papers, no face scans, nothing to pay. In test now. Pick your line and join the waitlist.">
+  <meta property="og:title" content="Gloki — you get in because people who know you vouch for you">
+  <meta property="og:description" content="A network for deciding things together across borders. In test now. Pick your line and join the waitlist.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gloki.app/">
+  <meta property="og:image" content="https://gloki.app/assets/gloki-icon.png">
+  <meta name="theme-color" content="#3b82f6">
+  <link rel="icon" href="assets/gloki-icon.png" type="image/png">
+  <link rel="preload" href="assets/fonts/HammersmithOne.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Cabin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap top">
+    <a class="brand" href="#top" aria-label="Gloki, home">
+      <img src="assets/gloki-icon.png" alt="" width="36" height="36">
+      Gloki <span class="plate">Line map · beta</span>
+    </a>
+    <nav class="nav" aria-label="Page">
+      <a href="#stations"><span class="long">The stations</span><span class="short">Stations</span></a>
+      <a href="#lines"><span class="long">Three lines in</span><span class="short">Lines</span></a>
+      <a href="#status"><span class="long">Line status</span><span class="short">Status</span></a>
+      <a href="#join"><span>Join</span></a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- First viewport: the diagram is the page -->
+    <section class="hero" id="top" aria-labelledby="hook">
+      <div class="wrap">
+        <h1 class="hook" id="hook">You get in because <em>people who know you</em> vouch for you.</h1>
+        <p class="lede"><strong>Gloki</strong> is a network for deciding things together across borders. Four people who know you confirm you are real: no ID papers, no face scans, nothing to pay. It is in test now. Pick your line and join the waitlist.</p>
+
+        <div class="diagram stage diagram--desktop" aria-hidden="true">
+          <svg viewBox="0 0 1200 600">
+            <rect x="0" y="0" width="1200" height="600" fill="#ffffff"/>
+            <rect x="640" y="0" width="560" height="600" fill="#eff6ff"/>
+            <text x="652" y="26" class="small">zone 2 · verified people</text>
+            <text x="12" y="588" class="small">zone 1 · the way in</text>
+            <path class="line line--solve draw" pathLength="1" d="M 0 150 H 420 L 560 230 H 600"/>
+            <path class="line line--build draw d2" pathLength="1" d="M 0 300 H 600"/>
+            <path class="line line--contribute draw d3" pathLength="1" d="M 0 450 H 420 L 560 370 H 600"/>
+            <path class="line line--trunk draw d4" pathLength="1" d="M 1000 300 H 1200"/>
+            <g class="arrive">
+              <rect class="plate-rect plate-rect--solve" x="22" y="106" width="252" height="32" rx="3"/>
+              <text x="36" y="128" class="terminal">Solve global issues</text>
+              <rect class="plate-rect plate-rect--build" x="22" y="256" width="306" height="32" rx="3"/>
+              <text x="36" y="278" class="terminal">Build digital democracy</text>
+              <rect class="plate-rect plate-rect--contribute" x="22" y="406" width="372" height="32" rx="3"/>
+              <text x="36" y="428" class="terminal">Contribute to a new internet</text>
+              <text x="22" y="482" class="small">planned line · no node to run yet</text>
+            </g>
+            <g class="arrive">
+              <circle class="station" cx="330" cy="150" r="10"/>
+              <text x="330" y="182" class="label" text-anchor="middle">Create a key</text>
+              <circle class="station" cx="330" cy="300" r="10"/>
+              <text x="330" y="332" class="label" text-anchor="middle">Save your key</text>
+              <circle class="station" cx="330" cy="450" r="10"/>
+              <text x="330" y="482" class="label" text-anchor="middle">Say what you are</text>
+            </g>
+            <g class="arrive">
+              <circle class="station" cx="1045" cy="300" r="10"/>
+              <text x="1045" y="276" class="label" text-anchor="middle">Four people vouch</text>
+              <circle class="station" cx="1140" cy="300" r="10"/>
+              <text x="1140" y="334" class="label" text-anchor="middle">Verified</text>
+              <text x="1196" y="276" class="label" text-anchor="end">forum →</text>
+            </g>
+          </svg>
+          <div class="interchange" id="join-desktop" aria-hidden="true"></div>
+        </div>
+
+        <p class="termrow" aria-hidden="true"><span class="plate plate--solve">Solve issues</span><span class="plate plate--build">Build democracy</span><span class="plate plate--contribute">Contribute</span></p>
+        <div class="diagram diagram--mobile" aria-hidden="true">
+          <svg viewBox="0 0 360 220">
+            <rect x="0" y="0" width="360" height="220" fill="#ffffff"/>
+            <path class="line line--solve draw" pathLength="1" d="M 50 0 V 110 L 150 180 V 220"/>
+            <path class="line line--build draw d2" pathLength="1" d="M 180 0 V 220"/>
+            <path class="line line--contribute draw d3" pathLength="1" d="M 310 0 V 110 L 210 180 V 220"/>
+            <g class="arrive">
+              <circle class="station" cx="50" cy="60" r="8"/>
+              <text x="66" y="65" class="label" style="font-size:12.5px">Create a key</text>
+              <circle class="station" cx="180" cy="100" r="8"/>
+              <text x="166" y="105" class="label" text-anchor="end" style="font-size:12.5px">Save your key</text>
+              <circle class="station" cx="310" cy="60" r="8"/>
+              <text x="294" y="65" class="label" text-anchor="end" style="font-size:12.5px">Say what you are</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- The interchange: where the three lines meet. On desktop it is placed over the diagram. -->
+        <div class="interchange" id="join">
+          <h2><span>You · interchange</span></h2>
+          <form class="form" action="https://buttondown.com/api/emails/embed-subscribe/BUTTONDOWN_USERNAME" method="post" target="_blank">
+            <!-- BUTTONDOWN_USERNAME: replace with the YWF newsletter's username (the slug in buttondown.com/<username>). -->
+            <div class="row">
+              <div class="field">
+                <label for="email">Your email</label>
+                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@example.org">
+              </div>
+              <button class="button" type="submit">Join the waitlist</button>
+            </div>
+            <fieldset class="doors">
+              <legend>Which line is yours?</legend>
+              <label class="door"><input type="radio" name="tag" value="solve-global-issues" checked><span class="swatch"></span>Solve global issues</label>
+              <label class="door"><input type="radio" name="tag" value="build-digital-democracy"><span class="swatch swatch--build"></span>Build digital democracy</label>
+              <label class="door"><input type="radio" name="tag" value="contribute-a-node"><span class="swatch swatch--contribute"></span>Contribute to a new internet <small>(planned)</small></label>
+            </fieldset>
+            <input type="hidden" name="embed" value="1">
+            <p class="fine">We write when your line opens. One email at a time, and you can leave with one click.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- The stations: how you get in -->
+    <section id="stations" aria-labelledby="stations-h">
+      <div class="wrap">
+        <h2 id="stations-h">The stations: how you get in</h2>
+        <p class="sub">Every stop is a real screen in the test version. Nothing here asks for your papers, your face or your money.</p>
+        <ol class="route">
+          <li class="stop">
+            <h3><span class="n">1</span> Create a key</h3>
+            <p>Gloki has no passwords. One tap makes your key and signs you in.</p>
+            <p class="honest">Right now the key works like a password: whoever types it in is you. We say so on the screen where you make it.</p>
+          </li>
+          <li class="stop">
+            <h3><span class="n">2</span> Save your key</h3>
+            <p>It is the only way back into your account. Gloki cannot reset it, so you copy it or download it before you go on.</p>
+          </li>
+          <li class="stop">
+            <h3><span class="n">3</span> Say what you are</h3>
+            <p>A person, an organisation, or someone who will host a node. An organisation is declared, not checked, in this test.</p>
+          </li>
+          <li class="stop stop--proof">
+            <h3 class="text"><span class="n">4</span> Four people vouch for you</h3>
+            <p class="text">People who know you confirm you are a real person. That, and nothing you pay or upload, is what makes your voice count. You ask someone you know; a video call and a daily session are there for the rest.</p>
+            <figure>
+              <img src="assets/hub-light.png" alt="The Get verified screen: 0 of 4 approvals received, a progress bar with four segments, and one primary card, Ask someone who knows you." width="360" height="740" loading="lazy">
+              <figcaption>The verification screen in the test version.</figcaption>
+            </figure>
+          </li>
+          <li class="stop">
+            <h3><span class="n">5</span> Verified</h3>
+            <p>Verified everywhere on Gloki, and able to vouch for the next person. Four approvals is the whole of it.</p>
+          </li>
+          <li class="stop stop--proof">
+            <h3 class="text"><span class="n">6</span> The forum</h3>
+            <p class="text">One conversation shared by everyone in the test. Post, reply, like. Your name and your country's flag, not a code.</p>
+            <figure>
+              <img src="assets/forum-light.png" alt="The forum: a welcome post by Priya Nair with an Indian flag, a reply underneath it, and the reader's own post marked You." width="360" height="740" loading="lazy">
+              <figcaption>The forum in the test version.</figcaption>
+            </figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Three lines in -->
+    <section id="lines" aria-labelledby="lines-h" style="background: var(--wash)">
+      <div class="wrap">
+        <h2 id="lines-h">Three lines in</h2>
+        <p class="sub">Pick the one that fits. They all arrive at the same place.</p>
+        <ul class="lines">
+          <li class="term term--solve">
+            <span class="bar" aria-hidden="true"></span>
+            <div>
+              <h3>Solve global issues <span class="plate plate--solve">first invitees</span></h3>
+              <p><span class="who">Academics and world federalists</span> who already argue about problems no single country can fix, and want a place where a global “we” can decide something and say it out loud.</p>
+              <button class="button button--ghost" type="button" data-door="solve-global-issues">Join this line</button>
+            </div>
+          </li>
+          <li class="term term--build">
+            <span class="bar" aria-hidden="true"></span>
+            <div>
+              <h3>Build digital democracy</h3>
+              <p><span class="who">Civic-tech people, organisers, researchers.</span> One person, one vote. Vouching instead of ID. Talk before any vote. The mechanism is the product; help shape it while it is small.</p>
+              <button class="button button--ghost" type="button" data-door="build-digital-democracy">Join this line</button>
+            </div>
+          </li>
+          <li class="term term--contribute">
+            <span class="bar" aria-hidden="true"></span>
+            <div>
+              <h3>Contribute to a new internet <span class="plate plate--contribute">planned line</span></h3>
+              <p><span class="who">People with a server.</span> A node is a small computer that keeps a copy of the network, so no single company holds it. The node software is not ready yet. Joining this line records your interest, and we write when there is something to run.</p>
+              <button class="button button--ghost" type="button" data-door="contribute-a-node">Join this line</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Line status: what is in test, what comes later -->
+    <section id="status" aria-labelledby="status-h">
+      <div class="wrap">
+        <h2 id="status-h">Line status</h2>
+        <p class="sub">What is running in the test, what is planned, and what comes later. We would rather say it here than have you find out.</p>
+        <div class="board">
+          <table>
+            <thead><tr><th scope="col">Service</th><th scope="col">Status</th><th scope="col">Notes</th></tr></thead>
+            <tbody>
+              <tr><td>Sign-up with a key, no passwords</td><td><span class="st st--test">In test</span></td><td class="why">The key is not yet signed on the network; it works like a password.</td></tr>
+              <tr><td>Four people who know you vouch</td><td><span class="st st--test">In test</span></td><td class="why">Ask someone, invitations, a video call, a daily session.</td></tr>
+              <tr><td>Three kinds of account</td><td><span class="st st--test">In test</span></td><td class="why">Person, organisation (declared, not checked), node contributor.</td></tr>
+              <tr><td>One shared forum</td><td><span class="st st--test">In test</span></td><td class="why">Post, reply, like. English only for now.</td></tr>
+              <tr><td>Your own agent holding your data</td><td><span class="st st--test">In test</span></td><td class="why">Runs on the project's node for now.</td></tr>
+              <tr><td>Host a node</td><td><span class="st st--plan">Planned</span></td><td class="why">No runnable node yet. Joining the line records interest.</td></tr>
+              <tr><td>Problem → Discussion → Solutions → Vote → Mandate</td><td><span class="st st--later">Later</span></td><td class="why">Comes back once the network has verified people in it. <a href="https://young-world-federalists.github.io/gloki-engage/">See it in the demo</a>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who -->
+    <section id="who" aria-labelledby="who-h" style="background: var(--wash)">
+      <div class="wrap who-grid">
+        <div>
+          <h2 id="who-h">Who is building it</h2>
+          <p>Gloki is a project of the <strong>Young World Federalists</strong>, built in the open. The app's code is public, and the network runs on nodes that people, not a company, will carry.</p>
+          <p>Questions, or an organisation that wants in? Reply to the first email the waitlist sends you. A person reads it.</p>
+        </div>
+        <div>
+          <h2>Where to look</h2>
+          <p><a href="https://young-world-federalists.github.io/gloki-engage/">The full demo</a>, with the democracy pipeline that comes back later.<br>
+          <a href="https://github.com/young-world-federalists/gloki-engage">The source on GitHub</a>.</p>
+          <p><a class="button" href="#join">Join the waitlist</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Young World Federalists</span>
+      <a href="https://github.com/young-world-federalists/gloki-engage">GitHub</a>
+      <span>No cookies, no trackers. The waitlist is run on Buttondown.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Stations light as they come into view; the door buttons preselect the line and go to the form.
+    (function () {
+      var stops = document.querySelectorAll('.stop');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('lit'); io.unobserve(e.target); } });
+        }, { rootMargin: '0px 0px -30% 0px' });
+        stops.forEach(function (s) { io.observe(s); });
+      } else {
+        stops.forEach(function (s) { s.classList.add('lit'); });
+      }
+      document.querySelectorAll('[data-door]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var r = document.querySelector('input[name="tag"][value="' + b.getAttribute('data-door') + '"]');
+          if (r) r.checked = true;
+          document.getElementById('join').scrollIntoView({ behavior: 'smooth', block: 'center' });
+          setTimeout(function () { document.getElementById('email').focus({ preventScroll: true }); }, 450);
+        });
+      });
+      // Desktop: move the interchange over the diagram. Mobile keeps it in flow under the lines.
+      var mq = window.matchMedia('(min-width: 760px)');
+      var slot = document.getElementById('join-desktop'); var form = document.getElementById('join');
+      function place() { if (mq.matches && form.parentElement !== slot.parentElement) { slot.replaceWith(form); } }
+      place();
+    })();
+  </script>
+</body>
+</html>

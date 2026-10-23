@@ -1,0 +1,5 @@
+# Impeccable runtime and review captures (the critique snapshots, surface briefs and config are committed)
+.impeccable/live/
+.impeccable/review/
+.impeccable/questions/
+.DS_Store
