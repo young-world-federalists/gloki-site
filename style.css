@@ -89,8 +89,8 @@ h3 { font-size: 1.25rem; }
   border-bottom: 3px solid var(--ink);
 }
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--ink); font-family: var(--display); font-size: 1.35rem; }
-.brand img { width: 36px; height: 36px; border-radius: 8px; }
-.brand .plate { margin-left: 0.4rem; }
+.brand img { width: 36px; height: 36px; }
+.brand .short { display: none; }
 .nav { display: flex; gap: 0.25rem 1.1rem; flex-wrap: wrap; font-family: var(--display); font-size: 0.95rem; }
 .nav a { color: var(--ink); text-decoration: none; padding: 0.55rem 0.1rem; display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; }
 .nav a::before { content: ''; width: 18px; height: 6px; border-radius: 3px; background: var(--ink); }
@@ -103,6 +103,9 @@ h3 { font-size: 1.25rem; }
 /* Hero: the diagram is the page's first viewport */
 .hero { position: relative; padding-block: 1.25rem 2.5rem; }
 .hero .wrap { display: grid; gap: 1rem; }
+.kicker { display: flex; align-items: center; gap: 0.5rem; margin: 0; font-family: var(--display); font-size: 1.2rem; color: var(--ink); }
+.kicker img { width: 28px; height: 28px; border-radius: 7px; }
+.kicker .plate { margin-left: 0.3rem; }
 .hook { max-width: 22ch; }
 .hook em { font-style: normal; color: var(--solve-text); }
 .lede { font-size: 1.15rem; max-width: 46ch; color: var(--ink-soft); }
@@ -243,8 +246,21 @@ section > .wrap > h2 { margin-bottom: 0.75rem; }
 .st--later { color: var(--status-later); }
 .board .why { color: var(--ink-muted); font-size: 0.95rem; }
 
-/* Who */
+/* Who: the Global Democracy Initiative */
 .who-grid { display: grid; gap: 1rem 3rem; grid-template-columns: minmax(0, 1fr); }
+.values { list-style: none; padding: 0; margin: 0 0 1.2em; max-width: var(--measure); display: grid; gap: 0.6rem; }
+.values li { padding-left: 1.4rem; position: relative; }
+.values li::before { content: ''; position: absolute; left: 0; top: 0.5em; width: 10px; height: 10px; border-radius: 50%; border: 3px solid var(--ink); background: var(--paper); }
+.values strong { color: var(--ink); font-weight: 600; }
+
+/* Imprint and privacy: plain documents on the same paper */
+.doc { padding-block: 2.5rem 3.5rem; }
+.doc h1 { font-size: clamp(1.9rem, 1.2rem + 2.4vw, 2.8rem); margin-bottom: 1.2rem; }
+.doc h2 { font-size: 1.35rem; margin: 2rem 0 0.6rem; }
+.doc address { font-style: normal; margin: 0 0 1em; }
+.doc ul { max-width: var(--measure); padding-left: 1.2rem; }
+.doc li { margin-bottom: 0.4em; }
+.doc .updated { color: var(--ink-muted); font-size: 0.95rem; }
 .foot { border-top: 3px solid var(--ink); padding-block: 1.5rem 2.5rem; font-size: 0.95rem; color: var(--ink-muted); }
 .foot .wrap { display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; align-items: center; }
 .foot a { color: var(--ink-muted); }
@@ -262,6 +278,10 @@ section > .wrap > h2 { margin-bottom: 0.75rem; }
   .form .row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.6rem; }
   .form .row .button { justify-self: start; }
   .who-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+@media (max-width: 1099.98px) {
+  .brand .long { display: none; }
+  .brand .short { display: inline; }
 }
 @media (max-width: 759.98px) {
   .diagram--desktop { display: none; }

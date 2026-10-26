@@ -9,8 +9,9 @@ web
 ## Stack
 
 Static HTML and one CSS file, no framework runtime, no third-party script. Deploys from GitHub Pages
-on a new repository `young-world-federalists/gloki-site` (to be created on Eston's go); the domain
-is gloki.app (Eston, 15 Oct 2026 thread; DNS owner and registrar not yet recorded). Page budget under
+on `young-world-federalists/gloki-site` (created 26 Oct 2026). The domain is
+**globaldemocracyinitiative.org**, held in the YWF Cloudflare account (Eston, 26 Oct 2026; the
+transfer from the old Webflow setup was still completing that day). gloki.app is dropped for now. Page budget under
 200 KB including images. Build path: code-first (Eston, 2026-10-23).
 
 ## Users
@@ -30,6 +31,17 @@ first readers, but the page must clear their reading level.
 
 The reader arrives from a link in an email, a WhatsApp group or a talk, on a phone as often as a
 laptop, and decides in under a minute whether to leave an email address.
+
+## Publisher (Eston, 26 Oct 2026)
+
+The page is published by the **Global Democracy Initiative (GDI)**, with Gloki as its main project.
+GDI began in 2021 as a coalition of seven organisations (concept note, 24 May 2021; values doc;
+2023 Digital Democracy Lab abstract by Eston McKeague, David Gallup, Ouri Poupko, Lars Luenenburger
+and Gery Colombo, all in the YWF shared drive under "Global Democracy Initiative"). It is no longer
+an active coalition and has no legal existence of its own: it is a **project of Young World
+Federalists, Inc.**, which is its fiscal and legal host and the publisher named in the imprint and
+privacy pages. Say exactly that; never present GDI as a separate organisation or the 2021 partners
+as current members (their names stay off the page).
 
 ## Product Purpose
 
@@ -60,9 +72,8 @@ Three things a neighbouring product cannot truthfully copy together:
 - The app's demo (full pipeline, seeded communities) is live at
   https://young-world-federalists.github.io/gloki-engage/. The beta build (sign-up, keys, vouching, one
   forum) exists on the `ui` branch and deploys only when Ouri merges to `server-side`.
-- The waitlist is a Buttondown newsletter; the Young World Federalists already pay for the account.
-  The page posts the email (and the chosen door as a tag) to Buttondown's embed-subscribe endpoint.
-  The newsletter's Buttondown username is not yet recorded — Eston supplies it.
+- The waitlist is the YWF Buttondown account, username `YoungWorldFederalists` (Eston, 26 Oct 2026).
+  The page posts the email and the chosen door as a tag to Buttondown's embed-subscribe endpoint.
 - Partners: Ouri Poupko builds the backend and node runtime; Eston McKeague (YWF) owns the product,
   copy and this page.
 - The page is reached from emails, WhatsApp groups and talks; it must work on a phone over mobile data.
@@ -80,15 +91,20 @@ Three things a neighbouring product cannot truthfully copy together:
 - No communities in the beta; "join a community" collapses into "join Gloki", one membership.
 - English only for the beta (Eston, 2026-10-23); fr/sw pages are a later step through the native-review
   packet.
-- Open decisions: what "your own agent holds your data" means in the beta (the page lists it as Planned until confirmed); the Buttondown username; whether one list with tags or one list per door; the
-  domain's DNS owner; who answers the "Partner with us" contact.
+- Settled 26 Oct 2026 (Eston): YWF named as builder; the agent row shown as Planned; contact by
+  reply to the first waitlist email, plus hello@globaldemocracyinitiative.org.
+- Open: whether waitlist sign-ups also receive the general YWF newsletter (they join the same
+  Buttondown list, tagged by door); who reads hello@.
 - Terminology: "vouch" (people who know you confirm you are a real person), "agent" (the thing that
   holds your data), "node" (a small server that keeps a copy of the network), "mandate" (a decision a
   community publishes), "door" (one of the three ways in).
 
 ## Brand Commitments
 
-- Name: **Gloki**. Mark: `assets/gloki-icon.png` (white figure-and-arcs on a brand-blue rounded square).
+- Publisher: **Global Democracy Initiative**. Mark: `assets/gdi-mark.svg`, the network figure
+  from Eston's 2022 GDI logo (YWF drive, "GDI Branding/Vector GDI Logos"), without its wordmark; the
+  name is set in the page's display face.
+- Product: **Gloki**. Mark: `assets/gloki-icon.png` (white figure-and-arcs on a brand-blue rounded square).
 - Brand blue **#3b82f6** stays the accent. White text on this blue measures 3.68:1; the app keeps that
   as a locked exception, the landing page does not inherit it: body-size text is blue on white, not
   white on blue.

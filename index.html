@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gloki — you get in because people who know you vouch for you</title>
-  <meta name="description" content="Gloki is a network for deciding things together across borders. Four people who know you confirm you are real: no ID papers, no face scans, nothing to pay. In test now. Pick your line and join the waitlist.">
-  <meta property="og:title" content="Gloki — you get in because people who know you vouch for you">
+  <title>Gloki, from the Global Democracy Initiative</title>
+  <meta name="description" content="Gloki, from the Global Democracy Initiative, is a network for deciding things together across borders. Four people who know you confirm you are real: no ID papers, no face scans, nothing to pay. In test now. Pick your line and join the waitlist.">
+  <meta property="og:title" content="Gloki, from the Global Democracy Initiative">
   <meta property="og:description" content="A network for deciding things together across borders. In test now. Pick your line and join the waitlist.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gloki.app/">
-  <meta property="og:image" content="https://gloki.app/assets/gloki-icon.png">
+  <meta property="og:url" content="https://globaldemocracyinitiative.org/">
+  <meta property="og:image" content="https://globaldemocracyinitiative.org/assets/gloki-icon.png">
   <meta name="theme-color" content="#3b82f6">
-  <link rel="icon" href="assets/gloki-icon.png" type="image/png">
+  <link rel="icon" href="assets/gdi-mark.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/HammersmithOne.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Cabin-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
@@ -20,9 +20,9 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="wrap top">
-    <a class="brand" href="#top" aria-label="Gloki, home">
-      <img src="assets/gloki-icon.png" alt="" width="36" height="36">
-      Gloki <span class="plate">Line map · beta</span>
+    <a class="brand" href="#top" aria-label="Global Democracy Initiative, home">
+      <img src="assets/gdi-mark.svg" alt="" width="36" height="36">
+      <span class="long">Global Democracy Initiative</span><span class="short">GDI</span>
     </a>
     <nav class="nav" aria-label="Lines">
       <a class="nav--solve" href="#line-solve"><span class="long">Solve global issues</span><span class="short">Solve</span></a>
@@ -36,8 +36,9 @@
     <!-- First viewport: the diagram is the page -->
     <section class="hero" id="top" aria-labelledby="hook">
       <div class="wrap">
+        <p class="kicker"><img src="assets/gloki-icon.png" alt="" width="28" height="28"> Gloki <span class="plate">Line map · beta</span></p>
         <h1 class="hook" id="hook">You get in because <em>people who know you</em> vouch for you.</h1>
-        <p class="lede"><strong>Gloki</strong> is a network for deciding things together across borders. Four people who know you confirm you are real: no ID papers, no face scans, nothing to pay. It is in test now. Pick your line and join the waitlist.</p>
+        <p class="lede"><strong>Gloki</strong> is a network for deciding things together across borders, built by the Global Democracy Initiative. Four people who know you confirm you are real: no ID papers, no face scans, nothing to pay. It is in test now. Pick your line and join the waitlist.</p>
 
         <div class="diagram stage diagram--desktop" aria-hidden="true">
           <svg viewBox="0 0 1200 600">
@@ -217,18 +218,25 @@
       </div>
     </section>
 
-    <!-- Who -->
+    <!-- Who: the Global Democracy Initiative -->
     <section id="who" aria-labelledby="who-h" style="background: var(--wash)">
       <div class="wrap who-grid">
         <div>
-          <h2 id="who-h">Who is building it</h2>
-          <p>Gloki is a project of the <strong>Young World Federalists</strong>, built in the open. The app's code is public, and the network runs on nodes that people, not a company, will carry.</p>
-          <p>Questions, or an organisation that wants in? Reply to the first email the waitlist sends you. A person reads it.</p>
+          <h2 id="who-h">The Global Democracy Initiative</h2>
+          <p>The Global Democracy Initiative began in 2021, when seven organisations working for global democracy agreed on a plan. People anywhere would name the problems no single country can fix, propose solutions, debate them and vote: one person, one vote. The results would be public, so that the people in power can be held to them.</p>
+          <p><strong>Gloki is that plan, being built.</strong> It starts with the step everything else rests on: knowing that each voice belongs to one real person.</p>
+          <ul class="values">
+            <li><strong>Global democracy.</strong> People take part directly in the decisions that cross borders.</li>
+            <li><strong>Global citizenship.</strong> Our common humanity binds us together.</li>
+            <li><strong>Open and experimental.</strong> We build new ways to decide together, and the code belongs to everyone.</li>
+          </ul>
+          <p>The Global Democracy Initiative is a project of the <a href="https://www.ywf.world/">Young World Federalists</a>, a nonprofit registered in the United States that hosts it legally and financially.</p>
         </div>
         <div>
           <h2>Where to look</h2>
           <p><a href="https://young-world-federalists.github.io/gloki-engage/">The full demo</a>, with the democracy pipeline that comes back later.<br>
           <a href="https://github.com/young-world-federalists/gloki-engage">The source on GitHub</a>.</p>
+          <p>Questions, or an organisation that wants in? Write to <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>, or reply to the first email the waitlist sends you. A person reads it.</p>
           <p><a class="button" href="#join">Join the waitlist</a></p>
         </div>
       </div>
@@ -237,7 +245,9 @@
 
   <footer class="foot">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Young World Federalists</span>
+      <span>© <span id="year">2026</span> Young World Federalists, Inc. The Global Democracy Initiative is a project of the Young World Federalists.</span>
+      <a href="imprint.html">Imprint</a>
+      <a href="privacy.html">Privacy</a>
       <a href="https://github.com/young-world-federalists/gloki-engage">GitHub</a>
       <span>No cookies, no trackers. The waitlist is run on Buttondown.</span>
     </div>

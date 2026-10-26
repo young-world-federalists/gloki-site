@@ -31,6 +31,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 - The hook is the page's one h1 in display type on white, not a reversed nameplate: one h1 and AA contrast; a 3.6rem reversed plate would be a poster.
 - Nav is the three line names plus Join (fix 8 applied). Lines enter from beyond the left edge of the viewport; diagonals are 45°; the trunk leaves the box edge.
 
+## Adaptations, 26 Oct 2026 (GDI as publisher)
+
+- The header's title plate is the Global Democracy Initiative (network mark + name, "GDI" under 1100px); Gloki moves to a kicker above the h1 with its own mark and the Line map plate. The hook, diagram and form are untouched.
+- "Who is building it" becomes the GDI section: the 2021 plan, "Gloki is that plan, being built", three values, and the YWF hosting line. Footer and two new pages (imprint.html, privacy.html) name Young World Federalists, Inc. as publisher.
+
 ## Unresolved
 
-Buttondown username; whether one list with a door tag or a list per door; the domain's DNS; who answers "Partner with us"; the status-board wording for "your own agent holding your data" (shown as Planned until Eston confirms what the beta's agent does).
+Whether waitlist sign-ups also get the YWF newsletter; who reads hello@; DNS cutover once the domain transfer completes; the status-board wording for "your own agent holding your data" (shown as Planned until Eston confirms what the beta's agent does).
