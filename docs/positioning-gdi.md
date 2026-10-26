@@ -53,7 +53,7 @@ where there is no internet.
 
 | What | Status | Basis |
 |---|---|---|
-| Get in when four people who know you vouch | **In test** (app) | The vouch graph gives everyone exactly four active vouches (Ouri, call). Whether the server enforces it is unknown **[Ouri]** |
+| Get in when four people vouch for you | **In test** (app); see note below | Ouri's original `community_contract.py` enforces it: the contract picks four existing members at random, all four must approve, and the newcomer takes their place between them, so everyone keeps exactly four links. The beta's "people who know you" version has no server code yet |
 | One shared forum | **In test** | Beta UI |
 | A node anyone can run | **Available for developers** | Docker image, GPL-3.0, local only by default |
 | Records copied across members' nodes | **Built, not tested across machines** | The node runs consensus between partners (Ouri: "This app actually works decentralized"). Our own test put three partners on one node, and the live demo is one node |
@@ -64,6 +64,36 @@ where there is no internet.
 | Leave with your identity | **Planned** | Sovereignty spec H3 |
 | Losing your phone doesn't lose your vote | **Planned** | Sovereignty spec H2 |
 | Reaching places without internet (radio) | **Research** | Spec H7, Reticulum as candidate |
+
+**Note on vouching:** random vouchers are what make Ouri's design resist fake accounts, because
+colluders can't choose each other. "People who know you" is easier to use but loses that
+guarantee. Until Eston and Ouri pick a rule (or a mix: known people first, random later), the
+page says "four people vouch for you", not "four people who know you", and doesn't claim
+resistance to fake accounts.
+
+### The protections we planned, in plain words
+
+These are the brainstormed protections (sovereignty spec, blind-server note), so the page can
+show the plan without claiming any of it. A line is one sentence on the page; builders get a link
+to the spec.
+
+| On the page | Behind it | Status |
+|---|---|---|
+| Your phone signs everything you do, so nobody can post or vote as you | Keys made on the device, passkey unlock (H1) | Being built |
+| Lose your phone, and the people who vouched for you can let you back in | Voucher re-attestation with a waiting period (H2) | Planned |
+| Every record is copied to many members' servers, so nobody can change it quietly | Signed append-only logs (H3) | Being built |
+| Servers store your data without being able to read it | Encryption, blind servers | Being built |
+| You can prove you may vote without saying who you are | Semaphore (H4, step 1) | Planned |
+| Votes are counted while still locked; no single server can open one | ElectionGuard threshold keys (H4, step 2) | Planned |
+| You can check the app you run is the code we published | Signed releases, CSP/SRI (H5) | Planned |
+| Nodes can hide where they are | Tor onion services (H7) | Research |
+| Reaching places without internet, by radio | Reticulum over LoRa (H7) | Research |
+| Text messages for reminders only, never for votes | SMS/USSD (H7) | Research |
+| **No binding vote before an independent security audit** | H8 | A commitment we can make today |
+
+The last row is a policy, not a feature, so the page can state it as true now. **[Eston: commit
+to it?]** Engagement mechanics (deliberation, quadratic voting, conviction, delegation) belong to
+Gloki, not the network. They go under Gloki as "comes later".
 
 **Pilot rule:** anyone who joins the pilot is told plainly that the project can see their data
 until encryption lands, and that moving to the production network may mean a data migration.
