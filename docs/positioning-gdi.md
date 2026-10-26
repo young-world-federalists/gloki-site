@@ -56,7 +56,7 @@ where there is no internet.
 | Get in when four people vouch for you | **In test** (app); see note below | Ouri's original `community_contract.py` enforces it: the contract picks four existing members at random, all four must approve, and the newcomer takes their place between them, so everyone keeps exactly four links. The beta's "people who know you" version has no server code yet |
 | One shared forum | **In test** | Beta UI |
 | A node anyone can run | **Available for developers** | Docker image, GPL-3.0, local only by default |
-| Records copied across members' nodes | **Built, not tested across machines** | The node runs consensus between partners (Ouri: "This app actually works decentralized"). Our own test put three partners on one node, and the live demo is one node |
+| Records copied across members' nodes | **Early code** | The node runs a PBFT-style agreement among a contract's partners, but doesn't check signatures yet and has no view change (`consensus/pbft.py`). Never run across separate machines; the live demo is one node |
 | Nobody can act as you | **Being built** | The node has no authentication yet (its own API docs say so) |
 | Your data on your own server | **Possible, not yet used** | The design allows it. On the live demo everyone's data sits on one project node |
 | Encryption; servers that can't read your data | **Being built** (Eston + Ouri) | "I didn't implement it yet" (Ouri, call) |
