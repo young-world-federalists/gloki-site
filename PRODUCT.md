@@ -110,9 +110,13 @@ Three things a neighbouring product cannot truthfully copy together:
 ## Brand Commitments
 
 - Publisher: **Global Democracy Initiative**. Mark: `assets/gdi-mark.svg`, the network figure
-  from Eston's 2022 GDI logo (YWF drive, "GDI Branding/Vector GDI Logos"), without its wordmark; the
-  name is set in the page's display face.
-- Product: **Gloki**. Mark: `assets/gloki-icon.png` (white figure-and-arcs on a brand-blue rounded square).
+  from Eston's 2022 GDI logo (YWF drive, "GDI Branding/Vector GDI Logos"), redrawn on 26 Oct 2026
+  (Eston chose route B, `docs/brand/2026-10-26/`): the same seven nodes and links in ink, plus one
+  brand-blue newcomer where two links cross, with four links, the vouching rule. Header icon
+  `assets/gdi-icon-32.svg`, favicon `assets/gdi-icon-16.svg`, share image `assets/og-image.png`.
+  The name is set in Jost, the page's display face.
+- Product: **Gloki**. Its mark (white figure-and-arcs on a brand-blue rounded square) lives in the
+  gloki-engage repo; this site no longer uses it.
 - Brand blue **#3b82f6** stays the accent. White text on this blue measures 3.68:1; the app keeps that
   as a locked exception, the landing page does not inherit it: body-size text is blue on white, not
   white on blue.

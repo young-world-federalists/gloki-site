@@ -314,14 +314,15 @@
     },
     "brandMark": {
       "path": "assets/gdi-mark.svg",
+      "headerIcon": "assets/gdi-icon-32.svg",
+      "favicon": "assets/gdi-icon-16.svg",
+      "shareImage": "assets/og-image.png",
       "headerSize": "32px",
       "colors": [
-        "#EC623E",
-        "#7BD484",
-        "#165A99",
-        "#22231A"
+        "#111418",
+        "#3b82f6"
       ],
-      "note": "The mark's palette and the page's palette currently differ; a decision is pending (docs/brand/2026-10-26/)."
+      "note": "Route B (Eston, 26 Oct 2026): the 2022 network figure in ink, with a brand-blue newcomer at the crossing of two links, four links: the vouching rule. See docs/brand/2026-10-26/."
     },
     "notCanonized": [
       "mark.todo yellow (#fff1a8) placeholders: temporary editorial device, remove before launch"

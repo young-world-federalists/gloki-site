@@ -6,7 +6,8 @@ is a project of Young World Federalists, Inc., which publishes the site.
 
 - `index.html`, `style.css`: the home page. `build.html`: how the network works, for builders.
   `imprint.html`, `privacy.html`: the legal pages.
-- `assets/`: the GDI network mark (`gdi-mark.svg`, from the 2022 logo); `docs/` holds the 2021
+- `assets/`: the GDI mark (`gdi-mark.svg`, the 2022 network figure with a blue newcomer at its
+  crossing), its 32px and 16px icons and the share image `og-image.png`; `docs/` holds the 2021
   concept note and the 2024 white paper; `fonts/` holds Jost and Atkinson Hyperlegible (both OFL,
   licences beside them).
 - `PRODUCT.md`: the product facts the page is written from (Impeccable `init`).

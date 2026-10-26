@@ -180,7 +180,7 @@ A near-monochrome ink-on-white sheet with one meaningful blue and one warning ve
 - **Hairline** (rule): light separators between list items inside a section and the border of an unselected sign-up choice. Never a section divider.
 - **Counterfeit Grey** (counterfeit-grey): solid figure copies that stand for fake accounts in the story count. Nowhere else.
 
-The mark `assets/gdi-mark.svg` keeps its own colours (orange #EC623E, green #7BD484, navy #165A99 on ink lines); the mark's palette and the page's palette currently differ, and a decision on whether the page moves toward the mark's colours is pending (brand exploration in `docs/brand/2026-10-26/`).
+The mark (`assets/gdi-mark.svg`, Eston's decision 26 Oct 2026, route B in `docs/brand/2026-10-26/`) is the 2022 GDI network figure redrawn in the page's two colours: seven ink nodes and links in their 2022 positions, plus one brand-blue newcomer where two of the 2022 links cross, so it sits between two linked pairs with four links, the page's vouching rule. The header and the favicon use their own masters (`assets/gdi-icon-32.svg`, `assets/gdi-icon-16.svg`); at 16px the icon is only the newcomer and its four. The mark uses no colour outside the page palette.
 
 ### Named Rules
 **The Two-Tone Rule.** Every hue has a graphics tone and a words tone. Brand blue (#3b82f6) and vermilion (#e0412b) fill shapes and lines; text in those hues uses #1d4ed8 and #b42318. No text sits in brand blue, and no text sits on it.
