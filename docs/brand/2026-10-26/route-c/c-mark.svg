@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="110 92 1151 1023">
+  <title>GDI mark: the 2022 figure with a newcomer at the crossing</title>
+  <line x1="750" y1="200" x2="318" y2="465" stroke="#22231A" stroke-width="17.7"/>
+  <line x1="318" y1="465" x2="509.1" y2="611.5" stroke="#22231A" stroke-width="17.7"/>
+  <line x1="509.1" y1="611.5" x2="785" y2="823" stroke="#22231A" stroke-width="17.7"/>
+  <line x1="731" y1="512" x2="509.1" y2="611.5" stroke="#22231A" stroke-width="17.7"/>
+  <line x1="509.1" y1="611.5" x2="218" y2="742" stroke="#22231A" stroke-width="17.7"/>
+  <line x1="785" y1="823" x2="550" y2="1007" stroke="#22231A" stroke-width="17.7"/>
+  <line x1="550" y1="1007" x2="218" y2="742" stroke="#22231A" stroke-width="17.7"/>
+  <line x1="1153" y1="742" x2="785" y2="823" stroke="#22231A" stroke-width="17.7"/>
+  <line x1="1153" y1="742" x2="731" y2="512" stroke="#22231A" stroke-width="17.7"/>
+  <circle cx="750" cy="200" r="100" fill="#EC623E"/>
+  <circle cx="731" cy="512" r="100" fill="#7BD484"/>
+  <circle cx="218" cy="742" r="100" fill="#7BD484"/>
+  <circle cx="550" cy="1007" r="100" fill="#EC623E"/>
+  <circle cx="1153" cy="742" r="100" fill="#EC623E"/>
+  <circle cx="785" cy="823" r="100" fill="#165A99"/>
+  <circle cx="318" cy="465" r="100" fill="#165A99"/>
+  <circle cx="509.1" cy="611.5" r="84" fill="#3b82f6"/>
+</svg>
