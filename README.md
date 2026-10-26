@@ -11,7 +11,7 @@ screenshots, no framework and no third-party request. Deploys as a static site (
 
 ## Before it goes live
 
-- Replace `BUTTONDOWN_USERNAME` in `index.html` with the YWF newsletter's Buttondown username.
+- The waitlist posts to the YWF Buttondown list (`YoungWorldFederalists`). Create the three door tags there (`solve-global-issues`, `build-digital-democracy`, `contribute-a-node`) before launch.
 - Point gloki.app at the Pages site (CNAME) and enforce HTTPS.
 - Decide one Buttondown list with a `tag` per door (as built) or one list per door.
 
