@@ -248,6 +248,8 @@ section > .wrap > h2 { margin-bottom: 0.75rem; }
 
 /* Who: the Global Democracy Initiative */
 .who-grid { display: grid; gap: 1rem 3rem; grid-template-columns: minmax(0, 1fr); }
+.motto { margin: 0.6rem 0 1.2rem; }
+.papers { font-size: 0.98rem; color: var(--ink-muted); }
 .values { list-style: none; padding: 0; margin: 0 0 1.2em; max-width: var(--measure); display: grid; gap: 0.6rem; }
 .values li { padding-left: 1.4rem; position: relative; }
 .values li::before { content: ''; position: absolute; left: 0; top: 0.5em; width: 10px; height: 10px; border-radius: 50%; border: 3px solid var(--ink); background: var(--paper); }

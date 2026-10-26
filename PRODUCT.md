@@ -43,6 +43,14 @@ Federalists, Inc.**, which is its fiscal and legal host and the publisher named 
 privacy pages. Say exactly that; never present GDI as a separate organisation or the 2021 partners
 as current members (their names stay off the page).
 
+Sources added 26 Oct 2026: the old GDI homepage (gdi-site.webflow.io: motto "Assume global
+responsibility", values Global Democracy / Global Citizenship / Open Source Innovation) and the 2023
+white paper "Gloki: Global Digital Voter Identity" (Poupko, McKeague, Gallup, Colombo,
+Lünenburger; Drive doc "Gloki White Paper"). The page links both PDFs as history. Where the paper
+and the beta differ, the beta wins and the page says so: the paper has strangers chosen at random
+vouch, unique profile photos checked by software, blockchains and "decentralized" records; the beta
+has people who know you vouch, and none of those claims may appear as fact on the page.
+
 ## Product Purpose
 
 Gloki is a global direct-democracy platform: communities anywhere turn shared problems into
