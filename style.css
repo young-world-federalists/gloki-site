@@ -44,7 +44,7 @@ body {
   font: 400 1.0625rem/1.6 var(--text);
   font-kerning: normal;
 }
-::selection { background: var(--blue); color: #fff; }
+::selection { background: var(--blue-text); color: #fff; }
 
 img, svg { display: block; max-width: 100%; }
 a { color: var(--blue-text); text-decoration-thickness: 1px; text-underline-offset: .18em; }
@@ -106,7 +106,9 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 .p-ink { fill: var(--ink); }
 .p-blue { fill: var(--blue); }
 .link-old { stroke: var(--ink); stroke-width: 1.4; opacity: 0; } /* end state: the old links are gone */
-.link-new { stroke: var(--blue); stroke-width: 1.8; stroke-linecap: round; }
+.link-new { stroke: var(--blue); stroke-width: 2; stroke-linecap: round; }
+.p-fake { fill: none; stroke: var(--verm); stroke-width: 1.3; }
+.count { width: 100%; max-width: 30rem; height: auto; margin: -.25rem 0 1.25rem; }
 
 @media (prefers-reduced-motion: no-preference) {
   .newcomer { animation: arrive .7s var(--ease) .25s both; }
@@ -151,7 +153,7 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 .jump { display: inline-block; margin-top: .75rem; font-weight: 700; }
 
 /* ---- Sections ------------------------------------------------------------ */
-.section { padding-block: var(--section); border-top: 1px solid var(--rule); }
+.section { padding-block: var(--section); border-top: 1px solid var(--ink); } /* chart-sheet rules in ink */
 .section > .wrap > :where(p, ul, ol) { max-width: var(--measure); }
 .prose p { max-width: var(--measure); }
 .lead { font-size: 1.125rem; }
@@ -172,11 +174,11 @@ mark.todo { background: var(--todo); color: var(--ink); padding: 0 .2em; border-
 .group li { padding: .5rem 0; border-top: 1px solid var(--rule); }
 .group li:first-child { border-top: 0; }
 .group li strong { display: block; }
-.glyph { width: 12px; height: 24px; flex: none; }
+.glyph { width: 20px; height: 40px; flex: none; }
 .glyph.g-solid use { fill: var(--ink); }
 .glyph.g-out use, .glyph.g-half use.o { fill: none; stroke: var(--ink); stroke-width: 2; }
 .glyph.g-half use.f { fill: var(--ink); }
-.glyph.g-dot use { fill: none; stroke: var(--ink); stroke-width: 2; stroke-dasharray: 2.2 2.2; }
+.glyph.g-dot use { fill: none; stroke: var(--ink); stroke-width: 1.8; stroke-dasharray: 2.4 3.2; }
 .notyet { color: var(--verm-text); font-weight: 700; }
 .rule-box { margin-top: 2.25rem; padding: 1.25rem 1.25rem 1rem; background: var(--paper); border: 2px solid var(--ink); border-radius: var(--radius); max-width: 44rem; }
 .rule-box h3 { font-size: 1.25rem; }
@@ -201,16 +203,18 @@ mark.todo { background: var(--todo); color: var(--ink); padding: 0 .2em; border-
 details.history { max-width: 44rem; }
 details.history summary { cursor: pointer; font-family: var(--display); font-weight: 600; font-size: clamp(1.3rem, 1.05rem + 1vw, 1.7rem); min-height: 44px; display: flex; align-items: center; gap: .6rem; list-style: none; }
 details.history summary::-webkit-details-marker { display: none; }
-details.history summary::after { content: "+"; font-weight: 500; margin-left: auto; font-size: 1.5rem; color: var(--ink-soft); }
-details.history[open] summary::after { content: "–"; }
+details.history .toggle { width: 20px; height: 20px; margin-left: auto; flex: none; }
+details.history .toggle path { stroke: var(--ink); stroke-width: 2; }
+details.history[open] .toggle .v { display: none; }
 details.history .inner { padding-top: 1rem; }
 
 /* Ways to take part */
+.section > .wrap > .waylist { max-width: none; }
 .waylist { display: grid; gap: 1.5rem; padding: 0; margin: 0 0 2rem; list-style: none; }
 @media (min-width: 56rem) { .waylist { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; } }
 .waylist li { border-top: 2px solid var(--ink); padding-top: .9rem; }
 .waylist p { margin-bottom: .75rem; }
-.waylist .more { font-weight: 700; }
+.waylist .more { font-weight: 700; display: inline-flex; align-items: center; min-height: 44px; }
 
 /* ---- Builder page and legal pages --------------------------------------- */
 .doc { padding-block: 2rem 4rem; }
@@ -221,14 +225,15 @@ details.history .inner { padding-top: 1rem; }
 .doc li { margin-bottom: .45rem; }
 .doc .updated { color: var(--ink-soft); }
 .plan { list-style: none; padding: 0 !important; max-width: 46rem; }
-.plan li { display: grid; grid-template-columns: 12px 1fr; gap: .2rem .8rem; padding: .7rem 0; border-top: 1px solid var(--rule); margin: 0; }
+.plan li { display: grid; grid-template-columns: 20px 1fr; gap: .2rem .8rem; padding: .7rem 0; border-top: 1px solid var(--rule); margin: 0; }
 .plan .glyph { grid-row: span 2; margin-top: .15rem; }
 .plan .how { color: var(--ink-soft); font-size: .95rem; }
 .diagram { max-width: 30rem; margin: 1.25rem 0 1.5rem; }
 .diagram figcaption { color: var(--ink-soft); font-size: .95rem; margin-top: .4rem; }
 
 /* ---- Footer -------------------------------------------------------------- */
-.foot { border-top: 1px solid var(--rule); padding-block: 1.5rem 2.5rem; color: var(--ink-soft); font-size: .95rem; }
-.foot .wrap { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; align-items: baseline; }
-.foot p { margin: 0; flex-basis: 100%; max-width: var(--measure); }
+.foot { border-top: 1px solid var(--ink); padding-block: 1.5rem 2.5rem; color: var(--ink-soft); font-size: .95rem; }
+.foot p { margin: 0 0 .5rem; max-width: var(--measure); }
+.foot-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0 1.25rem; }
 .foot a { color: var(--ink-soft); min-height: 44px; display: inline-flex; align-items: center; }
+.foot-links { display: inline-flex; flex-wrap: wrap; gap: 0 1.25rem; }

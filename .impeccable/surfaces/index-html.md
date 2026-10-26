@@ -33,13 +33,14 @@ global democracy needs this; what works today, as a figure legend; who we are; t
 ways to take part.
 
 FIRST VIEWPORT: Phone: the GDI mark and name; the h1 in Jost; a block of pictogram figures where a
-newcomer arrives in a gap and the four figures around it turn blue, joined by four short lines;
+newcomer arrives in its gap between two linked pairs, the pairs' links move to it as four short
+lines, and the five turn blue;
 the caption "You get in when four people vouch for you."; then the email field, the three ways to
 take part and the Sign up button, all inside the first screen. Desktop: copy and form on the left,
 the figure block large on the right.
 
 FORM: Direction A "One figure, one person" (Isotype), position 1 of 7 on our ordered list, chosen by
-Eston. seed: none (unavailable)
+Eston. seed: none (roll blocked by the harness, not run; Eston told 26 Oct)
 
 SIGNATURE: Once, on load, the newcomer slides into its gap and the four links draw, then the four
 turn blue (about 1.4s, ease-out). Reduced motion shows the end state. The status board reuses the
