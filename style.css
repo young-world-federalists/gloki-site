@@ -107,7 +107,7 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 .p-blue { fill: var(--blue); }
 .link-old { stroke: var(--ink); stroke-width: 1.4; opacity: 0; } /* end state: the old links are gone */
 .link-new { stroke: var(--blue); stroke-width: 2; stroke-linecap: round; }
-.p-fake { fill: none; stroke: var(--verm); stroke-width: 1.3; }
+.p-fake { fill: #7c848e; } /* copies: a form no status-board state uses */
 .count { width: 100%; max-width: 30rem; height: auto; margin: -.25rem 0 1.25rem; }
 
 @media (prefers-reduced-motion: no-preference) {
