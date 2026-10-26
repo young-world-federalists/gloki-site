@@ -30,13 +30,13 @@
   table.pal th { font: 600 14px var(--display); }
   .sw { display: inline-block; width: 28px; height: 28px; border-radius: 4px; vertical-align: middle; box-shadow: inset 0 0 0 1px rgba(0,0,0,.12); }
   .ok { font-weight: 700; } .no { font-weight: 700; color: var(--verm-text); }
-  .mocks { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; }
+  .mocks { display: flex; gap: 28px; flex-wrap: nowrap; align-items: flex-start; flex-wrap: wrap; }
   .frame { border: 1px solid #c4cad3; overflow: hidden; position: relative; background: #fff; }
   .frame iframe { border: 0; transform-origin: 0 0; position: absolute; left: 0; top: 0; }
-  .desk { width: 864px; height: 540px; } .desk iframe { width: 1440px; height: 900px; transform: scale(.6); }
+  .desk { width: 720px; height: 450px; } .desk iframe { width: 1440px; height: 900px; transform: scale(.5); }
   .mob { width: 360px; height: 740px; } .mob iframe { width: 360px; height: 740px; }
   .strip { display: flex; flex-direction: column; gap: 14px; width: 220px; }
-  .strip svg { width: 220px; height: auto; }
+  #st1 svg, #st2 svg { width: 220px; height: auto; }
   .strip * { animation: none !important; }
   .strip .start .link-old { opacity: 1; } .strip .start .link-new { opacity: 0; }
   .strip .start .voucher { fill: var(--ink); } .strip .start .newcomer use { fill: var(--verm); }
@@ -145,7 +145,7 @@ document.getElementById('s').innerHTML = `
 
   <h2>The first screen, recoloured (the live index.html, with this route’s colours and mark injected)</h2>
   <div class="mocks">
-    <div class="cell"><div class="frame desk"><iframe id="fd" src="../../../../index.html" title="Desktop mock"></iframe></div><small>Desktop, 1440 × 900, shown at 60%</small></div>
+    <div class="cell"><div class="frame desk"><iframe id="fd" src="../../../../index.html" title="Desktop mock"></iframe></div><small>Desktop, 1440 × 900, shown at 50%</small></div>
     <div class="cell"><div class="frame mob"><iframe id="fm" src="../../../../index.html" title="Phone mock"></iframe></div><small>Phone, 360 × 740, actual size</small></div>
     <div class="strip">
       <div class="cell"><div id="st1" class="start"></div><small>Animation start: newcomer “not yet”, two old links</small></div>
