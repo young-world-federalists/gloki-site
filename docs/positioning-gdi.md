@@ -95,6 +95,9 @@ The last row is a policy, not a feature, so the page can state it as true now. *
 to it?]** Engagement mechanics (deliberation, quadratic voting, conviction, delegation) belong to
 Gloki, not the network. They go under Gloki as "comes later".
 
+**Pilot gate (Eston, 26 Oct):** the pilot opens only once signing works, so nobody can act as
+another member.
+
 **Pilot rule:** anyone who joins the pilot is told plainly that the project can see their data
 until encryption lands, and that moving to the production network may mean a data migration.
 Ouri offered to write an automatic migration tool, so nobody has to get verified twice.

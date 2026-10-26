@@ -72,24 +72,12 @@ together, a network has to carry their voices. That is why we still build with t
 
 ---
 
-## Who counts, and how tools decide today
+## One person, one vote, across borders
 
-Democracy software has to decide who may take part. Tools made for one city, country or
-organisation use one of these answers:
-
-- **A list of residents** from a city or a government. It works inside one country and stops at
-  the border.
-- **A list from the organiser.** The people running the vote decide who is on it.
-- **Random selection.** A small group is chosen by lot, as citizens' assemblies do. It is good for
-  deep discussion, but most people never take part.
-- **Tokens.** People who hold more of a digital token get more say.
-- **Tools that do not hold votes.** Some tools gather opinions from anyone, without a check, and
-  are not built to count one vote per person.
-
-Each answer fits the job it was made for. None of them lets people everywhere take part, one vote
-each, without a government, a company or money in the middle. That is the part we are building.
-
-### One person, one vote, across borders
+Today's democracy tools decide who counts with a government's list of residents, a list from the
+organiser, tokens, or no check at all. Each fits the job it was made for, but none lets people
+everywhere take part, one vote each, without a government, a company or money in the middle.
+That is the part we are building. [Link] How other tools decide who counts *(builder page)*
 
 You get in when four people vouch for you. To vouch means to confirm that you are a real person.
 You do not upload an ID card, scan your face or pay anything.
@@ -102,36 +90,32 @@ When it is, this page will say which rule we picked and why.
 
 ## What works today, and what does not
 
-Last updated: [DATE]. We change this list when things change.
+Last updated: [DATE].
 
 **In the demo app**
 - Four people vouch for you. The app shows the steps; the network does not run the rule yet.
-- One shared forum, where members post and reply.
+- One shared forum, to post and reply.
 
 **For developers**
-- A node anyone can run on their own computer. A node is a small server that keeps a copy of the
-  network. It is not safe to run in public yet.
+- A node you can run on your own computer. A node is a small server that keeps a copy of the
+  network. Not safe to run in public yet.
 
 **Early code**
-- Copying records to many members' nodes. The code exists. It does not yet check signatures, and
-  we have not run it across separate computers.
+- Copying records to many nodes. Not yet checked or tested across separate computers.
 
 **Being built**
-- Nobody can act as you. Today the network does not check who sends a request. Other members can
-  see your key, so someone could act as you.
-- Servers that store your data without being able to read it. Until this is done, the project
-  team can see your data.
+- Nobody can act as you. Today the network does not check who sends a request, and other members
+  can see your key.
+- Servers that keep your data without being able to read it. Until then, the project team can
+  see your data.
 
 **Possible, not used yet**
-- Your data on your own node. The design allows it. In the demo, everyone's data sits on one node.
+- Your data on your own node. In the demo, everyone's data sits on one node.
 
-**Planned:** nobody can see how you voted · you can leave and take your identity with you · losing
-your phone does not lose your vote.
+**Planned** (designed, not started): secret votes · leave with your identity · lose your phone,
+keep your vote.
 
-**Research:** reaching places without internet, by radio.
-
-*Planned* means it is in our design and building has not started. *Research* means we are still
-finding out whether it can work.
+**Research** (still finding out if it can work): reaching places without internet, by radio.
 
 ### A rule we keep today
 
@@ -163,28 +147,25 @@ States. It is GDI's legal and financial home.
 The pilot is the first group of people on Gloki. It is **free**: nothing to pay, no tokens,
 nothing to buy.
 
-**Who it is for.** The first members are world citizens: people in the Young World Federalists'
-chapters, and others who already work across borders. Anyone can join the waitlist.
+- **Who it is for:** world citizens, starting with the Young World Federalists' chapters and others
+  who already work across borders. Anyone can join the waitlist.
+- **What you do:** make a key, get vouched for by four people, and post in one shared forum.
+  Discussing and voting together come later.
+- **Who vouches first:** the first few members vouch for each other, starting with the two of us.
+- **When it opens:** once your phone can sign what you do, so nobody else can act as you. We will
+  write to the waitlist then.
 
-**What you do.** You make a key, four people vouch for you, and you join one shared forum to post
-and reply. Ways to discuss and vote together come later.
-
-**Who vouches first.** The first few members vouch for each other, starting with the two of us.
-After that, members vouch for newcomers.
-
-**Before you join, please know this.** Ouri Poupko runs the pilot's node on Google Cloud. Until
-encryption is built, the project team can see your data, and until signing is built, another member
-could act as you. When the full network is ready, your account may need to move to it. We plan a
-tool that moves it for you, so nobody has to be vouched for twice.
-[EDITOR: the pilot opens only once signing is in place? Eston to decide; if yes, say so here.]
+**Before you join.** Ouri Poupko runs the pilot's node on Google Cloud. Until encryption is
+built, the project team can see your data. Later your account may need to move to the full
+network; we plan a tool that moves it for you, so nobody is vouched for twice.
 
 ---
 
-## Where this started
+## Where this started *(collapsed by default; one line shows: "GDI began in 2021. Read how it started.")*
 
 GDI began in 2021 as a coalition of seven organisations working for democracy at a world scale. In
-2023, some of us wrote a white paper, "Gloki: Global Digital Voter Identity".
-[LINK: 2021 concept note] [LINK: 2023 white paper PDF]
+2024, some of us published a white paper, "GloKi: Global Digital Voter Identity".
+[LINK: 2021 concept note PDF] [LINK: 2024 white paper PDF]
 
 The coalition is no longer active. [EDITOR: one plain sentence on why, if Eston wants it.] In 2026
 we started again from first principles, as a project of the Young World Federalists.
@@ -241,12 +222,32 @@ Federalists, Inc.
 This page is for engineers and researchers. It says exactly what the code does today, so you can
 decide whether to help.
 
+### How other tools decide who counts
+
+Democracy software has to decide who may take part. Tools made for one city, country or
+organisation use one of these answers:
+
+- **A list of residents** from a city or a government, as many city participation platforms do.
+  It works inside one country and stops at the border.
+- **A list from the organiser.** The people running the vote decide who is on it.
+- **Random selection.** A small group is chosen by lot, as citizens' assemblies do. It is good for
+  deep discussion, but most people never take part.
+- **Tokens.** People who hold more of a digital token get more say.
+- **Tools that do not hold votes.** Some tools gather opinions from anyone, without a check, and
+  are not built to count one vote per person.
+- **Proof-of-person services** that other apps can query, built on vouching, credentials or
+  biometrics.
+
+Each answer fits the job it was made for. None of them lets people everywhere take part, one vote
+each, without a government, a company or money in the middle.
+
 ### The node
 
 The network runs on the **Identity Block Chain**, Ouri Poupko's open-source node (GPL-3.0). It puts
 his research on self-sovereign digital agents into practice: software that holds one person's data
-and acts only for them. [LINK: repository github.com/ouripoupko/ibc] [LINK: "Self-Sovereign Digital
-Agents for a Grassroots Digital Society", ICDCS 2022, verify]
+and acts only for them.
+[Repository](https://github.com/ouripoupko/ibc) ·
+[Poupko, Shapiro, Talmon, "Self-Sovereign Digital Agents for a Grassroots Digital Society", ICDCS 2022, pp. 202–212](https://ieeexplore.ieee.org/document/9912178)
 
 - Each person is an **agent**. An agent registers on a node and acts through it.
 - Rules live in **contracts**: small Python programs. Every agent that joins a contract is a
@@ -260,8 +261,10 @@ Agents for a Grassroots Digital Society", ICDCS 2022, verify]
 Ouri's community contract picks two existing links in the trust graph at random, which gives four
 members. All four must approve the newcomer, and the newcomer takes a place between them, so every
 member keeps exactly four links. Random choice matters: people making fake accounts cannot pick
-each other. [LINK: "Building a Sybil-Resilient Digital Community Utilizing Trust-Graph
-Connectivity", IEEE/ACM ToN 2021, verify; open version arXiv:1901.00752]
+each other. The design comes from
+[Poupko, Shahaf, Shapiro, Talmon, "Building a Sybil-Resilient Digital Community Utilizing
+Trust-Graph Connectivity", IEEE/ACM Transactions on Networking, 2021](https://ieeexplore.ieee.org/document/9446607)
+([free version on arXiv](https://arxiv.org/abs/1901.00752)).
 
 The pilot app also tests vouching by people you choose. That version has no server code yet. Until
 we choose one rule, we make no claim about keeping out fake accounts.
@@ -300,6 +303,22 @@ contract language, and testing across machines.
 
 [LINK: sovereignty and security plan, Eston to confirm it can be public]
 
+### The research
+
+Ouri's papers, all with Ehud Shapiro and colleagues ([full list on dblp](https://dblp.org/pid/234/6110.html)):
+
+- [Self-Sovereign Digital Agents for a Grassroots Digital Society](https://ieeexplore.ieee.org/document/9912178).
+  ICDCS 2022. What the node implements.
+- [Building a Sybil-Resilient Digital Community Utilizing Trust-Graph Connectivity](https://arxiv.org/abs/1901.00752).
+  IEEE/ACM Transactions on Networking, 2021. The four-link vouching rule.
+- [Sybil-Resilient Coin Minting](https://arxiv.org/abs/2007.15536). arXiv, 2020. Who answers for a
+  fake account that gets in.
+- [Cordial Miners](https://arxiv.org/abs/2205.09174). DISC 2023. A consensus protocol from the same
+  group; the node runs a different, PBFT-style protocol today.
+
+[EDITOR: links found by web search and consistent across sources; open each once in a browser
+before publishing. The paper indexes were blocked from the build session.]
+
 ### BrightID and GDI
 
 BrightID also uses vouching. It lets people prove to other apps that they use only one account. GDI
@@ -333,3 +352,5 @@ will send you the open problems.
 | "The random pick can be steered…" | `ibc.py:44` timestamp from the receiving node; `common/state.py` seeds `random` with it | OK |
 | "There is no single global chain" | PBFT runs per contract; `consensus/nakamoto.py` is a stub | OK |
 | Barlow quote | Dropped (Kofi, Giorgia) | n/a |
+| "The pilot opens once your phone can sign what you do" | Eston, 26 Oct: pilot gated on signing | OK, a commitment |
+| "In 2024, some of us published a white paper" | The PDF's own header: "2024 White Paper", created Jan 2024 | OK |

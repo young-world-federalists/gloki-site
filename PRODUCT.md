@@ -44,8 +44,8 @@ privacy pages. Say exactly that; never present GDI as a separate organisation or
 as current members (their names stay off the page).
 
 Sources added 26 Oct 2026: the old GDI homepage (gdi-site.webflow.io: motto "Assume global
-responsibility", values Global Democracy / Global Citizenship / Open Source Innovation) and the 2023
-white paper "Gloki: Global Digital Voter Identity" (Poupko, McKeague, Gallup, Colombo,
+responsibility", values Global Democracy / Global Citizenship / Open Source Innovation) and the white paper "GloKi: Global Digital Voter Identity" (written 2023, published as the "2024 White
+Paper") (Poupko, McKeague, Gallup, Colombo,
 Lünenburger; Drive doc "Gloki White Paper"). The page links both PDFs as history. Where the paper
 and the beta differ, the beta wins and the page says so: the paper has strangers chosen at random
 vouch, unique profile photos checked by software, blockchains and "decentralized" records; the beta
