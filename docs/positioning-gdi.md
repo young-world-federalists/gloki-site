@@ -1,4 +1,4 @@
-# GDI positioning: draft to lock
+# GDI positioning (locked)
 
 **Status:** v2, 26 Oct 2026. Rewritten after Eston's answers, the Eston–Ouri call (about 13 Oct)
 and a read of the node's code (`github.com/ouripoupko/ibc`). Ouri is not being asked yet. Items
@@ -120,10 +120,16 @@ Ouri offered to write an automatic migration tool, so nobody has to get verified
 6. **History.** The 2021 coalition, the 2023 white paper, how the idea moved on.
 7. **Doors.** §4.
 
-## 8. To lock
+## 8. Locked (Eston, 26 Oct 2026)
 
-**Eston, now:** the promise (§1) · doors in this order (§4) · the credit line "built on Ouri
-Poupko's open-source node".
+All five: the promise (§1) · doors in the order Build with us / Carry the network / Join Gloki ·
+the credit line "built on Ouri Poupko's open-source node" · the commitment "No binding vote
+before an independent security audit" · "four people vouch for you" until a vouching rule is
+chosen. Copy drafts A, B and C are written from this version (`docs/copy/`).
+
+Paying for the audit: the commitment costs nothing until a binding vote is planned. Funders of
+open civic infrastructure (NLnet's NGI Zero, OTF's Red Team Lab) have offered audits as support
+to projects they fund; check their current calls before applying.
 
 **Before publish:**
 - **Ouri:** status-board wording, the vouch rule, his problem list, the node repo move (later).
