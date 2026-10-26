@@ -73,8 +73,8 @@ today is an interim version: Gloki-first, with GDI as the sender. It is fine to 
 - Buttondown: the separate GDI newsletter (above), double opt-in, door tags.
 - Cloudflare Email Routing for hello@globaldemocracyinitiative.org.
 - DNS cutover once the transfer completes (records in README), then custom domain + HTTPS.
-- Host copies of the 2021 concept and 2023 white paper PDFs in this repo (the links point at
-  Webflow's file host); Eston uploads them in chat.
+- ~~Host copies of the 2021 concept and white paper PDFs~~ Done 26 Oct: `assets/docs/` (from
+  Eston's Drive; the white paper is the "2024 White Paper").
 - Legal read of `imprint.html` and `privacy.html`.
 
 ## Don't

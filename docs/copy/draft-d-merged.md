@@ -165,7 +165,7 @@ network; we plan a tool that moves it for you, so nobody is vouched for twice.
 
 GDI began in 2021 as a coalition of seven organisations working for democracy at a world scale. In
 2024, some of us published a white paper, "GloKi: Global Digital Voter Identity".
-[LINK: 2021 concept note PDF] [LINK: 2024 white paper PDF]
+[Link: the 2021 concept note (PDF), `assets/docs/gdi-concept-2021.pdf`, with the note "2021 document; the coalition is no longer active"] [Link: the 2024 white paper (PDF), `assets/docs/gloki-white-paper-2024.pdf`]
 
 The coalition is no longer active. [EDITOR: one plain sentence on why, if Eston wants it.] In 2026
 we started again from first principles, as a project of the Young World Federalists.
