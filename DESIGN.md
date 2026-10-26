@@ -1,280 +1,306 @@
 ---
-name: Gloki
-description: The line diagram of how you get into Gloki and how you hold it up, drawn on white in a Beck-style transit grammar.
+name: Global Democracy Initiative
+description: One figure, one person. An Isotype page that counts real people on white, with ink pictograms and a single blue for people who have been vouched in.
 colors:
   paper: "#ffffff"
-  wash: "#eff6ff"
-  wash-2: "#e0ecff"
-  ink: "#111827"
-  ink-soft: "#374151"
-  ink-muted: "#4b5563"
-  solve: "#3b82f6"
-  solve-text: "#1d4ed8"
-  build: "#0f766e"
-  build-text: "#0f766e"
-  contribute: "#d97706"
-  contribute-text: "#b45309"
-  status-good: "#047857"
-  status-plan: "#b45309"
-  status-later: "#4b5563"
-  focus: "#b45309"
+  field: "#f1f5fb"
+  ink: "#111418"
+  ink-soft: "#3b424b"
+  ink-hover: "#2a3038"
+  rule: "#d5dae1"
+  brand-blue: "#3b82f6"
+  blue-text: "#1d4ed8"
+  vermilion: "#e0412b"
+  vermilion-text: "#b42318"
+  vermilion-wash: "#fff5f3"
+  counterfeit-grey: "#7c848e"
 typography:
   display:
-    fontFamily: "Hammersmith One, Gill Sans, Trebuchet MS, sans-serif"
-    fontSize: "clamp(1.9rem, 1.1rem + 3.4vw, 3.6rem)"
-    fontWeight: 400
-    lineHeight: 1.1
-    letterSpacing: "-0.005em"
+    fontFamily: "Jost, Futura, Century Gothic, Trebuchet MS, sans-serif"
+    fontSize: "clamp(2rem, 1.25rem + 3.4vw, 3.75rem)"
+    fontWeight: 600
+    lineHeight: 1.06
+    letterSpacing: "-0.012em"
+  display-doc:
+    fontFamily: "Jost, Futura, Century Gothic, Trebuchet MS, sans-serif"
+    fontSize: "clamp(1.9rem, 1.3rem + 2.4vw, 2.9rem)"
+    fontWeight: 600
+    lineHeight: 1.06
+    letterSpacing: "-0.012em"
   headline:
-    fontFamily: "Hammersmith One, Gill Sans, Trebuchet MS, sans-serif"
-    fontSize: "clamp(1.5rem, 1rem + 2vw, 2.4rem)"
-    fontWeight: 400
-    lineHeight: 1.1
-    letterSpacing: "-0.005em"
+    fontFamily: "Jost, Futura, Century Gothic, Trebuchet MS, sans-serif"
+    fontSize: "clamp(1.55rem, 1.15rem + 1.7vw, 2.35rem)"
+    fontWeight: 600
+    lineHeight: 1.12
+    letterSpacing: "-0.008em"
   title:
-    fontFamily: "Hammersmith One, Gill Sans, Trebuchet MS, sans-serif"
-    fontSize: "1.25rem"
+    fontFamily: "Jost, Futura, Century Gothic, Trebuchet MS, sans-serif"
+    fontSize: "1.2rem"
+    fontWeight: 500
+    lineHeight: 1.25
+  caption:
+    fontFamily: "Jost, Futura, Century Gothic, Trebuchet MS, sans-serif"
+    fontSize: "1.05rem"
+    fontWeight: 500
+    lineHeight: 1.3
+  label:
+    fontFamily: "Jost, Futura, Century Gothic, Trebuchet MS, sans-serif"
+    fontSize: "1.05rem"
+    fontWeight: 600
+    lineHeight: 1
+  lead:
+    fontFamily: "Atkinson Hyperlegible, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.125rem"
     fontWeight: 400
-    lineHeight: 1.1
-    letterSpacing: "-0.005em"
-  lede:
-    fontFamily: "Cabin, Gill Sans, Segoe UI, sans-serif"
-    fontSize: "1.15rem"
-    fontWeight: 400
-    lineHeight: 1.55
-    letterSpacing: "normal"
+    lineHeight: 1.6
   body:
-    fontFamily: "Cabin, Gill Sans, Segoe UI, sans-serif"
+    fontFamily: "Atkinson Hyperlegible, Segoe UI, Helvetica Neue, Arial, sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
-    lineHeight: 1.55
-    letterSpacing: "normal"
-  caption:
-    fontFamily: "Cabin, Gill Sans, Segoe UI, sans-serif"
-    fontSize: "0.9rem"
+    lineHeight: 1.6
+  body-strong:
+    fontFamily: "Atkinson Hyperlegible, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.0625rem"
+    fontWeight: 700
+    lineHeight: 1.6
+  small:
+    fontFamily: "Atkinson Hyperlegible, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "0.95rem"
     fontWeight: 400
-    lineHeight: 1.55
-    letterSpacing: "normal"
-  label:
-    fontFamily: "Hammersmith One, Gill Sans, Trebuchet MS, sans-serif"
-    fontSize: "0.8rem"
-    fontWeight: 400
-    lineHeight: 1
-    letterSpacing: "0.06em"
+    lineHeight: 1.6
 rounded:
-  plate: "2px"
-  control: "8px"
-  panel: "12px"
-  interchange: "28px"
+  focus: "2px"
+  md: "6px"
   pill: "999px"
 spacing:
-  field: "0.3rem"
-  form: "0.6rem"
   gutter: "1rem"
-  stack: "1.25rem"
-  sub: "2rem"
-  section-top: "3.5rem"
-  section-bottom: "2.5rem"
+  gutter-wide: "1.5rem"
+  stack: "1rem"
+  section: "clamp(3rem, 2rem + 4vw, 5rem)"
 components:
   button-primary:
     backgroundColor: "{colors.ink}"
     textColor: "{colors.paper}"
-    typography: "{typography.title}"
-    rounded: "{rounded.pill}"
-    padding: "0 1.3rem"
+    typography: "{typography.label}"
+    rounded: "{rounded.md}"
+    padding: "0 1.4rem"
     height: "48px"
   button-primary-hover:
-    backgroundColor: "{colors.solve-text}"
+    backgroundColor: "{colors.ink-hover}"
     textColor: "{colors.paper}"
-  button-ghost:
-    backgroundColor: "transparent"
+  nav-link:
     textColor: "{colors.ink}"
-    typography: "{typography.title}"
-    rounded: "{rounded.pill}"
-    padding: "0 1.3rem"
-    height: "48px"
-  button-ghost-hover:
-    backgroundColor: "{colors.wash}"
-    textColor: "{colors.ink}"
-  plate:
+    rounded: "{rounded.md}"
+    padding: "0 0.7rem"
+    height: "44px"
+  nav-link-hover:
+    backgroundColor: "{colors.field}"
+  nav-join:
     backgroundColor: "{colors.ink}"
     textColor: "{colors.paper}"
-    typography: "{typography.label}"
-    rounded: "{rounded.plate}"
-    padding: "0.45em 0.7em 0.4em"
-  plate-solve:
-    backgroundColor: "{colors.solve-text}"
-    textColor: "{colors.paper}"
-  plate-build:
-    backgroundColor: "{colors.build}"
-    textColor: "{colors.paper}"
-  plate-contribute:
-    backgroundColor: "{colors.contribute-text}"
-    textColor: "{colors.paper}"
+    rounded: "{rounded.md}"
+    padding: "0 0.7rem"
+    height: "44px"
   input-email:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.control}"
-    padding: "0 0.9rem"
+    typography: "{typography.body}"
+    rounded: "{rounded.md}"
+    padding: "0.6rem 0.8rem"
     height: "48px"
-  interchange:
+  way-chip:
     backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink-soft}"
-    rounded: "{rounded.interchange}"
-    padding: "1rem 1.25rem 0.9rem"
-  board-head:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
-    typography: "{typography.label}"
-    padding: "0.8rem 1rem"
-  nav-link:
-    backgroundColor: "transparent"
     textColor: "{colors.ink}"
-    padding: "0.55rem 0.1rem"
+    typography: "{typography.body}"
+    rounded: "{rounded.pill}"
+    padding: "0.35rem 0.8rem 0.35rem 0.6rem"
     height: "44px"
+  way-chip-selected:
+    backgroundColor: "{colors.field}"
+    textColor: "{colors.ink}"
+  status-board:
+    backgroundColor: "{colors.field}"
+    textColor: "{colors.ink}"
+    padding: "{spacing.section} 0"
+  rule-box:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.md}"
+    padding: "1.25rem 1.25rem 1rem"
+  warn-note:
+    backgroundColor: "{colors.vermilion-wash}"
+    textColor: "{colors.ink}"
+    padding: "1rem 1.1rem"
+  link:
+    textColor: "{colors.blue-text}"
+  not-yet:
+    textColor: "{colors.vermilion-text}"
+    typography: "{typography.body-strong}"
 ---
 
-# Design System: Gloki
+# Design System: Global Democracy Initiative
 
 ## Overview
 
-**Creative North Star: "The Line Map"**
+**Creative North Star: "One Figure, One Person"**
 
-Gloki's landing page is a transit diagram, not a brochure. The ground is white paper; everything on it is either a line, a station, or a nameplate. Three coloured lines are the three ways in (Solve, Build, Contribute); they run straight or at 45°, cross a pale blue zone band, and meet at one interchange, which is the reader, holding the only form on the page. The system borrows Beck's discipline (a fixed stroke, round caps, black-ringed white stations, uppercase plates) and nothing else of his: the roundel is the brand mark's cousin, never a TfL copy.
+The page counts people the way Isotype did. One pictogram is one real person, and the rule that lets a newcomer in (four people vouch) is drawn rather than explained. Everything else is a chart sheet around those figures: a white ground, ink type, thin ink rules between sections on an even rhythm, and one tinted field for the status board. The system is flat by conviction. Colour is spent only where it carries meaning: blue fills people who are in, vermilion marks what is not yet true.
 
-The tone is plain and literal. Headings are a single rounded humanist display face at one weight; body copy is a quiet humanist sans held to a 46-character measure; colour appears only where it means something (a line, its plate, a status). Density is low and the rhythm is editorial: more air above a heading than below it, one idea per station. Depth is almost absent; the one shadow on the page belongs to the interchange and nothing else.
+Density is low and reading-first. The reader may be on a cheap phone, reading English as a second language, so body text is large (17px), set in a typeface designed for legibility, and held to a short measure. Headings are geometric and confident in the Futura lineage; they speak, the body reads. The world refuses two neighbours by name: the glowing node network and gradients of a crypto page, and the cream, serif, stock-photo NGO brochure.
 
-Confirmed rejections, from the build and from PRODUCT.md: no hero-plus-three-cards, no device mockup, no stock photography, no hype words, and no brand blue behind or inside body-size text.
+The person pictogram is the system's one signature. It is the hero, the status-board legend, the radio marker in the sign-up form, and the avatar in the team list. Its fill state is a grammar, not decoration.
 
 **Key Characteristics:**
-- White paper, black ink, three line colours, one pale wash: the whole palette.
-- A 10-unit round-capped stroke is the line; a 20px white disc with a 4px ink ring is the station.
-- The nameplate (black bar, white uppercase display type, 2px corners) labels every control.
-- Dashed stroke means a planned line; the dash is the honesty marker, not decoration.
-- One authored moment: the lines draw themselves on load, then stations light as they enter view.
+- White ground, ink pictograms, flat colour only; no shadows, no gradients.
+- One person pictogram (round head, tapered body, no face) reused everywhere.
+- Brand blue fills figures and graphics; a darker blue carries every blue word.
+- Vermilion means "not yet", in the same two-tone split.
+- Jost for headings and controls, Atkinson Hyperlegible for all reading.
+- Thin ink rules separate sections like a chart sheet.
 
 ## Colors
 
-Paper and ink carry the page; three line colours each come in a stroke value and, where needed, a darker text value, so that nothing readable falls below AA.
+A near-monochrome ink-on-white sheet with one meaningful blue and one warning vermilion, each split into a graphics tone and a darker text tone.
 
 ### Primary
-- **Solve Blue** (`solve`): the brand blue and the main line. Used only as a stroke or a small fill: the 10-unit line, the 18×6 nav swatch, the 26×8 radio swatch, the vertical route bar. It is 3.68:1 on white, which is enough for a 6px-and-up stroke and never for text.
-- **Solve Ink** (`solve-text`): the same line at reading strength (6.7:1 on white, 6.2:1 on the wash). Links, the coloured words in the h1, the Solve nameplate and plate-rect, and the primary button's hover fill.
+- **Vouched Blue** (brand-blue): fills the figures of people who have been vouched in, the new links that join a newcomer to its four vouchers, the team avatars, and the figure inside a selected sign-up choice. It is a graphics colour only (3.68:1 on white); it never sets text, and white text never sits on it. This blue is fixed by the brand.
+- **Word Blue** (blue-text): every blue word: links, the focus ring, text selection (white text on Word Blue), `accent-color` and the caret (6.7:1 on white, 6.1:1 on the field).
 
 ### Secondary
-- **Build Teal** (`build` / `build-text`): the second line. One value serves both stroke and text (5.5:1 on white, 5.0:1 on the wash); `build-text` is currently an alias of `build`.
-
-### Tertiary
-- **Contribute Amber** (`contribute`): the third line's stroke, always dashed (3.2:1 on white: a stroke, never text).
-- **Contribute Ink** (`contribute-text`): its text and plate value (5.0:1 on white, 4.6:1 on the wash). Also the page's focus ring and the Planned status.
+- **Not-Yet Vermilion** (vermilion): the graphics tone for "not yet": the 1px rule on the left of a warning note, and the start colour of the newcomer before it turns blue.
+- **Not-Yet Words** (vermilion-text): the "Not yet:" lead-in on status items and the bold opener of a warning note (6.6:1 on white).
+- **Warning Wash** (vermilion-wash): the faint ground behind a warning note; used only there.
 
 ### Neutral
-- **Paper** (`paper`): the page ground, the station centre, the interchange, the inputs.
-- **Zone Wash** (`wash`): the zone-2 band in the diagram, alternate table rows, and the background of alternating sections (Three lines in, Who is building it).
-- **Deep Wash** (`wash-2`): text selection only.
-- **Ink** (`ink`): rules, ticks, station rings, nameplates, headings, the primary button, the 3px section rules.
-- **Soft Ink** (`ink-soft`): body text (10.3:1).
-- **Muted Ink** (`ink-muted`): captions, fine print, footer, placeholders, the "zone" labels in the diagram (7.6:1).
-- **Status Good / Plan / Later** (`status-good`, `status-plan`, `status-later`): the three dot-and-word states of the status board (green dot, dashed amber ring, muted grey dot).
+- **Paper** (paper): the page ground, and the ground of controls and the rule box.
+- **Chart Field** (field): the cool tint behind the status board, the hover ground of nav links, and the ground of a selected sign-up choice.
+- **Ink** (ink): headings, body text, solid figures, section rules, control borders, the primary button and the nav "Sign up" button.
+- **Soft Ink** (ink-soft): secondary text: the hero promise, "last updated" lines, the legend, fine print, figure captions on the builder page, the footer (10.2:1 on white).
+- **Pressed Ink** (ink-hover): hover ground of ink buttons.
+- **Hairline** (rule): light separators between list items inside a section and the border of an unselected sign-up choice. Never a section divider.
+- **Counterfeit Grey** (counterfeit-grey): solid figure copies that stand for fake accounts in the story count. Nowhere else.
 
-### Named Rules (optional, powerful)
-**The Stroke-Not-Text Rule.** `solve` (#3b82f6) and `contribute` (#d97706) are strokes and swatches only. Any character set in a line's colour uses that line's `-text` value, and no body-size text is ever white on brand blue.
+The mark `assets/gdi-mark.svg` keeps its own colours (orange #EC623E, green #7BD484, navy #165A99 on ink lines); the mark's palette and the page's palette currently differ, and a decision on whether the page moves toward the mark's colours is pending (brand exploration in `docs/brand/2026-10-26/`).
 
-**The Two-Value Line Rule.** Every line colour exists as a pair: a stroke value for the diagram and a text value for words and plates. Adding a line means adding both and checking both against paper and wash.
+### Named Rules
+**The Two-Tone Rule.** Every hue has a graphics tone and a words tone. Brand blue (#3b82f6) and vermilion (#e0412b) fill shapes and lines; text in those hues uses #1d4ed8 and #b42318. No text sits in brand blue, and no text sits on it.
 
-**The One Wash Rule.** Tinted ground is one pale blue, used for zone bands and alternating sections; there is no second tint and no grey.
+**The Blue Means In Rule.** A blue figure is a person who is in, or you choosing to be. Never use blue to decorate, to tint a section, or to colour a heading.
+
+**The Counterfeit Grey Rule.** Grey (#7c848e) solid figures exist only to show fake accounts in a count. No legend state uses grey; a grey figure must never be read as a status.
 
 ## Typography
 
-**Display Font:** Hammersmith One (self-hosted woff2, OFL), with Gill Sans and Trebuchet MS as fallbacks.
-**Body Font:** Cabin 400/500/600 (self-hosted woff2, OFL), with Gill Sans and Segoe UI as fallbacks.
+**Display Font:** Jost (with Futura, Century Gothic, Trebuchet MS), self-hosted at 500 and 600.
+**Body Font:** Atkinson Hyperlegible (with Segoe UI, Helvetica Neue, Arial), self-hosted at 400 and 700.
 
-**Character:** A Johnston-descended rounded sans for everything that is a label on the map (headings, nameplates, nav, buttons, field labels, table heads), and a warm humanist sans at reading size for everything the reader reads. Both are one family of feeling; the display face is never bolded and the body face is never used above 1.15rem.
+**Character:** A geometric Futura-lineage voice for what the page says aloud, paired with a typeface built for low-vision legibility for everything the reader has to read. The pairing is the Isotype pairing restated for a phone.
 
 ### Hierarchy
-- **Display** (400, `clamp(1.9rem, 1.1rem + 3.4vw, 3.6rem)`, 1.1): the single h1, balanced, 22ch max, with the key phrase set in Solve Ink. Fixed at 1.9rem under 760px.
-- **Headline** (400, `clamp(1.5rem, 1rem + 2vw, 2.4rem)`, 1.1): section h2s. Fixed at 1.6rem under 760px.
-- **Title** (400, 1.25rem, 1.1): station h3s, carrying a numbered ink tag. The three terminal h3s step up to 1.6rem and take their line's text colour.
-- **Lede** (400, 1.15rem, 1.55): the one paragraph under the h1, 46ch, with the product name at 600. Drops to 0.98rem / 1.45 under 760px.
-- **Body** (400, 1.0625rem, 1.55): all prose, held to a 46ch measure (`--measure`), pretty-wrapped. 500 is used for the first column of the status board and 600 for the "who" phrase that opens each terminal's paragraph.
-- **Caption** (400, 0.9rem): figcaptions at 0.85rem, fine print and footer at 0.9–0.95rem, in Muted Ink.
-- **Label** (400, 0.8rem, 0.06em, uppercase, display face): the nameplate and the table head. Nav links (0.95rem), field labels (0.95rem) and status words (0.95rem) are display face in sentence case.
+- **Display** (Jost 600, fluid 2rem to 3.75rem, 1.06): the single h1 of the home page. Balanced wrapping, slight negative tracking.
+- **Display (doc pages)** (Jost 600, fluid 1.9rem to 2.9rem, 1.06): the h1 of the builder, imprint and privacy pages.
+- **Headline** (Jost 600, fluid 1.55rem to 2.35rem, 1.12): section h2s. The history disclosure summary uses Jost 600 at a smaller fluid size (1.3rem to 1.7rem).
+- **Title** (Jost 500, 1.2rem, 1.25): h3s in team bios, ways to take part and the rule box; status-board group titles sit at 1.15rem with their figure glyph.
+- **Caption** (Jost 500, 1.05rem, 1.3; 1.3rem from 56rem): the hero figure caption. The figure speaks in the display voice.
+- **Label** (Jost 600, 1.05rem, 1): buttons. Nav links use Jost 500 at body size.
+- **Lead** (Atkinson 400, 1.125rem, 1.6): the hero promise and section lead paragraphs.
+- **Body** (Atkinson 400, 1.0625rem, 1.6): all reading text, held to a 38rem measure.
+- **Body strong** (Atkinson 700): bold lead-ins that name a status item, a fact or a person's org; form labels and the fieldset legend.
+- **Small** (Atkinson 400, 0.95rem, 1.6): legend, fine print, "how" lines in the builder plan, diagram captions, footer.
 
-### Named Rules (optional)
-**The One Weight Rule.** Hammersmith One ships at 400 only; hierarchy comes from size and the plate, never from weight.
+### Named Rules
+**The Speak and Read Rule.** Jost is for headings, nav, buttons, the figure caption and the disclosure summary. Anything a reader must read in sentences is Atkinson Hyperlegible. Never set a paragraph in Jost.
 
-**The 46ch Rule.** Prose never runs wider than 46 characters; the diagram, not the paragraph, is what spans the viewport.
+**The No-Caps Rule.** No uppercase labels, no letter-spaced kickers, no eyebrows above headings. A heading starts the section by itself.
 
 ## Layout
 
-One centred column, `min(100%, 74rem)` wide with a 1rem gutter on each side, holds everything; section backgrounds alternate paper and wash across the full width. Sections take 3.5rem above and 2.5rem below; an h2 has 0.75rem beneath it and a sub-lede 2rem beneath that. The route list indents 3.4rem for its 10px line and 20px stations with 2.2rem between stops. Forms stack on a 0.6rem gap with 0.3rem between a label and its field.
+A single centred column with a 72rem maximum and a 1rem side gutter that widens to 1.5rem from 40rem. Prose (paragraphs and lists) is held to a 38rem measure; the rule box, the history disclosure and the builder plan widen to 44 to 46rem. Sections stack on an even vertical rhythm (the fluid `section` padding, 3rem to 5rem), each opened by a 1px ink rule, so the page reads like ruled chart sheets.
 
-The hero is a three-row grid: h1, lede, then a stage with a 1200/600 aspect ratio holding the desktop SVG. The interchange sits in the same grid cell as the stage, placed by pure CSS at `margin-left: 50%`, `margin-top: 4.5%`, `width: 31.5%` (max 30rem), so the form lands at the convergence point with scripting off. From 760px the "who" grid is two equal columns and the proof stations run text beside a 220px screenshot.
+Built 360px first. On a phone the hero order is: h1, the figure block, the sign-up form, then the promise, so the email field and Sign up fit the first screen. From 56rem the hero becomes two columns (about 1.05 : 1, 3.5rem apart): h1, promise and form on the left, the figure block centred on the right. Paired text sections, the status-board groups and the team list go two-up at 56rem and 40rem respectively; the three ways to take part go three-up at 56rem. Nav labels shorten below 30rem ("GDI", "Builders"), and the "What works today" nav link appears only from 44rem.
 
-Under 760px the diagram swaps for a vertical 360/160 SVG whose three lines enter from the top and feed the interchange directly below it; a row of three small plates names the lines above the SVG; the nav collapses to short labels and a full-width row; the status board hides its Notes column; the interchange corner drops to 22px. Under 420px the nav shrinks to 0.82rem with 12px swatches. There is no horizontal scroll at 360px.
+Every standalone interactive target is at least 44px tall (buttons and the email field 48px). Inline prose links fall under the WCAG 2.5.8 inline exception and keep their text height.
 
 ## Elevation & Depth
 
-The system is flat. Hierarchy is drawn with ink rules (3px section rules, 2px table rules, 5px interchange border, 4px station rings, 2px input borders), not with shadow, and tinted ground is the single pale wash. One exception exists and is deliberate: the interchange carries a soft downward shadow so that it reads as sitting on top of the diagram it interrupts.
+The system is flat. There are no shadows anywhere, at rest or on hover. Depth is conveyed only by ground tone (the Chart Field behind the status board against Paper), by rules (1px ink between sections, 1px hairline inside lists), and by 2px ink borders that enclose something the reader must act on or keep (the email field, the rule box).
 
-### Shadow Vocabulary (if applicable)
-- **Interchange lift** (`box-shadow: 0 10px 24px -14px rgba(17, 24, 39, 0.45)`): the interchange only.
-
-### Named Rules (optional)
-**The Ink-Rule Rule.** Separation is a black rule, never a shadow or a grey line. The interchange is the one surface allowed to float, because it is the one surface that lies over the map.
+### Named Rules
+**The Flat Sheet Rule.** No box-shadow, no gradient, no glow, no blur. If something needs to stand out, give it an ink border or the field tint.
 
 ## Shapes
 
-Round-capped strokes and hard-edged plates. Lines are 10-unit strokes with round caps and joins, running straight or at exactly 45°; the planned line is the same stroke dashed in path-length units (`--dash`: 0.03 0.022 on the desktop paths, 0.12 0.09 on the mobile paths, about a 36/26px dash on both), so it dashes whether or not the draw-on runs. Stations are 20px white discs with a 4px ink ring that fills with ink when lit. Nameplates have barely-rounded 2px corners (3px rx inside the SVG). Controls are 8px (inputs, the brand mark); panels are 12px (status board, screenshot frames); the interchange is a 28px pill-box with a 5px ink border (22px under 760px); buttons are fully round pills. Swatches that stand for a line (nav, radios, route bars) are short rounded bars at half their height, and the Contribute swatch is always a repeating dash.
+Corners are gently rounded at one radius (6px) for buttons, nav links, the email field and the rule box; sign-up choices are full pills. The focus ring rounds at 2px. Rules are straight hairlines: 1px ink for section tops and the footer, 1px hairline grey between list items, 2px ink as the top edge of each "way to take part" and as the border of the rule box and email field.
+
+The recurring silhouette is the person pictogram: a 20 by 40 unit figure with a round head (radius 4.6), a tapered body, arms held slightly out, two legs, no face. It is defined once as an SVG symbol and reused at every size. Its fill state is the status grammar:
+
+- **Solid ink:** works now.
+- **Half-filled** (outline, filled below the waist): being built, or early code.
+- **Outline** (2px ink stroke, no fill): planned or possible.
+- **Dotted outline** (1.8px dashed ink stroke): research.
+
+In the hero, figures stand in rows of thirteen on a 24-unit pitch and 56-unit row step; links between figures are lines (new links 2px brand blue with round caps; old links 1.4px ink, gone in the end state).
+
+### Named Rules
+**The One Glyph Rule.** The person pictogram is the only illustration and the only icon. Legend, radio marker, team avatar and diagram all reuse the same symbol; the only other drawn marks are the GDI mark and the plus/minus of the history disclosure. No icon library, no second figure drawing, no faces.
+
+**The Four States Rule.** Status is shown by how a figure is filled, never by a new colour. Solid, half, outline, dotted: four states, in that order, always with a word beside them.
 
 ## Components
 
 ### Buttons
-Decisive and ink-black; a button is a nameplate the reader can press.
-- **Shape:** full pill (999px), 48px tall, `0 1.3rem` side padding, display face at 1.05rem with 0.02em tracking.
-- **Primary:** ink background, paper text. Used for "Join the waitlist".
-- **Hover / Focus:** background shifts to Solve Ink with a 1px lift, 160ms ease-out; active returns to rest. Focus is the global 3px Contribute-Ink outline at 3px offset.
-- **Ghost:** transparent with a 2px ink border and ink text; hover fills with the wash. Used for the three "Join this line" links.
+Plain, dark and certain: an ink slab with white type.
+- **Shape:** gently rounded (6px).
+- **Primary:** Ink ground, white Jost 600 label at 1.05rem, 48px tall, 1.4rem side padding. Used for Sign up in the form; the nav "Sign up" is the same treatment at 44px.
+- **Hover / Focus:** ground darkens to Pressed Ink; focus shows the shared 3px Word Blue outline at a 3px offset.
+- No secondary button. A second action is a bold text link ("How it works and what is open") with a 44px target.
 
-### Chips
-The nameplate, the diagram's label grammar, used for every control label on the page.
-- **Style:** ink bar, paper uppercase display text at 0.8rem with 0.06em tracking, 2px corners, `0.45em 0.7em 0.4em` padding.
-- **State:** three line variants swap the bar for the line's text colour (`plate--solve`, `plate--build`, `plate--contribute`). The same plate appears as the "Line map · beta" title plate beside the mark, the "YOU · INTERCHANGE" heading, the station number tags, and the line tags after terminal headings ("first invitees", "planned line").
+### Chips (sign-up choices)
+- **Style:** full pill, Paper ground, 1px Hairline border, a small outline figure as the radio marker, body text label, 44px tall. The native radio sits invisibly over the whole chip.
+- **State:** selected turns the border Ink, the ground Chart Field, and fills the figure Vouched Blue. Keyboard focus draws the 3px Word Blue outline around the chip.
 
 ### Cards / Containers
-- **Interchange** (the form's container): 28px pill-box, paper background, 5px ink border, `1rem 1.25rem 0.9rem` padding, the one shadow. On desktop it overlays the convergence point of the diagram.
-- **Status board:** 3px ink border, 12px corners, clipped; a table with ink header (nameplate typography), 2px ink row rules, wash on even rows, tabular numerals.
-- **Screenshot frames:** 3px ink border, 12px corners, 220px wide (200px under 760px), Muted Ink caption beneath.
-- **Terminals** (the three lines): a 3px ink rule above each (none on the first), a 56px column holding a 10px vertical bar in the line's colour with a station at its head, and the title in the line's text colour.
+- **Rule box** (the one promise the project keeps): Paper ground, 2px Ink border, 6px radius, 1.25rem padding, 44rem max, sitting on the status board's field.
+- **Warning note:** Warning Wash ground, a 1px vermilion rule on the left, 1rem by 1.1rem padding, bold Not-Yet Words opener, 38rem measure.
+- **Status board:** a full-width section on Chart Field; a figure legend, then groups each titled by a figure glyph and a Jost title, items separated by hairlines.
+- No shadows on any container (see Elevation & Depth).
 
 ### Inputs / Fields
-- **Style:** 48px tall, 2px ink border, 8px corners, paper background, ink text at 1.05rem, Muted Ink placeholder, display-face label above on a 0.3rem gap.
-- **Radios:** native 20px radios with ink accent colour, each in a 44px-tall row with a 26×8 line swatch before the label; the Contribute option carries "(planned)" in Muted Ink.
-- **Focus:** the global ring, 3px solid Contribute Ink at 3px offset, 2px radius.
+- **Style:** Paper ground, 2px Ink border, 6px radius, 48px tall, body type; label above in Atkinson 700. Placeholder is a mid grey (#5b636d, 6.1:1).
+- **Focus:** the shared 3px Word Blue outline at a 3px offset.
 
 ### Navigation
-- **Style:** display face at 0.95rem, ink text, 44px tall targets, each link preceded by an 18×6 bar in its line's colour (dashed for Contribute, ink for Join). Hover underlines at 0.3em offset. Under 760px the long names give way to one-word short names and the nav spans the header's full width; the header is closed by a 3px ink rule.
-- **Brand:** the mark at 36px with 8px corners, "Gloki" in display face at 1.35rem, and the title plate (hidden under 760px).
+- **Style:** a 60px header row under a 1px Hairline: the GDI mark at 32px plus the name in Jost 600 on the left; Jost 500 nav links on the right, 44px tall, rounded 6px.
+- **States:** hover tints the link with Chart Field; the last item is the ink "Sign up" button.
+- **Mobile:** below 30rem the name becomes "GDI" and "For builders" becomes "Builders"; the in-page "What works today" link appears from 44rem.
 
-### The Line Diagram
-The signature. Two inline SVGs (1200×600 desktop, 360×160 mobile), aria-hidden, drawn entirely from the tokens: paper ground, a wash zone band, three `.line` paths (`stroke-width: var(--line-w)`, round caps), `.station` discs, `.plate-rect` nameplates with `.terminal` text (18px uppercase display, paper), `.label` text (15px display, ink) and `.small` text (13.5px body face, Muted Ink). Each path carries `pathLength="1"`; on load the lines draw in over 1.3s on `cubic-bezier(0.16, 1, 0.3, 1)` with 0.15s, 0.3s and 0.9s stagger (the trunk last), the dashed line animating to its `--dash` pattern, and the labels and stations fade in at 1.1s over 0.6s. Under `prefers-reduced-motion`, everything is drawn and still. The route list on the Stations section repeats the grammar in CSS: a 10px Solve bar and 20px stations whose rings fill with ink (300ms) as each stop enters view.
+### Links
+- Word Blue, 1px underline at a 0.18em offset; hover thickens the underline to 2px. Footer links use Soft Ink. Standalone links carry 44px targets; inline links in prose take the WCAG 2.5.8 inline exception.
 
-### Status
-- **Style:** display face at 0.95rem, a 10px dot before the word in `currentColor`. In test is Status Good; Planned is Status Plan with a 7px dashed ring instead of a dot; Later is Status Later.
+### The Vouching Figure Block (signature)
+The hero: three rows of ink figures with a gap in the middle row. On load, once, the newcomer drops into the gap (0.7s), the two old links between neighbouring pairs fade, four short blue links draw from the newcomer to the four vouchers, and the vouchers and newcomer turn Vouched Blue, about 1.4s in all on an expressive ease-out. With reduced motion the end state shows at once. Caption in the Caption style: "You get in when four people vouch for you." The builder page repeats the rule as a static before/after diagram in the same figures.
+
+### Story Count
+A row of figures at a smaller size: one ink figure, then twelve Counterfeit Grey copies, showing one person making many accounts.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** draw with the line grammar: 10-unit round-capped strokes, straight or at 45°, 20px stations with a 4px ink ring, and a nameplate for every label.
-- **Do** use the dashed stroke (`--dash` on a `pathLength="1"` path, or the repeating-gradient swatch) for anything planned and not yet real; the dash is how the page tells the truth.
-- **Do** set every line's words in its `-text` value and check it against both paper and wash (AA, 4.5:1 or better).
-- **Do** hold prose to 46ch in Cabin 400 at 1.0625rem / 1.55, and keep all headings in Hammersmith One at 400.
-- **Do** separate with ink rules (3px between sections, 2px inside tables) and alternate paper and wash for section ground.
-- **Do** keep every target 44px or taller, the focus ring 3px Contribute Ink at 3px offset, and the h1 singular.
+- **Do** draw every person with the one pictogram symbol, and let its fill carry status: solid works now, half-filled being built, outline planned, dotted research.
+- **Do** keep brand blue (#3b82f6) for figures, links between figures and the selected-choice figure; use #1d4ed8 for every blue word, the focus ring and selection.
+- **Do** mark what is not true yet with bold #b42318 "Not yet:" text, and keep vermilion #e0412b for graphics.
+- **Do** open each section with a 1px ink rule and the fluid section padding, so the page keeps its chart-sheet rhythm.
+- **Do** set headings, nav, buttons and the figure caption in Jost; set every sentence in Atkinson Hyperlegible at 17px or larger, on a 38rem measure.
+- **Do** keep every standalone target at 44px or more, buttons and fields at 48px, and show the 3px Word Blue focus ring on everything focusable.
+- **Do** show the end state of any motion under `prefers-reduced-motion`.
 
 ### Don't:
-- **Don't** set text in `solve` (#3b82f6) or `contribute` (#d97706), and don't put white text on brand blue at body size; use `solve-text` and `contribute-text`.
-- **Don't** add a shadow to anything but the interchange; depth here is an ink rule.
-- **Don't** introduce a second tint, a grey rule, a gradient fill, or a bold weight of the display face.
-- **Don't** replace the diagram with cards, a device mockup, or photography; the map is the hero and the form sits inside it.
-- **Don't** copy TfL: no bar-and-circle roundel, no Johnston; the station ring and the plate are the whole borrowing.
+- **Don't** set text in brand blue or put white text on brand blue; that pairing is the app's exception, not the page's.
+- **Don't** add shadows, gradients, glows, or a glowing node-network illustration; the world refuses the crypto page.
+- **Don't** use cream grounds, serif display type or stock photography; the world refuses the NGO brochure.
+- **Don't** give figures faces, outlines on solid fills, or a second drawing style; there is one pictogram.
+- **Don't** use grey figures for anything but fake accounts in a count.
+- **Don't** use hairline grey as a section divider; section rules are ink.
+- **Don't** thicken the warning note's vermilion side rule beyond 1px or turn it into a coloured stripe on other containers.
+- **Don't** treat the yellow `mark.todo` placeholders as part of the system; they are a temporary editorial device and must be removed before launch.
+- **Don't** add uppercase kickers, eyebrows or letter-spaced labels above headings.
