@@ -1,7 +1,8 @@
 # Final page copy (merged)
 
-Locked by Eston, 27 Oct 2026: the merge from `docs/copy-drafts/REVIEW.md`, Gore 1994 as the
-opening quote, the white paper dated 2023. Every `[check: …]` tag points to
+Locked by Eston, 27 Oct 2026: the merge from `docs/copy-drafts/REVIEW.md`, the white paper dated
+2023. Revised the same day: the opening quote is Tim Berners-Lee (1999), not Al Gore, and "agent" is
+replaced by "your own record" (it now reads as an AI agent). The built page is `index.html`. Every `[check: …]` tag points to
 `docs/research-gdi-positioning.md` and must be checked word for word on the source page before
 the page goes live. Rows marked **?** in the status board wait on Ouri's answers.
 
@@ -15,7 +16,7 @@ the page goes live. Rows marked **?** in the status board wait on Ouri's answers
 on a network its members carry.
 
 **What Gloki is:** Gloki is the foundation we are building: one identity per person, vouched for
-by people who know you, kept by your own agent.
+by people who know you, with your own record that you control.
 
 **Button:** Join the waitlist
 
@@ -23,10 +24,11 @@ by people who know you, kept by your own agent.
 
 ## 2. The story
 
-**The promise.** In 1994, Al Gore described what the new networks could become: "Our goal is a
-kind of global conversation, in which everyone who wants can have his or her say." [check: A3]
+**The promise.** "The Web is more a social creation than a technical one. I designed it for a
+social effect—to help people work together." Tim Berners-Lee, *Weaving the Web*, 1999.
+[check: Q2, found only in excerpts: check wording and punctuation in a copy of the book]
 
-**What went wrong.** We got the conversation. We did not get the say. In the US, crypto
+**What went wrong.** We got the connection. We did not get the say. In the US, crypto
 investment fraud took $7.2 billion from people in 2025. [check: B1] Many people believe feeds
 tuned for anger pulled us apart. Studies disagree. [check: B3]
 
@@ -47,9 +49,9 @@ says which.
 You get in because four people who know you vouch for you. No ID papers, no face scans, no
 tokens, nothing to buy. Vouching works in the app today and is in test.
 
-**Your records stay yours** · *Planned*
-We are building an agent for each person that keeps their own records. A group will share only
-what belongs to the group. Running your own agent is planned, not done.
+**Your own record** · *Planned*
+We are building a record for each person that they control, not a company. A group will share
+only what belongs to the group.
 
 **A network its members carry** · *Planned*
 We want nodes run by members, not by one company. You will be able to host one on a small
@@ -94,7 +96,7 @@ change this table when something changes.
 
 ## 6. For builders
 
-In our design, each person keeps a personal ledger, held by their agent. A contract runs only
+In our design, each person keeps a personal ledger: their own record. A contract runs only
 among the people who are part of it, and is copied only between them. The design paper
 (Poupko, Shapiro, Talmon) calls this subsidiarity. It is capital-free. It is not a blockchain in
 the crypto sense: no coins, no mining. Identity comes from a web of trust: four members who know
