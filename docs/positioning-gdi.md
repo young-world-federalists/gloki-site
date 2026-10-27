@@ -71,6 +71,17 @@ in one line.
 members ("solve global issues") lead, then builders, then node hosts; funders read the status
 board. So the hero must explain the foundation in one line under the promise. Three doors or four: open.
 
+### The gap the evidence shows (research file, C)
+
+No tool in the landscape combines one person one vote across borders, no central operator and a
+secret ballot. Hosted tools (Decidim, Loomio, Polis, Helios) identify people by email, SMS or an
+organiser's list, and run on one server. Decentralised proof-of-personhood relies on iris scans
+(World ID), government ID (Holonym, Rarimo) or vouching tied to crypto deposits (Proof of
+Humanity). The vouching projects without tokens (BrightID) show small or stale user bases.
+That's the space Gloki aims at: vouching by people who know you, no tokens, no biometrics.
+**Careful:** Gloki doesn't combine the three either, yet (status board, §5). The page can name
+the gap and say "we are building toward it". It can't say "the only one that does".
+
 ---
 
 ## 3. The one-sentence promise
@@ -95,11 +106,26 @@ Two alternates, depending on how §1 and §2 land:
 ## 4. The story, in four beats
 
 1. **The hope.** In the 1990s, people believed the internet would bring the world together.
-   (Quotes: only those marked VERIFIED in `docs/research-gdi-positioning.md`.)
+   Strongest candidates (research file, A; each must be checked word for word on its page first):
+   - Al Gore, Buenos Aires, 1994: "Our goal is a kind of global conversation, in which everyone
+     who wants can have his or her say." and "the distributed intelligence of the GII will spread
+     participatory democracy." The closest match to GDI's own aim.
+   - John Perry Barlow, 1996: "We are creating a world that all may enter without privilege or
+     prejudice accorded by race, economic power, military force, or station of birth."
+   - Nicholas Negroponte, *Being Digital*, 1995: "decentralizing, globalizing, harmonizing, and
+     empowering."
+   Don't use the Negroponte "nation-state" line, Gates's *Road Ahead* paraphrase or "new
+   Athenian Age": none traced to a primary source.
 2. **What happened.** It divided us instead: feeds tuned for outrage, crypto that became a byword
    for scams, AI that people fear more than they trust. (One sourced fact per clause, from the
    research file. Where the evidence is contested, such as social media and polarisation, the copy
    says "many people believe" or cites the study's own wording. It does not overstate.)
+   Usable facts (research file, B): crypto investment fraud was the biggest single source of
+   reported losses to Americans in 2025, $7.2 billion (FBI IC3, April 2026); 52% of Americans
+   are more concerned than excited about AI, up from 37% in 2021 (Pew, Aug 2026). Both are
+   US-only, so say so, or frame them as examples. On social media, cite one experiment
+   (Piccardi et al., *Science*, Nov 2025: one week of re-ranked feeds shifted feelings toward
+   the other party) and say plainly that studies disagree.
 3. **The turn.** Technology is not going away, and global problems don't stop at borders. There
    will be no global democracy without technology of some kind. So build the good version: fight
    fire with fire.
@@ -161,8 +187,14 @@ mining, no tokens; Ouri's paper calls it capital-free). The words are the questi
 Recommendation: no "Web5" or "blockchain" in a headline or the first screen. In the builders'
 section, one honest paragraph: "Technically, each person runs their own small ledger, and
 contracts run only among the people in them. There are no coins, no mining and no
-speculation. If you know Solid or Web5, it is in that family." (See the research file, item D,
-for whether Web5 is still a live project before naming it at all.)
+speculation. If you know Solid, it is in that family."
+
+**New fact (research file, D): drop the word "Web5".** Block wound down TBD, the unit behind
+Jack Dorsey's Web5, on 7 Nov 2024 (Q3 2024 shareholder letter; TechCrunch the same day). The
+code moved to the Decentralized Identity Foundation and has had no commits since October 2024.
+Naming it would tie GDI to an abandoned project. Solid is still alive through W3C (First Public
+Working Draft of Linked Web Storage Protocol 1.0, 31 Mar 2026), so it's the safer comparison.
+This should go to Ouri with question 6.
 
 **Decide (Eston + Ouri):** the Web5/blockchain rule, and the name of the foundation if B is chosen.
 
