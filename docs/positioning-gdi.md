@@ -1,4 +1,9 @@
-# GDI positioning one-pager (draft for Eston to lock)
+# GDI positioning one-pager
+
+**Locked by Eston, 27 Oct 2026:** naming B (Gloki = the foundation); door order keeps world
+federalists first; promise = the lead line in §3; Ouri's rows go to him in an email Eston sends
+(drafted 27 Oct). Still open: the Web5/blockchain rule (§6, waits on Ouri) and the democracy
+app's name.
 
 Draft, 27 Oct 2026. Written from `docs/brief-gdi-positioning.md`, `PRODUCT.md`, the gloki-engage
 sovereignty spec (§1, §2, §6) and `docs/FOR_OURI_blind_servers.md` on `origin/ui`, the 15 and
@@ -39,7 +44,7 @@ Gloki in Matrix's position.
 Under B, GDI is also the right name to be the face: an initiative, not a product, hosted by
 YWF. That matches what PRODUCT.md already says it legally is.
 
-**Decide (Eston):** A or B. Everything below is written for B. Under A, swap the two names.
+**Decided (Eston, 27 Oct): B.** The app's own name (Gloki Engage or other) is open.
 
 ---
 
@@ -62,7 +67,9 @@ positioning on the backend. If you'd rather keep "solve global issues" first bec
 invitees are world federalists, the story still works; the hero then has to explain the backend
 in one line.
 
-**Decide (Eston):** the door order, and whether this becomes three doors or four.
+**Decided (Eston, 27 Oct): world federalists first.** The page order is 4 → 1 → 2 → 3: future
+members ("solve global issues") lead, then builders, then node hosts; funders read the status
+board. So the hero must explain the foundation in one line under the promise. Three doors or four: open.
 
 ---
 
@@ -81,7 +88,7 @@ Two alternates, depending on how §1 and §2 land:
 - "Global democracy needs a foundation. We're building it in the open: identity without ID papers,
   one person one vote, and a network carried by the people who use it."
 
-**Decide (Eston):** pick one, or name what's wrong with all three.
+**Decided (Eston, 27 Oct): the lead line.** The alternates are kept for the copy drafts to borrow from.
 
 ---
 
@@ -132,7 +139,7 @@ something the `ui` repo can't see; only Ouri can say.
 Rule for copy: a property can be described as **what we are building** at any status. It can be
 described as **what Gloki does** only when its row says Live and Ouri has signed the row.
 
-**Decide (Ouri):** each **?** row, and whether any "Planned" row is further along than this repo
+**Asked (Ouri), email drafted 27 Oct for Eston to send:** each **?** row, and whether any "Planned" row is further along than this repo
 shows.
 
 ---
