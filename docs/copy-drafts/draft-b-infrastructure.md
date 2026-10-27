@@ -98,8 +98,8 @@ Each person keeps a personal ledger, held by their agent. A contract runs only
 among the people who are part of it, and is copied only between them. The design paper (Poupko,
 Shapiro, Talmon) calls this subsidiarity. It is capital-free. It is not a blockchain in the
 crypto sense: no coins, no mining. Identity comes from a web of trust: four members who know you
-vouch for you. The weak points are written down. Today your key works like a password, writes
-are not yet signed, and the paper notes that participants who collude can rewrite a contract's
+vouch for you. The weak points are written down. Today your key works like a password, signed
+writes are planned, and the paper notes that participants who collude can rewrite a contract's
 history. If you know Solid, it is in that family. All of it is in test or planned.
 
 ---
