@@ -7,7 +7,7 @@ is a project of Young World Federalists, Inc., which publishes the site.
 
 - `index.html`, `style.css`: the page. `imprint.html`, `privacy.html`: the legal pages.
 - `assets/`: the GDI network mark (`gdi-mark.svg`, from the 2022 logo), the Gloki mark, the two
-  screenshots, the fonts (Hammersmith One and Cabin, both OFL; licences beside them).
+  screenshots (no longer on the page; kept for the app docs), the fonts (Hammersmith One and Cabin, both OFL; licences beside them).
 - `PRODUCT.md`: the product facts the page is written from (Impeccable `init`).
 - `.impeccable/surfaces/index-html.md`: the page's direction contract.
 

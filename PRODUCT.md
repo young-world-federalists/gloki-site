@@ -104,7 +104,7 @@ Three things a neighbouring product cannot truthfully copy together:
 - Open: whether waitlist sign-ups also receive the general YWF newsletter (they join the same
   Buttondown list, tagged by door); who reads hello@.
 - Terminology: "vouch" (people who know you confirm you are a real person), "agent" (the thing that
-  holds your data), "node" (a small server that keeps a copy of the network), "mandate" (a decision a
+  holds your data; internal only: public copy says "your own record", since "agent" now reads as an AI agent, Eston 27 Oct 2026), "node" (a small server that keeps a copy of the network), "mandate" (a decision a
   community publishes), "door" (one of the three ways in).
 
 ## Brand Commitments
