@@ -1,6 +1,6 @@
 # Final page copy (merged)
 
-Locked by Eston, 27 Oct 2026: the merge from `docs/copy-drafts/REVIEW.md`, the white paper dated
+Locked by Eston, 27 Oct 2026 (sources checked 28 Oct; white paper year corrected to 2024 from the PDF itself): the merge from `docs/copy-drafts/REVIEW.md`, the white paper dated
 2023. Revised the same day: the opening quote is Tim Berners-Lee (1999), not Al Gore, and "agent" is
 replaced by "your own record" (it now reads as an AI agent). The built page is `index.html`. Every `[check: …]` tag points to
 `docs/research-gdi-positioning.md` and must be checked word for word on the source page before
@@ -25,16 +25,16 @@ by people who know you, with your own record that you control.
 ## 2. The story
 
 **The promise.** "The Web is more a social creation than a technical one. I designed it for a
-social effect—to help people work together." Tim Berners-Lee, *Weaving the Web*, 1999.
-[check: Q2, found only in excerpts: check wording and punctuation in a copy of the book]
+social effect—to help people work together—and not as a technical toy." Tim Berners-Lee, *Weaving the Web*, 1999, p. 123.
+[checked: Q2, archive.org scan of the 1999 edition]
 
-**What went wrong.** We got the connection. We did not get the say. In the US, crypto
-investment fraud took $7.2 billion from people in 2025. [check: B1] Many people believe feeds
-tuned for anger pulled us apart. Studies disagree. [check: B3]
+**What went wrong.** We got the connection. We did not get the say. In the US, people
+reported losing $7.2 billion to crypto investment fraud in 2025. [checked: B1] Many people believe feeds
+tuned for anger pulled us apart. The evidence is mixed. [checked: B3]
 
-**The missing part.** A vote only counts if it comes from one real person. Most online tools
+**The missing part.** A vote only counts if it comes from one real person. Some online tools
 check that with an email address or a phone number. Others use iris scans, passports or crypto
-deposits. [check: C] Across borders, none of these works for everyone.
+deposits. [checked: C] Across borders, none of these works for everyone.
 
 **What we build.** Technology is not going away, and global problems do not stop at borders. So
 we are building the good version: you get in because people who know you vouch for you. No ID
@@ -109,7 +109,7 @@ contract's history. If you know Solid, it is in that family.
 ## 7. Where this comes from
 
 GDI began in 2021 as a coalition of organisations working toward global democracy. That
-coalition is no longer active. In 2023 we wrote a white paper, *Gloki: Global Digital Voter
+coalition is no longer active. In 2024 we published a white paper, *Gloki: Global Digital Voter
 Identity*. Some of its ideas have changed: today, people who know you vouch for you, not
 strangers picked at random. GDI is now a project of Young World Federalists, Inc., which hosts
 it. Our old motto still holds: "Assume global responsibility."

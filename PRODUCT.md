@@ -44,8 +44,8 @@ privacy pages. Say exactly that; never present GDI as a separate organisation or
 as current members (their names stay off the page).
 
 Sources added 26 Oct 2026: the old GDI homepage (gdi-site.webflow.io: motto "Assume global
-responsibility", values Global Democracy / Global Citizenship / Open Source Innovation) and the 2023
-white paper "Gloki: Global Digital Voter Identity" (Poupko, McKeague, Gallup, Colombo,
+responsibility", values Global Democracy / Global Citizenship / Open Source Innovation) and the 2024
+white paper (its own header says "2024 White Paper"; PDF dated Jan 2024) "Gloki: Global Digital Voter Identity" (Poupko, McKeague, Gallup, Colombo,
 Lünenburger; Drive doc "Gloki White Paper"). The page links both PDFs as history. Where the paper
 and the beta differ, the beta wins and the page says so: the paper has strangers chosen at random
 vouch, unique profile photos checked by software, blockchains and "decentralized" records; the beta
@@ -101,8 +101,8 @@ Three things a neighbouring product cannot truthfully copy together:
   packet.
 - Settled 26 Oct 2026 (Eston): YWF named as builder; the agent row shown as Planned; contact by
   reply to the first waitlist email, plus hello@globaldemocracyinitiative.org.
-- Open: whether waitlist sign-ups also receive the general YWF newsletter (they join the same
-  Buttondown list, tagged by door); who reads hello@.
+- Settled 26–28 Oct 2026 (Eston): waitlist sign-ups never receive the YWF newsletter; GDI gets its own
+  free Buttondown account, tagged by door. hello@ forwards to Eston (Cloudflare Email Routing).
 - Terminology: "vouch" (people who know you confirm you are a real person), "agent" (the thing that
   holds your data; internal only: public copy says "your own record", since "agent" now reads as an AI agent, Eston 27 Oct 2026), "node" (a small server that keeps a copy of the network), "mandate" (a decision a
   community publishes), "door" (one of the three ways in).

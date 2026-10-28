@@ -22,7 +22,7 @@ The brief proposes **GDI = the commons, Gloki = the first app on it** (the Matri
 Re-grounding turned up a problem with that split. Every source uses "Gloki" for the foundation,
 not for the app:
 
-- The 2023 white paper is titled *Gloki: Global Digital Voter Identity*.
+- The 2024 white paper (written 2023) is titled *Gloki: Global Digital Voter Identity*.
 - Ouri's December 2025 deck: "What is Gloki ID? A personal voter identity on your own device".
 - The beta you agreed with Ouri on 15 Oct has **no democracy pipeline**. It is getting in
   (vouching), your own agent, hosting a node and one forum. The beta *is* the foundation.
@@ -138,7 +138,7 @@ Two alternates, depending on how §1 and §2 land:
    - **A network its members carry.** Nodes are run by people, not one company. Later, where the
      internet fails, messages can travel over radio.
 
-The history section (2021 coalition, 2023 white paper, old motto "Assume global responsibility")
+The history section (2021 coalition, 2024 white paper, old motto "Assume global responsibility")
 goes below the fold as "Where this comes from". It's context, not the plan.
 
 ---
