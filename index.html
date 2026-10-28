@@ -96,25 +96,53 @@
         </div>
 
         <!-- The interchange: where the three lines meet. On desktop it is placed over the diagram. -->
-        <div class="interchange" id="join">
+        <!-- The waitlist runs on Brevo (GDI account, list "GDI waitlist"). Brevo's main.js needs the ids and the
+             sib-/entry__ classes below; keep them, the field names and the Turnstile sitekey as they are. -->
+        <div class="interchange sib-form" id="join">
           <h2><span>You · interchange</span></h2>
-          <form class="form" action="https://buttondown.com/api/emails/embed-subscribe/YoungWorldFederalists" method="post" target="_blank">
-            <div class="row">
-              <div class="field">
-                <label for="email">Your email</label>
-                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@example.org">
-              </div>
-              <button class="button" type="submit">Join the waitlist</button>
+          <div id="sib-form-container">
+            <div id="error-message" class="sib-form-message-panel" role="alert">
+              <p class="sib-form-message-panel__text"><span class="sib-form-message-panel__inner-text">Something went wrong. Please try again, or write to <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>.</span></p>
             </div>
-            <fieldset class="doors">
-              <legend>Which line is yours?</legend>
-              <label class="door"><input type="radio" name="tag" value="solve-global-issues" checked><span class="swatch"></span>Solve global issues</label>
-              <label class="door"><input type="radio" name="tag" value="build-digital-democracy"><span class="swatch swatch--build"></span>Build digital democracy</label>
-              <label class="door"><input type="radio" name="tag" value="contribute-a-node"><span class="swatch swatch--contribute"></span>Contribute to a new internet <small>(planned)</small></label>
-            </fieldset>
-            <input type="hidden" name="embed" value="1">
-            <p class="fine">We write when your line opens. One email at a time, and you can leave with one click.</p>
-          </form>
+            <div id="success-message" class="sib-form-message-panel" role="status">
+              <p class="sib-form-message-panel__text"><span class="sib-form-message-panel__inner-text">Almost there. Check your inbox and click the link to confirm your place.</span></p>
+            </div>
+            <div id="sib-container">
+              <form id="sib-form" class="form" method="POST" action="https://a3e077e0.sibforms.com/serve/MUIFAHUj4finWtsnLObP3pkpRh8_iB7MLImmhGbLzT-9oHu40hodT5lJJ8-zigrAClrLqWwdv5RCE5VEL-V17qafPsP8lfJ00f_4-94QS_M6yu6FaL7ew_bomNpKA7_u4tkkBDMVANeqkhCreuYL0bNEY0xURuMP9MGEB2Egu2xSsr7R1SBARiCLPXFx4cyplnql6Pt05QwLYhleeg==" data-type="subscription">
+                <div class="sib-input sib-form-block">
+                  <div class="form__entry entry_block field">
+                    <label class="entry__label" for="EMAIL">Your email</label>
+                    <div class="entry__field">
+                      <input class="input" id="EMAIL" name="EMAIL" type="email" inputmode="email" autocomplete="email" placeholder="you@example.org" data-required="true" required>
+                    </div>
+                    <label class="entry__error entry__error--primary" for="EMAIL"></label>
+                  </div>
+                </div>
+                <div class="sib-checkbox-group sib-form-block">
+                  <fieldset class="form__entry entry_mcq doors">
+                    <legend>Which lines are yours? Pick any.</legend>
+                    <label class="door"><input type="checkbox" name="INTEREST[]" value="Solve global issues" data-value="Solve global issues"><span class="swatch"></span>Solve global issues</label>
+                    <label class="door"><input type="checkbox" name="INTEREST[]" value="Build digital democracy" data-value="Build digital democracy"><span class="swatch swatch--build"></span>Build digital democracy</label>
+                    <label class="door"><input type="checkbox" name="INTEREST[]" value="Contribute a node" data-value="Contribute a node"><span class="swatch swatch--contribute"></span>Contribute a node <small>(planned)</small></label>
+                    <label class="entry__error entry__error--primary"></label>
+                  </fieldset>
+                </div>
+                <div class="sib-captcha sib-form-block">
+                  <div class="form__entry entry_block">
+                    <div class="cf-turnstile g-recaptcha" id="sib-captcha" data-sitekey="0x4AAAAAAFqCnrqcYK-xXckD" data-callback="handleCaptchaResponse" data-language="en" data-theme="light" data-size="flexible"></div>
+                    <label class="entry__error entry__error--primary"></label>
+                  </div>
+                </div>
+                <button class="button sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                  <svg class="progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="40 17"/></svg>
+                  Join the waitlist
+                </button>
+                <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <input type="hidden" name="locale" value="en">
+                <p class="fine">We'll send one email to confirm. No spam, and you can leave any time. Your email stays with the Young World Federalists, and Brevo sends our emails. <a href="privacy.html">Privacy</a></p>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -252,7 +280,7 @@
       <a href="imprint.html">Imprint</a>
       <a href="privacy.html">Privacy</a>
       <a href="https://github.com/young-world-federalists/gloki-engage">GitHub</a>
-      <span>No cookies, no trackers. The waitlist is run on Buttondown.</span>
+      <span>No analytics, no ad trackers. The waitlist runs on Brevo.</span>
     </div>
   </footer>
 
@@ -268,15 +296,52 @@
       } else {
         stops.forEach(function (s) { s.classList.add('lit'); });
       }
-      // "Join this line" is a plain anchor to the form; with script it also preselects the line and focuses the field.
+      // "Join this line" is a plain anchor to the form; with script it also ticks the line and focuses the field.
+      var interest = {
+        'solve-global-issues': 'Solve global issues',
+        'build-digital-democracy': 'Build digital democracy',
+        'contribute-a-node': 'Contribute a node'
+      };
       document.querySelectorAll('[data-door]').forEach(function (b) {
         b.addEventListener('click', function () {
-          var r = document.querySelector('input[name="tag"][value="' + b.getAttribute('data-door') + '"]');
+          var r = document.querySelector('input[name="INTEREST[]"][value="' + interest[b.getAttribute('data-door')] + '"]');
           if (r) r.checked = true;
-          setTimeout(function () { document.getElementById('email').focus({ preventScroll: true }); }, 450);
+          setTimeout(function () { document.getElementById('EMAIL').focus({ preventScroll: true }); }, 450);
         });
       });
     })();
   </script>
+
+  <!-- Brevo form script and Cloudflare Turnstile, as Brevo's embed code sets them up. -->
+  <script>
+    // Turnstile's full widget needs 300px; on narrow phones that pushes the interchange past the edge.
+    if (window.matchMedia('(max-width: 400px)').matches) {
+      document.getElementById('sib-captcha').setAttribute('data-size', 'compact');
+    }
+    function handleCaptchaResponse() {
+      var event = new Event('captchaChange');
+      document.getElementById('sib-captcha').dispatchEvent(event);
+      window.grecaptcha = window.turnstile;
+    }
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+    window.LOCALE = 'en';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "That email address doesn't look right. Please check it and try again.";
+    window.REQUIRED_ERROR_MESSAGE = 'This field cannot be left blank.';
+    window.GENERIC_INVALID_MESSAGE = "That email address doesn't look right. Please check it and try again.";
+    window.INVALID_NUMBER = "That email address doesn't look right. Please check it and try again.";
+    window.INVALID_DATE = 'Please enter a valid date';
+    window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least 1 option';
+    window.translation = {
+      common: {
+        selectedList: '{quantity} list selected',
+        selectedLists: '{quantity} lists selected',
+        selectedOption: '{quantity} selected',
+        selectedOptions: '{quantity} selected'
+      }
+    };
+    var AUTOHIDE = Boolean(1);
+  </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>

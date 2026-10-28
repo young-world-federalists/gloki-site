@@ -192,6 +192,24 @@ a.button:not(.button--ghost), .button:not(.button--ghost):hover { color: var(--p
 .fine { font-size: 0.9rem; color: var(--ink-muted); margin: 0; }
 .fine a { color: var(--ink-muted); }
 
+/* The waitlist form runs on Brevo. Its script toggles the sib-/entry__ classes; the look stays the site's own. */
+.doors { border: 0; margin: 0; padding: 0; min-width: 0; }
+.form > .button { justify-self: start; }
+.entry__field { display: grid; }
+.form .entry__error { display: none; margin: 0.25rem 0 0; font-family: var(--text); font-size: 0.9rem; color: var(--contribute-text); }
+.entry_errored input[type='email'] { border-color: var(--contribute-text); }
+.sib-captcha { min-height: 65px; }
+.input--hidden { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
+.sib-form-message-panel { display: none; margin: 0 0 0.6rem; padding: 0.75rem 0.9rem; border: 2px solid var(--ink); border-radius: 8px; background: var(--wash); color: var(--ink); }
+.sib-form-message-panel--active { display: block; }
+.sib-form-message-panel__text { margin: 0; }
+#error-message { border-color: var(--contribute-text); background: var(--paper); }
+.sib-form-block__button .progress-indicator__icon { flex: none; animation: spin 0.9s linear infinite; }
+.sib-form-block__button .sib-hide-loader-icon { display: none; }
+.sib-form-block__button-disabled { cursor: progress; opacity: 0.75; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .sib-form-block__button .progress-indicator__icon { animation: none; } }
+
 /* Section rhythm: more space above a heading than below it */
 section { padding-block: 3.5rem 2.5rem; }
 section > .wrap > h2 { margin-bottom: 0.75rem; }
