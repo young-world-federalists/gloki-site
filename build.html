@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For builders · Global Democracy Initiative</title>
+  <meta name="description" content="How the Global Democracy Initiative's network works today, its known gaps, the open problems, and the research behind it.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/gdi-icon-16.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Jost-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/AtkinsonHyperlegible-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="person" viewBox="0 0 20 40">
+        <circle cx="10" cy="5.2" r="4.6"/>
+        <path d="M4.6 11.2H15.4Q17.4 11.2 17.6 13.4L18.6 25H15.8L15 17V39.2H10.9V27.5H9.1V39.2H5V17L4.2 25H1.4L2.4 13.4Q2.6 11.2 4.6 11.2Z"/>
+      </symbol>
+      <clipPath id="lower-half"><rect x="0" y="21" width="20" height="20"/></clipPath>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap top">
+    <a class="brand" href="./" aria-label="Global Democracy Initiative, home">
+      <img src="assets/gdi-icon-32.svg" alt="" width="32" height="32">
+      <span class="long">Global Democracy Initiative</span><span class="short">GDI</span>
+    </a>
+    <nav class="nav" aria-label="Site">
+      <a class="optional" href="./#works">What works today</a>
+      <a class="nav--join" href="./#join">Sign up</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1" class="wrap doc">
+    <h1>How the network works, and what is open</h1>
+    <p class="lead">This page is for engineers and researchers. It says exactly what the code does today, so you can decide whether to help.</p>
+
+    <h2 id="who-counts">How other tools decide who counts</h2>
+    <p>Democracy software has to decide who may take part. Tools made for one city, country or organisation use one of these answers:</p>
+    <ul>
+      <li><strong>A list of residents</strong> from a city or a government, as many city participation platforms do. It works inside one country and stops at the border.</li>
+      <li><strong>A list from the organiser.</strong> The people running the vote decide who is on it.</li>
+      <li><strong>Random selection.</strong> A small group is chosen by lot, as citizens' assemblies do. It is good for deep discussion, but most people never take part.</li>
+      <li><strong>Tokens.</strong> People who hold more of a digital token get more say.</li>
+      <li><strong>Tools that do not hold votes.</strong> Some tools gather opinions from anyone, without a check, and are not built to count one vote per person.</li>
+      <li><strong>Proof-of-person services</strong> that other apps can query, built on vouching, credentials or biometrics.</li>
+    </ul>
+    <p>Each answer fits the job it was made for. None of them lets people everywhere take part, one vote each, without a government, a company or money in the middle.</p>
+
+    <h2 id="node">The node</h2>
+    <p>The network runs on the <strong>Identity Block Chain</strong>, Ouri Poupko's open-source node (GPL-3.0). It puts his research on self-sovereign digital agents into practice: software that holds one person's data and acts only for them. <a href="https://github.com/ouripoupko/ibc">Repository</a>.</p>
+    <ul>
+      <li>Each person is an <strong>agent</strong>. An agent registers on a node and acts through it.</li>
+      <li>Rules live in <strong>contracts</strong>: small Python programs. Every agent that joins a contract is a <strong>partner</strong> on it and keeps a copy of its state.</li>
+      <li>A write to a contract goes through an agreement step among that contract's partners (a PBFT-style protocol), so the copies stay the same. There is no single global chain.</li>
+      <li>The node ships as a Docker image and listens only on your own computer by default.</li>
+    </ul>
+
+    <h2 id="vouching">The vouching rule in the code</h2>
+    <figure class="diagram">
+      <svg viewBox="0 0 220 120" role="img" aria-labelledby="rule-t">
+        <title id="rule-t">Before: members A and B are linked, and C and D are linked. After: the newcomer sits between all four, and both old links are gone.</title>
+        <g aria-hidden="true">
+          <line x1="22" y1="28" x2="70" y2="28" class="link-old"/>
+          <line x1="22" y1="96" x2="70" y2="96" class="link-old"/>
+          <use href="#person" class="p-ink" x="12" y="10" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="60" y="10" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="12" y="78" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="60" y="78" width="20" height="40"/>
+          <line x1="140" y1="28" x2="164" y2="62" class="link-new"/>
+          <line x1="188" y1="28" x2="164" y2="62" class="link-new"/>
+          <line x1="140" y1="96" x2="164" y2="62" class="link-new"/>
+          <line x1="188" y1="96" x2="164" y2="62" class="link-new"/>
+          <use href="#person" class="p-blue" x="130" y="10" width="20" height="40"/>
+          <use href="#person" class="p-blue" x="178" y="10" width="20" height="40"/>
+          <use href="#person" class="p-blue" x="130" y="78" width="20" height="40"/>
+          <use href="#person" class="p-blue" x="178" y="78" width="20" height="40"/>
+          <use href="#person" class="p-blue" x="154" y="44" width="20" height="40"/>
+        </g>
+      </svg>
+      <figcaption>Before and after a newcomer joins. Each member keeps exactly four links.</figcaption>
+    </figure>
+    <p>Ouri's community contract picks two existing links in the trust graph at random, which gives four members. All four must approve the newcomer, and the newcomer takes a place between them, so every member keeps exactly four links. Random choice matters: people making fake accounts cannot pick each other. The design comes from <a href="https://ieeexplore.ieee.org/document/9446607">Poupko, Shahaf, Shapiro and Talmon, "Building a Sybil-Resilient Digital Community Utilizing Trust-Graph Connectivity", IEEE/ACM Transactions on Networking, 2021</a> (<a href="https://arxiv.org/abs/1901.00752">free version on arXiv</a>).</p>
+    <p>The pilot app also tests vouching by people you choose. That version has no server code yet. Until we choose one rule, we make no claim about keeping out fake accounts.</p>
+
+    <h2 id="gaps">Known gaps</h2>
+    <ul>
+      <li><strong>No authentication.</strong> Anyone who knows an agent's identity string and node address can send requests as that agent. Identity strings are visible to other partners.</li>
+      <li><strong>Agreement does not check signatures</strong> yet, and has no view change. It has not been run across separate machines.</li>
+      <li><strong>The random pick can be steered.</strong> It is seeded with a timestamp set by the node that receives the request, so whoever runs that node can influence which four members are chosen.</li>
+      <li><strong>Contracts are plain Python</strong> in a sandbox, not a language designed for safe contracts.</li>
+      <li><strong>No encryption</strong> of stored data yet.</li>
+    </ul>
+
+    <h2 id="open">Open problems</h2>
+    <p>The gaps above are where we would start: signed requests, signature checks in agreement, randomness no single node can steer, encryption, a safer contract language, and testing across machines. <mark class="todo">[Ouri's list of hard problems goes here]</mark></p>
+
+    <h2 id="plan">The protections we plan</h2>
+    <ul class="plan">
+      <li><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg><strong>Your phone signs everything you do.</strong><span class="how">Keys made on the device, unlocked with a passkey. Being built.</span></li>
+      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Lose your phone, and your vouchers can let you back in.</strong><span class="how">Vouchers confirm you again, after a waiting period. Planned.</span></li>
+      <li><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg><strong>Nobody can change records quietly.</strong><span class="how">Signed append-only logs copied across nodes. Being built.</span></li>
+      <li><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg><strong>Servers store your data without reading it.</strong><span class="how">Encryption, blind servers. Being built.</span></li>
+      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Prove you may vote without saying who you are.</strong><span class="how">Semaphore. Planned.</span></li>
+      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Votes counted while still locked.</strong><span class="how">ElectionGuard threshold keys. Planned.</span></li>
+      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Check that the app you run is the code we published.</strong><span class="how">Signed releases, CSP and SRI. Planned.</span></li>
+      <li><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Nodes can hide where they are.</strong><span class="how">Tor onion services. Research.</span></li>
+      <li><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Reaching places without internet.</strong><span class="how">Reticulum over LoRa radio. Research.</span></li>
+      <li><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Text messages for reminders, never for votes.</strong><span class="how">SMS and USSD. Research.</span></li>
+    </ul>
+
+    <h2 id="research">The research</h2>
+    <p>Ouri's papers, all with Ehud Shapiro and colleagues (<a href="https://dblp.org/pid/234/6110.html">full list on dblp</a>):</p>
+    <ul>
+      <li><a href="https://ieeexplore.ieee.org/document/9912178">Self-Sovereign Digital Agents for a Grassroots Digital Society</a>. ICDCS 2022. What the node implements.</li>
+      <li><a href="https://arxiv.org/abs/1901.00752">Building a Sybil-Resilient Digital Community Utilizing Trust-Graph Connectivity</a>. IEEE/ACM Transactions on Networking, 2021. The four-link vouching rule.</li>
+      <li><a href="https://arxiv.org/abs/2007.15536">Sybil-Resilient Coin Minting</a>. arXiv, 2020. Who answers for a fake account that gets in.</li>
+      <li><a href="https://arxiv.org/abs/2205.09174">Cordial Miners</a>. DISC 2023. A consensus protocol from the same group; the node runs a different, PBFT-style protocol today.</li>
+    </ul>
+
+    <h2 id="brightid">BrightID and GDI</h2>
+    <p>BrightID also uses vouching. It lets people prove to other apps that they use only one account. GDI is building the whole foundation a democracy needs on one network its members run: who counts, where the record lives and, later, how votes are counted. The protections that would set it apart technically are still being built.</p>
+
+    <h2 id="licence">Licence and how we decide</h2>
+    <p>The node is GPL-3.0. The Gloki app's licence is not set yet. For now Ouri and Eston make the decisions. Contributors are welcome in that discussion.</p>
+    <p><strong>Get in touch:</strong> <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>, or <a href="./#join">sign up</a> with "Build with us" and we will send you the open problems.</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Built on Ouri Poupko's open-source node. GDI is a project of Young World Federalists, Inc.</p>
+      <div class="foot-row"><span>© 2026 Young World Federalists, Inc.</span><span class="foot-links"><a href="./">Home</a> <a href="imprint.html">Imprint</a> <a href="privacy.html">Privacy</a></span></div>
+    </div>
+  </footer>
+</body>
+</html>

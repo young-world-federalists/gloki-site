@@ -1,359 +1,331 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-23T14:34:08Z",
-  "title": "Design System: Gloki",
+  "generatedAt": "2026-10-26T22:30:00Z",
+  "title": "Design System: Global Democracy Initiative",
   "extensions": {
     "colorMeta": {
       "paper": {
         "role": "neutral",
         "displayName": "Paper",
-        "canonical": "oklch(100.0% 0.000 90)",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 90)",
         "tonalRamp": [
-          "oklch(15% 0.000 90)",
-          "oklch(26% 0.000 90)",
-          "oklch(38% 0.000 90)",
-          "oklch(49% 0.000 90)",
-          "oklch(61% 0.000 90)",
-          "oklch(72% 0.000 90)",
-          "oklch(84% 0.000 90)",
-          "oklch(95% 0.000 90)"
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
         ]
       },
-      "wash": {
+      "field": {
         "role": "neutral",
-        "displayName": "Zone Wash",
-        "canonical": "oklch(97.0% 0.014 255)",
+        "displayName": "Chart Field",
+        "canonical": "#f1f5fb",
+        "oklch": "oklch(96.9% 0.009 258)",
         "tonalRamp": [
-          "oklch(15% 0.014 255)",
-          "oklch(26% 0.014 255)",
-          "oklch(38% 0.014 255)",
-          "oklch(49% 0.014 255)",
-          "oklch(61% 0.014 255)",
-          "oklch(72% 0.014 255)",
-          "oklch(84% 0.014 255)",
-          "oklch(95% 0.014 255)"
-        ]
-      },
-      "wash-2": {
-        "role": "neutral",
-        "displayName": "Deep Wash",
-        "canonical": "oklch(94.0% 0.029 260)",
-        "tonalRamp": [
-          "oklch(15% 0.029 260)",
-          "oklch(26% 0.029 260)",
-          "oklch(38% 0.029 260)",
-          "oklch(49% 0.029 260)",
-          "oklch(61% 0.029 260)",
-          "oklch(72% 0.029 260)",
-          "oklch(84% 0.029 260)",
-          "oklch(95% 0.024 260)"
+          "#090b0f",
+          "#22252a",
+          "#3f4247",
+          "#5e6166",
+          "#7f8388",
+          "#a2a5ab",
+          "#c6c9cf",
+          "#ebeff5"
         ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Ink",
-        "canonical": "oklch(21.0% 0.032 265)",
+        "canonical": "#111418",
+        "oklch": "oklch(19.0% 0.009 256)",
         "tonalRamp": [
-          "oklch(15% 0.032 265)",
-          "oklch(26% 0.032 265)",
-          "oklch(38% 0.032 265)",
-          "oklch(49% 0.032 265)",
-          "oklch(61% 0.032 265)",
-          "oklch(72% 0.032 265)",
-          "oklch(84% 0.032 265)",
-          "oklch(95% 0.022 265)"
+          "#090b0f",
+          "#22252a",
+          "#3f4247",
+          "#5e6267",
+          "#7f8388",
+          "#a1a5ab",
+          "#c5c9cf",
+          "#eaeff5"
         ]
       },
       "ink-soft": {
         "role": "neutral",
         "displayName": "Soft Ink",
-        "canonical": "oklch(37.3% 0.031 260)",
+        "canonical": "#3b424b",
+        "oklch": "oklch(37.6% 0.018 255)",
         "tonalRamp": [
-          "oklch(15% 0.031 260)",
-          "oklch(26% 0.031 260)",
-          "oklch(38% 0.031 260)",
-          "oklch(49% 0.031 260)",
-          "oklch(61% 0.031 260)",
-          "oklch(72% 0.031 260)",
-          "oklch(84% 0.031 260)",
-          "oklch(95% 0.021 260)"
+          "#090b0f",
+          "#21252a",
+          "#3d4249",
+          "#5b626a",
+          "#7b838d",
+          "#9fa6af",
+          "#c4cad2",
+          "#eaeff6"
         ]
       },
-      "ink-muted": {
+      "ink-hover": {
         "role": "neutral",
-        "displayName": "Muted Ink",
-        "canonical": "oklch(44.6% 0.026 257)",
+        "displayName": "Pressed Ink",
+        "canonical": "#2a3038",
+        "oklch": "oklch(30.7% 0.017 256)",
         "tonalRamp": [
-          "oklch(15% 0.026 257)",
-          "oklch(26% 0.026 257)",
-          "oklch(38% 0.026 257)",
-          "oklch(49% 0.026 257)",
-          "oklch(61% 0.026 257)",
-          "oklch(72% 0.026 257)",
-          "oklch(84% 0.026 257)",
-          "oklch(95% 0.021 257)"
+          "#090b0f",
+          "#22252a",
+          "#3e4249",
+          "#5c626a",
+          "#7c838c",
+          "#9fa6ae",
+          "#c4cad1",
+          "#eaeff5"
         ]
       },
-      "solve": {
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#d5dae1",
+        "oklch": "oklch(88.7% 0.011 257)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5e6267",
+          "#7e8389",
+          "#a1a5ab",
+          "#c6c9ce",
+          "#eceff3"
+        ]
+      },
+      "brand-blue": {
         "role": "primary",
-        "displayName": "Solve Blue",
-        "canonical": "oklch(62.3% 0.188 260)",
+        "displayName": "Vouched Blue",
+        "canonical": "#3b82f6",
+        "oklch": "oklch(62.3% 0.188 260)",
         "tonalRamp": [
-          "oklch(15% 0.128 260)",
-          "oklch(26% 0.128 260)",
-          "oklch(38% 0.158 260)",
-          "oklch(49% 0.188 260)",
-          "oklch(61% 0.188 260)",
-          "oklch(72% 0.143 260)",
-          "oklch(84% 0.078 260)",
-          "oklch(95% 0.023 260)"
-        ]
+          "#000430",
+          "#001f5b",
+          "#0a3d8a",
+          "#205cbc",
+          "#377df0",
+          "#66a4ff",
+          "#94caff",
+          "#c3f0ff"
+        ],
+        "note": "Graphics only (3.68:1 on white). Fixed by PRODUCT.md Brand Commitments."
       },
-      "solve-text": {
+      "blue-text": {
         "role": "primary",
-        "displayName": "Solve Ink",
-        "canonical": "oklch(48.8% 0.217 264)",
+        "displayName": "Word Blue",
+        "canonical": "#1d4ed8",
+        "oklch": "oklch(48.8% 0.217 264)",
         "tonalRamp": [
-          "oklch(15% 0.122 264)",
-          "oklch(26% 0.187 264)",
-          "oklch(38% 0.217 264)",
-          "oklch(49% 0.217 264)",
-          "oklch(61% 0.212 264)",
-          "oklch(72% 0.142 264)",
-          "oklch(84% 0.077 264)",
-          "oklch(95% 0.022 264)"
-        ]
+          "#000035",
+          "#041964",
+          "#143696",
+          "#2755cb",
+          "#3e76ff",
+          "#699eff",
+          "#95c6ff",
+          "#c3eeff"
+        ],
+        "note": "All blue text, focus ring, ::selection background (white text), accent-color, caret."
       },
-      "build": {
+      "vermilion": {
         "role": "secondary",
-        "displayName": "Build Teal",
-        "canonical": "oklch(51.1% 0.086 186)",
+        "displayName": "Not-Yet Vermilion",
+        "canonical": "#e0412b",
+        "oklch": "oklch(60.6% 0.199 31)",
         "tonalRamp": [
-          "oklch(15% 0.041 186)",
-          "oklch(26% 0.051 186)",
-          "oklch(38% 0.066 186)",
-          "oklch(49% 0.086 186)",
-          "oklch(61% 0.086 186)",
-          "oklch(72% 0.086 186)",
-          "oklch(84% 0.086 186)",
-          "oklch(95% 0.071 186)"
+          "#270000",
+          "#510000",
+          "#7e0c00",
+          "#ae2715",
+          "#e0422d",
+          "#fe755f",
+          "#ffa48e",
+          "#ffd1be"
         ]
       },
-      "build-text": {
+      "vermilion-text": {
         "role": "secondary",
-        "displayName": "Build Teal (text alias)",
-        "canonical": "oklch(51.1% 0.086 186)",
+        "displayName": "Not-Yet Words",
+        "canonical": "#b42318",
+        "oklch": "oklch(50.0% 0.182 30)",
         "tonalRamp": [
-          "oklch(15% 0.041 186)",
-          "oklch(26% 0.051 186)",
-          "oklch(38% 0.066 186)",
-          "oklch(49% 0.086 186)",
-          "oklch(61% 0.086 186)",
-          "oklch(72% 0.086 186)",
-          "oklch(84% 0.086 186)",
-          "oklch(95% 0.071 186)"
+          "#250000",
+          "#4e0000",
+          "#7a170f",
+          "#a93024",
+          "#d94b3c",
+          "#f77a69",
+          "#ffa796",
+          "#ffd3c4"
         ]
       },
-      "contribute": {
-        "role": "tertiary",
-        "displayName": "Contribute Amber",
-        "canonical": "oklch(66.6% 0.157 58)",
+      "vermilion-wash": {
+        "role": "secondary",
+        "displayName": "Warning Wash",
+        "canonical": "#fff5f3",
+        "oklch": "oklch(97.7% 0.011 31)",
         "tonalRamp": [
-          "oklch(15% 0.102 58)",
-          "oklch(26% 0.072 58)",
-          "oklch(38% 0.092 58)",
-          "oklch(49% 0.117 58)",
-          "oklch(61% 0.142 58)",
-          "oklch(72% 0.157 58)",
-          "oklch(84% 0.107 58)",
-          "oklch(95% 0.027 58)"
+          "#0d0a0a",
+          "#282423",
+          "#46403f",
+          "#675f5e",
+          "#89807e",
+          "#aba3a1",
+          "#cec7c6",
+          "#f3edec"
         ]
       },
-      "contribute-text": {
-        "role": "tertiary",
-        "displayName": "Contribute Ink",
-        "canonical": "oklch(55.5% 0.146 49)",
+      "counterfeit-grey": {
+        "role": "neutral",
+        "displayName": "Counterfeit Grey",
+        "canonical": "#7c848e",
+        "oklch": "oklch(61.0% 0.018 254)",
         "tonalRamp": [
-          "oklch(15% 0.096 49)",
-          "oklch(26% 0.081 49)",
-          "oklch(38% 0.106 49)",
-          "oklch(49% 0.131 49)",
-          "oklch(61% 0.146 49)",
-          "oklch(72% 0.146 49)",
-          "oklch(84% 0.101 49)",
-          "oklch(95% 0.026 49)"
-        ]
-      },
-      "status-good": {
-        "role": "status",
-        "displayName": "Status Good",
-        "canonical": "oklch(50.8% 0.105 166)",
-        "tonalRamp": [
-          "oklch(15% 0.050 166)",
-          "oklch(26% 0.060 166)",
-          "oklch(38% 0.080 166)",
-          "oklch(49% 0.100 166)",
-          "oklch(61% 0.105 166)",
-          "oklch(72% 0.105 166)",
-          "oklch(84% 0.105 166)",
-          "oklch(95% 0.070 166)"
-        ]
-      },
-      "status-plan": {
-        "role": "status",
-        "displayName": "Status Plan",
-        "canonical": "oklch(55.5% 0.146 49)",
-        "tonalRamp": [
-          "oklch(15% 0.096 49)",
-          "oklch(26% 0.081 49)",
-          "oklch(38% 0.106 49)",
-          "oklch(49% 0.131 49)",
-          "oklch(61% 0.146 49)",
-          "oklch(72% 0.146 49)",
-          "oklch(84% 0.101 49)",
-          "oklch(95% 0.026 49)"
-        ]
-      },
-      "status-later": {
-        "role": "status",
-        "displayName": "Status Later",
-        "canonical": "oklch(44.6% 0.026 257)",
-        "tonalRamp": [
-          "oklch(15% 0.026 257)",
-          "oklch(26% 0.026 257)",
-          "oklch(38% 0.026 257)",
-          "oklch(49% 0.026 257)",
-          "oklch(61% 0.026 257)",
-          "oklch(72% 0.026 257)",
-          "oklch(84% 0.026 257)",
-          "oklch(95% 0.021 257)"
-        ]
-      },
-      "focus": {
-        "role": "focus",
-        "displayName": "Focus Ring",
-        "canonical": "oklch(55.5% 0.146 49)",
-        "tonalRamp": [
-          "oklch(15% 0.096 49)",
-          "oklch(26% 0.081 49)",
-          "oklch(38% 0.106 49)",
-          "oklch(49% 0.131 49)",
-          "oklch(61% 0.146 49)",
-          "oklch(72% 0.146 49)",
-          "oklch(84% 0.101 49)",
-          "oklch(95% 0.026 49)"
-        ]
+          "#090b0f",
+          "#21252a",
+          "#3d4249",
+          "#5b626a",
+          "#7b838d",
+          "#9fa6af",
+          "#c3cad2",
+          "#eaeff6"
+        ],
+        "note": "Solid figure copies for fake accounts in the story count only; no legend state uses it."
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "The single h1; the key phrase set in Solve Ink. Fixed at 1.9rem under 760px."
+        "purpose": "The single h1 of the home page."
+      },
+      "display-doc": {
+        "displayName": "Display (doc pages)",
+        "purpose": "h1 of the builder, imprint and privacy pages."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section h2s. Fixed at 1.6rem under 760px."
+        "purpose": "Section h2s."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Station h3s with a numbered ink tag; terminal h3s step up to 1.6rem in their line's text colour."
-      },
-      "lede": {
-        "displayName": "Lede",
-        "purpose": "The one paragraph under the h1, 46ch; 0.98rem / 1.45 under 760px."
-      },
-      "body": {
-        "displayName": "Body",
-        "purpose": "All prose at a 46ch measure; 500 for the status board's first column, 600 for the who phrase."
+        "purpose": "h3s: team bios, ways to take part, rule box, status-board groups (1.15rem)."
       },
       "caption": {
-        "displayName": "Caption",
-        "purpose": "Figcaptions (0.85rem), fine print and footer (0.9–0.95rem) in Muted Ink."
+        "displayName": "Figure Caption",
+        "purpose": "The hero figure caption; 1.3rem from 56rem."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "The nameplate and the table head: uppercase display face at 0.8rem with 0.06em tracking."
+        "purpose": "Button labels."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero promise and section lead paragraphs."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text, 38rem measure."
+      },
+      "body-strong": {
+        "displayName": "Body Strong",
+        "purpose": "Bold lead-ins, form labels, legend of the fieldset, 'Not yet:'."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Legend, fine print, plan 'how' lines, diagram captions, footer."
       }
     },
-    "shadows": [
-      {
-        "name": "interchange-lift",
-        "value": "0 10px 24px -14px rgba(17, 24, 39, 0.45)",
-        "purpose": "The interchange only; the one surface that lies over the map."
-      }
-    ],
+    "shadows": [],
     "motion": [
       {
-        "name": "draw",
-        "value": "1.3s cubic-bezier(0.16, 1, 0.3, 1) forwards",
-        "purpose": "Lines draw themselves on load (stroke-dashoffset 1 → 0 with pathLength=1); staggered 0.15s, 0.3s, 0.9s; the dashed line animates to its --dash pattern."
+        "name": "ease-expressive",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "The newcomer's arrival and the drawing of new links."
       },
       {
         "name": "arrive",
-        "value": "0.6s ease-out 1.1s forwards",
-        "purpose": "Diagram labels and stations fade in after the lines."
+        "value": "translateY(-18px) to none, opacity 0 to 1; 0.7s ease-expressive, 0.25s delay",
+        "purpose": "Newcomer drops into its gap, once on load."
       },
       {
-        "name": "station-lit",
-        "value": "background-color 300ms ease-out",
-        "purpose": "A route station fills with ink when its stop enters view (IntersectionObserver, rootMargin -30% bottom)."
+        "name": "unlink",
+        "value": "opacity 1 to 0; 0.35s ease-out, 0.75s delay",
+        "purpose": "Old links between the two pairs disappear."
       },
       {
-        "name": "button",
-        "value": "transform 160ms ease-out, background-color 160ms ease-out",
-        "purpose": "Button hover lift and fill."
+        "name": "draw",
+        "value": "stroke-dashoffset 60 to 0; 0.55s ease-expressive, 0.85s delay",
+        "purpose": "Four new blue links draw to the vouchers."
+      },
+      {
+        "name": "to-blue",
+        "value": "fill ink to brand-blue 0.35s at 1.15s (vouchers); vermilion to brand-blue 0.3s at 1.25s (newcomer)",
+        "purpose": "The five figures turn Vouched Blue; whole sequence about 1.4s."
       },
       {
         "name": "reduced-motion",
-        "value": "animation: none; stroke-dashoffset: 0",
-        "purpose": "Under prefers-reduced-motion everything is drawn and still; scroll-behavior auto."
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "No animation; the end state shows at once; smooth scrolling is off."
       }
     ],
     "breakpoints": [
       {
-        "name": "phone-narrow",
-        "value": "420px"
+        "name": "narrow",
+        "value": "30rem",
+        "purpose": "Below: short brand name 'GDI' and short nav labels."
       },
       {
-        "name": "desktop",
-        "value": "760px"
+        "name": "sm",
+        "value": "40rem",
+        "purpose": "Gutter 1.5rem; team list two-up."
       },
       {
-        "name": "container",
-        "value": "74rem"
+        "name": "nav",
+        "value": "44rem",
+        "purpose": "The in-page 'What works today' nav link appears."
+      },
+      {
+        "name": "lg",
+        "value": "56rem",
+        "purpose": "Hero two columns; paired sections, status groups two-up; ways three-up."
       }
     ],
-    "strokes": [
-      {
-        "name": "line",
-        "value": "stroke-width: 10 (SVG units); stroke-linecap: round; stroke-linejoin: round",
-        "purpose": "Every line in the diagram; the CSS route bar is 10px with 5px corners."
-      },
-      {
-        "name": "line-planned",
-        "value": "stroke-dasharray: var(--dash); --dash: 0.03 0.022 (desktop paths), 0.12 0.09 (mobile paths), in pathLength=1 units",
-        "purpose": "The Contribute line; dashed means planned."
-      },
-      {
-        "name": "station",
-        "value": "20px disc, fill paper, 4px ink ring; lit = ink fill",
-        "purpose": "Stations in the SVG (r=10, stroke 4) and in the CSS route."
-      },
-      {
-        "name": "section-rule",
-        "value": "3px solid ink",
-        "purpose": "Header bottom, terminal separators, footer top, board and screenshot borders."
-      },
-      {
-        "name": "table-rule",
-        "value": "2px solid ink",
-        "purpose": "Row rules inside the status board; input borders."
-      },
-      {
-        "name": "interchange-border",
-        "value": "5px solid ink",
-        "purpose": "The interchange."
-      }
+    "layout": {
+      "maxWidth": "72rem",
+      "measure": "38rem",
+      "wideMeasure": "44rem to 46rem",
+      "targetMin": "44px",
+      "controlHeight": "48px"
+    },
+    "focus": {
+      "value": "3px solid #1d4ed8, offset 3px, radius 2px",
+      "purpose": "Every focusable element; chips use offset 2px."
+    },
+    "selection": {
+      "background": "#1d4ed8",
+      "color": "#ffffff"
+    },
+    "brandMark": {
+      "path": "assets/gdi-mark.svg",
+      "headerIcon": "assets/gdi-icon-32.svg",
+      "favicon": "assets/gdi-icon-16.svg",
+      "shareImage": "assets/og-image.png",
+      "headerSize": "32px",
+      "colors": [
+        "#111418",
+        "#3b82f6"
+      ],
+      "note": "Route B (Eston, 26 Oct 2026): the 2022 network figure in ink, with a brand-blue newcomer at the crossing of two links, four links: the vouching rule. See docs/brand/2026-10-26/."
+    },
+    "notCanonized": [
+      "mark.todo yellow (#fff1a8) placeholders: temporary editorial device, remove before launch"
     ]
   },
   "components": [
@@ -361,131 +333,155 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Ink pill for the one action on the page, Join the waitlist; hover turns Solve Ink and lifts 1px.",
-      "html": "<button class=\"ds-btn-primary\" type=\"button\">Join the waitlist</button>",
-      "css": ".ds-btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; min-height:48px; padding:0 1.3rem; background:var(--ink, #111827); color:var(--paper, #ffffff); font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:1.05rem; letter-spacing:0.02em; border:0; border-radius:999px; cursor:pointer; transition:transform 160ms ease-out, background-color 160ms ease-out; } .ds-btn-primary:hover { background:var(--solve-text, #1d4ed8); transform:translateY(-1px); } .ds-btn-primary:active { transform:translateY(0); } .ds-btn-primary:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; }"
-    },
-    {
-      "name": "Ghost Button",
-      "kind": "button",
-      "refersTo": "button-ghost",
-      "description": "Ink-outlined pill for the secondary Join this line links; hover fills with the wash.",
-      "html": "<a class=\"ds-btn-ghost\" href=\"#join\">Join this line</a>",
-      "css": ".ds-btn-ghost { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:0 1.3rem; background:transparent; color:var(--ink, #111827); border:2px solid var(--ink, #111827); font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:1.05rem; letter-spacing:0.02em; border-radius:999px; text-decoration:none; cursor:pointer; transition:transform 160ms ease-out, background-color 160ms ease-out; } .ds-btn-ghost:hover { background:var(--wash, #eff6ff); transform:translateY(-1px); } .ds-btn-ghost:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; }"
-    },
-    {
-      "name": "Nameplate",
-      "kind": "chip",
-      "refersTo": "plate",
-      "description": "The diagram's label grammar: ink bar, white uppercase display type; line variants take the line's text colour.",
-      "html": "<span class=\"ds-plate\">Line map · beta</span> <span class=\"ds-plate ds-plate--solve\">first invitees</span> <span class=\"ds-plate ds-plate--build\">Build democracy</span> <span class=\"ds-plate ds-plate--contribute\">planned line</span>",
-      "css": ".ds-plate { display:inline-block; background:var(--ink, #111827); color:var(--paper, #ffffff); font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; line-height:1; padding:0.45em 0.7em 0.4em; border-radius:2px; margin-right:0.4rem; } .ds-plate--solve { background:var(--solve-text, #1d4ed8); } .ds-plate--build { background:var(--build, #0f766e); } .ds-plate--contribute { background:var(--contribute-text, #b45309); }"
+      "description": "The one button: ink slab, white Jost label. Sign up.",
+      "html": "<button class=\"ds-button\" type=\"button\">Sign up</button>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.4rem;font:600 1.05rem/1 var(--display);color:#fff;background:var(--ink);border:0;border-radius:var(--radius);cursor:pointer}.ds-button:hover{background:#2a3038}.ds-button:focus-visible{outline:3px solid var(--blue-text);outline-offset:3px;}"
     },
     {
       "name": "Email Field",
       "kind": "input",
       "refersTo": "input-email",
-      "description": "The waitlist's one field: 48px, 2px ink border, 8px corners, display-face label.",
-      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-email\">Your email</label><input class=\"ds-input\" id=\"ds-email\" type=\"email\" placeholder=\"you@example.org\"></div>",
-      "css": ".ds-field { display:grid; gap:0.3rem; max-width:22rem; } .ds-field-label { font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-size:0.95rem; color:var(--ink, #111827); } .ds-input { font-family:'Cabin', 'Gill Sans', 'Segoe UI', sans-serif; font-size:1.05rem; color:var(--ink, #111827); height:48px; padding:0 0.9rem; border:2px solid var(--ink, #111827); border-radius:8px; background:var(--paper, #ffffff); width:100%; } .ds-input::placeholder { color:var(--ink-muted, #4b5563); opacity:1; } .ds-input:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; }"
+      "description": "Labelled email input with a 2px ink border.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Your email</label><input id=\"ds-email\" type=\"email\" placeholder=\"you@example.org\"></div>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-field{font:400 1.0625rem/1.6 var(--text);color:var(--ink);max-width:34rem}.ds-field label{display:block;font-weight:700;margin-bottom:.3rem}.ds-field input{width:100%;box-sizing:border-box;min-height:48px;padding:.6rem .8rem;font:inherit;color:var(--ink);background:var(--paper);border:2px solid var(--ink);border-radius:var(--radius)}.ds-field input::placeholder{color:#5b636d}.ds-field input:focus-visible{outline:3px solid var(--blue-text);outline-offset:3px;}"
     },
     {
-      "name": "Line Radio",
-      "kind": "input",
-      "refersTo": "input-email",
-      "description": "Which line is yours: native radios with a line swatch before each label; the planned line's swatch is dashed.",
-      "html": "<fieldset class=\"ds-doors\"><legend class=\"ds-doors-legend\">Which line is yours?</legend><label class=\"ds-door\"><input type=\"radio\" name=\"ds-tag\" checked><span class=\"ds-swatch\"></span>Solve global issues</label><label class=\"ds-door\"><input type=\"radio\" name=\"ds-tag\"><span class=\"ds-swatch ds-swatch--build\"></span>Build digital democracy</label><label class=\"ds-door\"><input type=\"radio\" name=\"ds-tag\"><span class=\"ds-swatch ds-swatch--contribute\"></span>Contribute to a new internet <small>(planned)</small></label></fieldset>",
-      "css": ".ds-doors { display:grid; gap:0.35rem; font-family:'Cabin', 'Gill Sans', 'Segoe UI', sans-serif; color:var(--ink-soft, #374151); border:1px solid #767676; padding:0.5rem 0.75rem 0.75rem; } .ds-doors-legend { font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-size:0.95rem; color:var(--ink, #111827); padding:0 0.2em; } .ds-door { display:flex; align-items:center; gap:0.6rem; min-height:44px; cursor:pointer; } .ds-door input { width:20px; height:20px; margin:0; accent-color:var(--ink, #111827); } .ds-door input:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; } .ds-swatch { width:26px; height:8px; border-radius:4px; background:var(--solve, #3b82f6); flex:none; } .ds-swatch--build { background:var(--build, #0f766e); } .ds-swatch--contribute { background:repeating-linear-gradient(90deg, var(--contribute, #d97706) 0 6px, transparent 6px 10px); } .ds-door small { color:var(--ink-muted, #4b5563); font-size:0.9rem; }"
+      "name": "Sign-up Choice Chips",
+      "kind": "chip",
+      "refersTo": "way-chip",
+      "description": "Pill radio choices whose marker is the person figure; selected fills it Vouched Blue.",
+      "html": "<svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><defs><symbol id=\"ds-person\" viewBox=\"0 0 20 40\"><circle cx=\"10\" cy=\"5.2\" r=\"4.6\"/><path d=\"M4.6 11.2H15.4Q17.4 11.2 17.6 13.4L18.6 25H15.8L15 17V39.2H10.9V27.5H9.1V39.2H5V17L4.2 25H1.4L2.4 13.4Q2.6 11.2 4.6 11.2Z\"/></symbol><clipPath id=\"ds-lower-half\"><rect x=\"0\" y=\"21\" width=\"20\" height=\"20\"/></clipPath></defs></svg><div class=\"ds-ways\"><label class=\"ds-way\"><input type=\"radio\" name=\"ds-tag\" checked><svg class=\"ds-dot\" viewBox=\"0 0 20 40\" aria-hidden=\"true\"><use href=\"#ds-person\"/></svg>Join Gloki, the first app</label><label class=\"ds-way\"><input type=\"radio\" name=\"ds-tag\"><svg class=\"ds-dot\" viewBox=\"0 0 20 40\" aria-hidden=\"true\"><use href=\"#ds-person\"/></svg>Build with us</label></div>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-ways{display:flex;flex-wrap:wrap;gap:.4rem;font:400 1.0625rem/1.6 var(--text);color:var(--ink)}.ds-way{position:relative;display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:.35rem .8rem .35rem .6rem;border:1px solid var(--rule);border-radius:999px;cursor:pointer;background:var(--paper)}.ds-way input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}.ds-dot{width:14px;height:28px;flex:none}.ds-dot use{fill:none;stroke:var(--ink);stroke-width:2}.ds-way:has(input:checked){border-color:var(--ink);background:var(--field)}.ds-way:has(input:checked) .ds-dot use{fill:var(--blue);stroke:var(--blue)}.ds-way:has(input:focus-visible){outline:3px solid var(--blue-text);outline-offset:2px}"
     },
     {
-      "name": "Line Nav",
+      "name": "Site Navigation",
       "kind": "nav",
       "refersTo": "nav-link",
-      "description": "The header's line names: display face, 44px targets, a line-coloured bar before each (dashed for the planned line), closed by a 3px ink rule.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Lines\"><a class=\"ds-nav-link ds-nav--solve\" href=\"#line-solve\">Solve global issues</a><a class=\"ds-nav-link ds-nav--build\" href=\"#line-build\">Build digital democracy</a><a class=\"ds-nav-link ds-nav--contribute\" href=\"#line-contribute\">Contribute a node</a><a class=\"ds-nav-link\" href=\"#join\">Join</a></nav>",
-      "css": ".ds-nav { display:flex; gap:0.25rem 1.1rem; flex-wrap:wrap; font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-size:0.95rem; padding-bottom:0.9rem; border-bottom:3px solid var(--ink, #111827); } .ds-nav-link { color:var(--ink, #111827); text-decoration:none; padding:0.55rem 0.1rem; display:inline-flex; align-items:center; gap:0.45rem; min-height:44px; } .ds-nav-link::before { content:''; width:18px; height:6px; border-radius:3px; background:var(--ink, #111827); } .ds-nav--solve::before { background:var(--solve, #3b82f6); } .ds-nav--build::before { background:var(--build, #0f766e); } .ds-nav--contribute::before { background:repeating-linear-gradient(90deg, var(--contribute, #d97706) 0 4px, transparent 4px 7px); } .ds-nav-link:hover { text-decoration:underline; text-underline-offset:0.3em; } .ds-nav-link:focus-visible { outline: 3px solid var(--focus, #b45309); outline-offset: 3px; border-radius: 2px; }"
+      "description": "Mark plus name in Jost; Jost nav links with a field-tint hover; ink Sign up last.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\">Global Democracy Initiative</a><nav class=\"ds-nav\"><a href=\"#\">What works today</a><a href=\"#\">For builders</a><a class=\"ds-join\" href=\"#\">Sign up</a></nav></header>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.75rem;border-bottom:1px solid var(--rule);font-family:var(--display)}.ds-brand{color:var(--ink);text-decoration:none;font-weight:600;font-size:1.05rem;min-height:44px;display:inline-flex;align-items:center}.ds-nav{display:flex;gap:.25rem}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 .7rem;color:var(--ink);text-decoration:none;font-weight:500;border-radius:var(--radius)}.ds-nav a:hover{background:var(--field)}.ds-nav a.ds-join{background:var(--ink);color:#fff}.ds-nav a.ds-join:hover{background:#2a3038}.ds-nav a:focus-visible,.ds-brand:focus-visible{outline:3px solid var(--blue-text);outline-offset:3px;}"
     },
     {
-      "name": "Interchange",
-      "kind": "card",
-      "refersTo": "interchange",
-      "description": "The form's container where the three lines meet: 28px pill-box, 5px ink border, the page's only shadow, headed by the YOU plate.",
-      "html": "<div class=\"ds-interchange\"><h2 class=\"ds-interchange-h\"><span>You · interchange</span></h2><p class=\"ds-interchange-p\">We write when your line opens. One email at a time, and you can leave with one click.</p></div>",
-      "css": ".ds-interchange { position:relative; background:var(--paper, #ffffff); border:5px solid var(--ink, #111827); border-radius:28px; padding:1rem 1.25rem 0.9rem; max-width:30rem; box-shadow:0 10px 24px -14px rgba(17,24,39,0.45); font-family:'Cabin', 'Gill Sans', 'Segoe UI', sans-serif; color:var(--ink-soft, #374151); } .ds-interchange-h { margin:0 0 0.5rem; font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:1.1rem; letter-spacing:0.06em; text-transform:uppercase; line-height:1.1; } .ds-interchange-h span { display:inline-block; background:var(--ink, #111827); color:var(--paper, #ffffff); padding:0.35em 0.6em 0.3em; border-radius:2px; } .ds-interchange-p { margin:0; font-size:0.9rem; color:var(--ink-muted, #4b5563); }"
-    },
-    {
-      "name": "Station Route",
+      "name": "Status Legend",
       "kind": "custom",
-      "refersTo": "plate",
-      "description": "The journey as one vertical Solve line with ink-ringed stations; a lit station fills with ink as it enters view.",
-      "html": "<ol class=\"ds-route\"><li class=\"ds-stop ds-stop--lit\"><h3 class=\"ds-stop-h\"><span class=\"ds-n\">1</span> Create a key</h3><p class=\"ds-stop-p\">Gloki has no passwords. One tap makes your key and signs you in.</p></li><li class=\"ds-stop\"><h3 class=\"ds-stop-h\"><span class=\"ds-n\">2</span> Save your key</h3><p class=\"ds-stop-p\">It is the only way back into your account.</p></li></ol>",
-      "css": ".ds-route { list-style:none; margin:0; padding:0; position:relative; font-family:'Cabin', 'Gill Sans', 'Segoe UI', sans-serif; color:var(--ink-soft, #374151); } .ds-route::before { content:''; position:absolute; left:15px; top:14px; bottom:14px; width:10px; border-radius:5px; background:var(--solve, #3b82f6); } .ds-stop { position:relative; padding:0 0 2.2rem 3.4rem; display:grid; gap:0.35rem; } .ds-stop:last-child { padding-bottom:0.5rem; } .ds-stop::before { content:''; position:absolute; left:6px; top:2px; width:20px; height:20px; border-radius:50%; background:var(--paper, #ffffff); border:4px solid var(--ink, #111827); transition:background-color 300ms ease-out; } .ds-stop--lit::before, .ds-stop:hover::before { background:var(--ink, #111827); } .ds-stop-h { margin:0; display:flex; align-items:center; gap:0.6rem; font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-weight:400; font-size:1.25rem; line-height:1.1; color:var(--ink, #111827); } .ds-n { font-size:0.8rem; color:var(--paper, #ffffff); background:var(--ink, #111827); border-radius:2px; padding:0.3em 0.5em 0.25em; letter-spacing:0.06em; } .ds-stop-p { margin:0; max-width:46ch; font-size:1.0625rem; line-height:1.55; }"
+      "refersTo": "status-board",
+      "description": "The four fill states of the person figure on the chart field: solid works now, half-filled being built, outline planned, dotted research.",
+      "html": "<svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><defs><symbol id=\"ds-person\" viewBox=\"0 0 20 40\"><circle cx=\"10\" cy=\"5.2\" r=\"4.6\"/><path d=\"M4.6 11.2H15.4Q17.4 11.2 17.6 13.4L18.6 25H15.8L15 17V39.2H10.9V27.5H9.1V39.2H5V17L4.2 25H1.4L2.4 13.4Q2.6 11.2 4.6 11.2Z\"/></symbol><clipPath id=\"ds-lower-half\"><rect x=\"0\" y=\"21\" width=\"20\" height=\"20\"/></clipPath></defs></svg><ul class=\"ds-legend\"><li><svg class=\"ds-glyph g-solid\" viewBox=\"0 0 20 40\" aria-hidden=\"true\"><use href=\"#ds-person\"/></svg>Works now</li><li><svg class=\"ds-glyph g-half\" viewBox=\"0 0 20 40\" aria-hidden=\"true\"><use class=\"o\" href=\"#ds-person\"/><g clip-path=\"url(#ds-lower-half)\"><use class=\"f\" href=\"#ds-person\"/></g></svg>Being built</li><li><svg class=\"ds-glyph g-out\" viewBox=\"0 0 20 40\" aria-hidden=\"true\"><use href=\"#ds-person\"/></svg>Planned or possible</li><li><svg class=\"ds-glyph g-dot\" viewBox=\"0 0 20 40\" aria-hidden=\"true\"><use href=\"#ds-person\"/></svg>Research</li></ul>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-glyph{width:20px;height:40px;flex:none;display:inline-block}.ds-glyph.g-solid use{fill:var(--ink)}.ds-glyph.g-out use,.ds-glyph.g-half use.o{fill:none;stroke:var(--ink);stroke-width:2}.ds-glyph.g-half use.f{fill:var(--ink)}.ds-glyph.g-dot use{fill:none;stroke:var(--ink);stroke-width:1.8;stroke-dasharray:2.4 3.2}.ds-legend{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;padding:1.5rem;margin:0;list-style:none;background:var(--field);color:var(--ink-soft);font:400 .95rem/1.6 var(--text)}.ds-legend li{display:inline-flex;align-items:center;gap:.4rem}"
     },
     {
-      "name": "Status Word",
-      "kind": "chip",
-      "refersTo": "board-head",
-      "description": "The status board's three states: a dot and a word in display face; Planned shows a dashed ring instead of a dot.",
-      "html": "<span class=\"ds-st ds-st--test\">In test</span> <span class=\"ds-st ds-st--plan\">Planned</span> <span class=\"ds-st ds-st--later\">Later</span>",
-      "css": ".ds-st { display:inline-flex; align-items:center; gap:0.45rem; font-family:'Hammersmith One', 'Gill Sans', 'Trebuchet MS', sans-serif; font-size:0.95rem; white-space:nowrap; margin-right:1rem; } .ds-st::before { content:''; width:10px; height:10px; border-radius:50%; background:currentColor; } .ds-st--test { color:var(--status-good, #047857); } .ds-st--plan { color:var(--status-plan, #b45309); } .ds-st--plan::before { background:transparent; border:2.5px dashed currentColor; width:7px; height:7px; } .ds-st--later { color:var(--status-later, #4b5563); }"
+      "name": "Status Group",
+      "kind": "card",
+      "refersTo": "status-board",
+      "description": "A status-board group: figure-glyph title, items with bold lead-ins split by hairlines, 'Not yet:' in vermilion words.",
+      "html": "<svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><defs><symbol id=\"ds-person\" viewBox=\"0 0 20 40\"><circle cx=\"10\" cy=\"5.2\" r=\"4.6\"/><path d=\"M4.6 11.2H15.4Q17.4 11.2 17.6 13.4L18.6 25H15.8L15 17V39.2H10.9V27.5H9.1V39.2H5V17L4.2 25H1.4L2.4 13.4Q2.6 11.2 4.6 11.2Z\"/></symbol><clipPath id=\"ds-lower-half\"><rect x=\"0\" y=\"21\" width=\"20\" height=\"20\"/></clipPath></defs></svg><div class=\"ds-group\"><h3><svg class=\"ds-glyph g-half\" viewBox=\"0 0 20 40\" aria-hidden=\"true\"><use class=\"o\" href=\"#ds-person\"/><g clip-path=\"url(#ds-lower-half)\"><use class=\"f\" href=\"#ds-person\"/></g></svg>Being built</h3><ul><li><strong>Nobody can act as you.</strong> <span class=\"ds-notyet\">Not yet:</span> today the network does not check who sends a request.</li><li><strong>Servers that keep your data without being able to read it.</strong></li></ul></div>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-glyph{width:20px;height:40px;flex:none;display:inline-block}.ds-glyph.g-solid use{fill:var(--ink)}.ds-glyph.g-out use,.ds-glyph.g-half use.o{fill:none;stroke:var(--ink);stroke-width:2}.ds-glyph.g-half use.f{fill:var(--ink)}.ds-glyph.g-dot use{fill:none;stroke:var(--ink);stroke-width:1.8;stroke-dasharray:2.4 3.2}.ds-group{background:var(--field);padding:1.5rem;color:var(--ink);font:400 1.0625rem/1.6 var(--text)}.ds-group h3{display:flex;align-items:center;gap:.55rem;font:500 1.15rem/1.25 var(--display);margin:0 0 .35rem}.ds-group ul{list-style:none;padding:0;margin:0}.ds-group li{padding:.5rem 0;border-top:1px solid var(--rule)}.ds-group li:first-child{border-top:0}.ds-group li strong{display:block;font-weight:700}.ds-notyet{color:var(--verm-text);font-weight:700}"
+    },
+    {
+      "name": "Rule Box",
+      "kind": "card",
+      "refersTo": "rule-box",
+      "description": "The promise the project keeps: paper box, 2px ink border, on the field.",
+      "html": "<div class=\"ds-rulebox\"><h3>A rule we keep today</h3><p><strong>There will be no binding vote on this network before an independent security audit.</strong> We will publish the full audit report.</p></div>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-rulebox{padding:1.25rem 1.25rem 1rem;background:var(--paper);border:2px solid var(--ink);border-radius:var(--radius);max-width:44rem;color:var(--ink);font:400 1.0625rem/1.6 var(--text)}.ds-rulebox h3{font:500 1.25rem/1.25 var(--display);margin:0 0 .4rem}.ds-rulebox p{margin:0}"
+    },
+    {
+      "name": "Warning Note",
+      "kind": "card",
+      "refersTo": "warn-note",
+      "description": "Before-you-join note: warning wash, 1px vermilion left rule, bold vermilion-words opener.",
+      "html": "<p class=\"ds-warn\"><strong>Before you join.</strong> Until encryption is built, the project team can see your data.</p>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-warn{max-width:38rem;margin:0;padding:1rem 1.1rem;border-left:1px solid var(--verm);background:#fff5f3;color:var(--ink);font:400 1.0625rem/1.6 var(--text)}.ds-warn strong{color:var(--verm-text);font-weight:700}"
+    },
+    {
+      "name": "Vouching Figure Block",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Signature: a newcomer takes its gap between two linked pairs; four blue links draw and the five turn Vouched Blue (end state shown).",
+      "html": "<svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><defs><symbol id=\"ds-person\" viewBox=\"0 0 20 40\"><circle cx=\"10\" cy=\"5.2\" r=\"4.6\"/><path d=\"M4.6 11.2H15.4Q17.4 11.2 17.6 13.4L18.6 25H15.8L15 17V39.2H10.9V27.5H9.1V39.2H5V17L4.2 25H1.4L2.4 13.4Q2.6 11.2 4.6 11.2Z\"/></symbol><clipPath id=\"ds-lower-half\"><rect x=\"0\" y=\"21\" width=\"20\" height=\"20\"/></clipPath></defs></svg><figure class=\"ds-crowd\"><svg viewBox=\"0 0 120 120\" role=\"img\" aria-label=\"A newcomer vouched in by four people\"><line class=\"ds-link\" x1=\"53\" y1=\"68\" x2=\"42\" y2=\"42\"/><line class=\"ds-link\" x1=\"67\" y1=\"68\" x2=\"78\" y2=\"42\"/><line class=\"ds-link\" x1=\"53\" y1=\"76\" x2=\"42\" y2=\"96\"/><line class=\"ds-link\" x1=\"67\" y1=\"76\" x2=\"78\" y2=\"96\"/><use href=\"#ds-person\" class=\"ds-ink\" x=\"2\" y=\"8\" width=\"20\" height=\"40\"/><use href=\"#ds-person\" class=\"ds-blue\" x=\"26\" y=\"8\" width=\"20\" height=\"40\"/><use href=\"#ds-person\" class=\"ds-ink\" x=\"50\" y=\"8\" width=\"20\" height=\"40\"/><use href=\"#ds-person\" class=\"ds-blue\" x=\"74\" y=\"8\" width=\"20\" height=\"40\"/><use href=\"#ds-person\" class=\"ds-ink\" x=\"98\" y=\"8\" width=\"20\" height=\"40\"/><use href=\"#ds-person\" class=\"ds-ink\" x=\"2\" y=\"52\" width=\"20\" height=\"40\"/><use href=\"#ds-person\" class=\"ds-blue\" x=\"50\" y=\"52\" width=\"20\" height=\"40\"/><use href=\"#ds-person\" class=\"ds-ink\" x=\"98\" y=\"52\" width=\"20\" height=\"40\"/></svg><figcaption>You get in when four people vouch for you.</figcaption></figure>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-crowd{margin:0;max-width:20rem}.ds-crowd svg{width:100%;height:auto;display:block}.ds-ink{fill:var(--ink)}.ds-blue{fill:var(--blue)}.ds-link{stroke:var(--blue);stroke-width:2;stroke-linecap:round}.ds-crowd figcaption{font:500 1.05rem/1.3 var(--display);color:var(--ink);margin-top:.35rem}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "link",
+      "description": "Word Blue with a 1px underline that thickens on hover.",
+      "html": "<p class=\"ds-p\">This page shows <a href=\"#\">what works today and what does not</a>.</p>",
+      "css": ":host{--paper:#ffffff;--field:#f1f5fb;--ink:#111418;--ink-soft:#3b424b;--rule:#d5dae1;--blue:#3b82f6;--blue-text:#1d4ed8;--verm:#e0412b;--verm-text:#b42318;--radius:6px;--display:\"Jost\",\"Futura\",\"Century Gothic\",\"Trebuchet MS\",sans-serif;--text:\"Atkinson Hyperlegible\",\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;}.ds-p{font:400 1.0625rem/1.6 var(--text);color:var(--ink)}.ds-p a{color:var(--blue-text);text-decoration-thickness:1px;text-underline-offset:.18em}.ds-p a:hover{text-decoration-thickness:2px}.ds-p a:focus-visible{outline:3px solid var(--blue-text);outline-offset:3px;border-radius:2px}"
     }
   ],
   "narrative": {
-    "northStar": "The Line Map",
-    "overview": "**Creative North Star: \"The Line Map\"**\n\nGloki's landing page is a transit diagram, not a brochure. The ground is white paper; everything on it is either a line, a station, or a nameplate. Three coloured lines are the three ways in (Solve, Build, Contribute); they run straight or at 45°, cross a pale blue zone band, and meet at one interchange, which is the reader, holding the only form on the page. The system borrows Beck's discipline (a fixed stroke, round caps, black-ringed white stations, uppercase plates) and nothing else of his: the roundel is the brand mark's cousin, never a TfL copy.\n\nThe tone is plain and literal. Headings are a single rounded humanist display face at one weight; body copy is a quiet humanist sans held to a 46-character measure; colour appears only where it means something (a line, its plate, a status). Density is low and the rhythm is editorial: more air above a heading than below it, one idea per station. Depth is almost absent; the one shadow on the page belongs to the interchange and nothing else.\n\nConfirmed rejections, from the build and from PRODUCT.md: no hero-plus-three-cards, no device mockup, no stock photography, no hype words, and no brand blue behind or inside body-size text.",
+    "northStar": "One Figure, One Person",
+    "overview": "The page counts people the way Isotype did. One pictogram is one real person, and the rule that lets a newcomer in (four people vouch) is drawn rather than explained. Everything else is a chart sheet around those figures: a white ground, ink type, thin ink rules between sections on an even rhythm, and one tinted field for the status board. The system is flat by conviction. Colour is spent only where it carries meaning: blue fills people who are in, vermilion marks what is not yet true.\n\nDensity is low and reading-first. The reader may be on a cheap phone, reading English as a second language, so body text is large (17px), set in a typeface designed for legibility, and held to a short measure. Headings are geometric and confident in the Futura lineage; they speak, the body reads. The world refuses two neighbours by name: the glowing node network and gradients of a crypto page, and the cream, serif, stock-photo NGO brochure.\n\nThe person pictogram is the system's one signature. It is the hero, the status-board legend, the radio marker in the sign-up form, and the avatar in the team list. Its fill state is a grammar, not decoration.",
     "keyCharacteristics": [
-      "White paper, black ink, three line colours, one pale wash: the whole palette.",
-      "A 10-unit round-capped stroke is the line; a 20px white disc with a 4px ink ring is the station.",
-      "The nameplate (black bar, white uppercase display type, 2px corners) labels every control.",
-      "Dashed stroke means a planned line; the dash is the honesty marker, not decoration.",
-      "One authored moment: the lines draw themselves on load, then stations light as they enter view."
+      "White ground, ink pictograms, flat colour only; no shadows, no gradients.",
+      "One person pictogram (round head, tapered body, no face) reused everywhere.",
+      "Brand blue fills figures and graphics; a darker blue carries every blue word.",
+      "Vermilion means \"not yet\", in the same two-tone split.",
+      "Jost for headings and controls, Atkinson Hyperlegible for all reading.",
+      "Thin ink rules separate sections like a chart sheet."
     ],
     "rules": [
       {
-        "name": "The Stroke-Not-Text Rule",
-        "body": "`solve` (#3b82f6) and `contribute` (#d97706) are strokes and swatches only. Any character set in a line's colour uses that line's `-text` value, and no body-size text is ever white on brand blue.",
+        "name": "The Two-Tone Rule",
+        "body": "Every hue has a graphics tone and a words tone. Brand blue (#3b82f6) and vermilion (#e0412b) fill shapes and lines; text in those hues uses #1d4ed8 and #b42318. No text sits in brand blue, and no text sits on it.",
         "section": "colors"
       },
       {
-        "name": "The Two-Value Line Rule",
-        "body": "Every line colour exists as a pair: a stroke value for the diagram and a text value for words and plates. Adding a line means adding both and checking both against paper and wash.",
+        "name": "The Blue Means In Rule",
+        "body": "A blue figure is a person who is in, or you choosing to be. Never use blue to decorate, to tint a section, or to colour a heading.",
         "section": "colors"
       },
       {
-        "name": "The One Wash Rule",
-        "body": "Tinted ground is one pale blue, used for zone bands and alternating sections; there is no second tint and no grey.",
+        "name": "The Counterfeit Grey Rule",
+        "body": "Grey (#7c848e) solid figures exist only to show fake accounts in a count. No legend state uses grey; a grey figure must never be read as a status.",
         "section": "colors"
       },
       {
-        "name": "The One Weight Rule",
-        "body": "Hammersmith One ships at 400 only; hierarchy comes from size and the plate, never from weight.",
+        "name": "The Speak and Read Rule",
+        "body": "Jost is for headings, nav, buttons, the figure caption and the disclosure summary. Anything a reader must read in sentences is Atkinson Hyperlegible. Never set a paragraph in Jost.",
         "section": "typography"
       },
       {
-        "name": "The 46ch Rule",
-        "body": "Prose never runs wider than 46 characters; the diagram, not the paragraph, is what spans the viewport.",
+        "name": "The No-Caps Rule",
+        "body": "No uppercase labels, no letter-spaced kickers, no eyebrows above headings. A heading starts the section by itself.",
         "section": "typography"
       },
       {
-        "name": "The Ink-Rule Rule",
-        "body": "Separation is a black rule, never a shadow or a grey line. The interchange is the one surface allowed to float, because it is the one surface that lies over the map.",
+        "name": "The Flat Sheet Rule",
+        "body": "No box-shadow, no gradient, no glow, no blur. If something needs to stand out, give it an ink border or the field tint.",
         "section": "elevation"
+      },
+      {
+        "name": "The One Glyph Rule",
+        "body": "The person pictogram is the only illustration and the only icon. Legend, radio marker, team avatar and diagram all reuse the same symbol; the only other drawn marks are the GDI mark and the plus/minus of the history disclosure. No icon library, no second figure drawing, no faces.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Four States Rule",
+        "body": "Status is shown by how a figure is filled, never by a new colour. Solid, half, outline, dotted: four states, in that order, always with a word beside them.",
+        "section": "shapes"
       }
     ],
     "dos": [
-      "**Do** draw with the line grammar: 10-unit round-capped strokes, straight or at 45°, 20px stations with a 4px ink ring, and a nameplate for every label.",
-      "**Do** use the dashed stroke (18/14, or the repeating-gradient swatch) for anything planned and not yet real; the dash is how the page tells the truth.",
-      "**Do** set every line's words in its `-text` value and check it against both paper and wash (AA, 4.5:1 or better).",
-      "**Do** hold prose to 46ch in Cabin 400 at 1.0625rem / 1.55, and keep all headings in Hammersmith One at 400.",
-      "**Do** separate with ink rules (3px between sections, 2px inside tables) and alternate paper and wash for section ground.",
-      "**Do** keep every target 44px or taller, the focus ring 3px Contribute Ink at 3px offset, and the h1 singular."
+      "**Do** draw every person with the one pictogram symbol, and let its fill carry status: solid works now, half-filled being built, outline planned, dotted research.",
+      "**Do** keep brand blue (#3b82f6) for figures, links between figures and the selected-choice figure; use #1d4ed8 for every blue word, the focus ring and selection.",
+      "**Do** mark what is not true yet with bold #b42318 \"Not yet:\" text, and keep vermilion #e0412b for graphics.",
+      "**Do** open each section with a 1px ink rule and the fluid section padding, so the page keeps its chart-sheet rhythm.",
+      "**Do** set headings, nav, buttons and the figure caption in Jost; set every sentence in Atkinson Hyperlegible at 17px or larger, on a 38rem measure.",
+      "**Do** keep every standalone target at 44px or more, buttons and fields at 48px, and show the 3px Word Blue focus ring on everything focusable.",
+      "**Do** show the end state of any motion under `prefers-reduced-motion`."
     ],
     "donts": [
-      "**Don't** set text in `solve` (#3b82f6) or `contribute` (#d97706), and don't put white text on brand blue at body size; use `solve-text` and `contribute-text`.",
-      "**Don't** add a shadow to anything but the interchange; depth here is an ink rule.",
-      "**Don't** introduce a second tint, a grey rule, a gradient fill, or a bold weight of the display face.",
-      "**Don't** replace the diagram with cards, a device mockup, or photography; the map is the hero and the form sits inside it.",
-      "**Don't** copy TfL: no bar-and-circle roundel, no Johnston; the station ring and the plate are the whole borrowing."
+      "**Don't** set text in brand blue or put white text on brand blue; that pairing is the app's exception, not the page's.",
+      "**Don't** add shadows, gradients, glows, or a glowing node-network illustration; the world refuses the crypto page.",
+      "**Don't** use cream grounds, serif display type or stock photography; the world refuses the NGO brochure.",
+      "**Don't** give figures faces, outlines on solid fills, or a second drawing style; there is one pictogram.",
+      "**Don't** use grey figures for anything but fake accounts in a count.",
+      "**Don't** use hairline grey as a section divider; section rules are ink.",
+      "**Don't** thicken the warning note's vermilion side rule beyond 1px or turn it into a coloured stripe on other containers.",
+      "**Don't** treat the yellow `mark.todo` placeholders as part of the system; they are a temporary editorial device and must be removed before launch.",
+      "**Don't** add uppercase kickers, eyebrows or letter-spaced labels above headings."
     ]
   }
 }
