@@ -43,22 +43,29 @@ on `main` after the merge:
 The form action, sitekey, field names, `AUTOHIDE` and both scripts are unchanged from PR #3. Draft
 PRs #1 and #2 are closed, so the open item about them undoing the waitlist is gone.
 
+## Done later on 29 October
+
+- **Turnstile hostname.** `gdi-site.webflow.io` is removed from the "GDI waitlist form" widget in
+  the YWF Cloudflare account. Read back after a reload: it allows only globaldemocracyinitiative.org
+  and sibforms.com.
+- **A real submit on the redesigned page** (item 1 in `2026-10-29-gdi-redesign-shipped.md`) passed
+  end to end with a fresh test address of Eston's, ticking "Build digital democracy" and "Carry the
+  network". Turnstile passed without a challenge, the success panel showed and took focus, the
+  confirmation email arrived, its link landed on `/confirmed`, and the welcome email arrived. In
+  Brevo the contact is in list #3 with `INTEREST` set to "Build digital democracy" and
+  "Contribute a node", so the renamed door still maps to the right option.
+
 ## Still open
 
-- **A real submit on the redesigned page.** Not done yet (item 1 in
-  `2026-10-29-gdi-redesign-shipped.md`). Eston, or a session with his OK, submits once on the live
-  page with a fresh test address, then checks the success panel takes focus and the `INTEREST`
-  choices arrive in Brevo. Turnstile doesn't allow localhost, so it can't be tested on a local
-  preview. The same note flags that on phones the Turnstile check pushes the Join button down.
-- **Test contacts.** List #3 still holds Eston's two test contacts from 28 October and no real
-  sign-ups. Eston deletes them.
-- **Turnstile hostname.** Eston is removing `gdi-site.webflow.io` from the "GDI waitlist form"
-  widget in the YWF Cloudflare account. Read back the widget's hostnames afterwards.
+- **Test contacts.** List #3 holds Eston's three test contacts (two from 28 October, one from the
+  live submit above) and no real sign-ups. Eston deletes them.
+- **Phone first screen.** `2026-10-29-gdi-redesign-shipped.md` notes that on phones the Turnstile
+  check pushes the Join button down. Optional; agree a fix with Eston first.
 - **DMARC to `p=quarantine`.** Look at the reports from mid-November 2026 (around 17 November). If
   they are clean, Eston changes the record in Cloudflare and you read it back with `dig`.
 - **Branded tracking subdomain** in Brevo: later, optional.
-- **Inbox placement:** worth one look once the welcome wording settles; an earlier confirmation
-  landed in Gmail's Promotions tab.
+- **Inbox placement:** worth one look once the welcome wording settles; confirmation emails have
+  landed in Gmail's Promotions tab, including the one from the live submit above.
 - **Legal wording** of the imprint and privacy page is still unreviewed (README, "Still open").
 
 ## Ground rules
