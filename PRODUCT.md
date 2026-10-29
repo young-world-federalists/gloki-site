@@ -8,7 +8,8 @@ web
 
 ## Stack
 
-Static HTML and one CSS file, no framework runtime, no third-party script. Deploys from GitHub Pages
+Static HTML and one CSS file, no framework runtime. The only third-party scripts are the waitlist's:
+Brevo's form script and Cloudflare Turnstile (since 28 Oct 2026). Deploys from GitHub Pages
 on `young-world-federalists/gloki-site` (created 26 Oct 2026). The domain is
 **globaldemocracyinitiative.org**, held in the YWF Cloudflare account (Eston, 26 Oct 2026; the
 transfer from the old Webflow setup was still completing that day). gloki.app is dropped for now. Page budget under
@@ -80,8 +81,8 @@ Three things a neighbouring product cannot truthfully copy together:
 - The app's demo (full pipeline, seeded communities) is live at
   https://young-world-federalists.github.io/gloki-engage/. The beta build (sign-up, keys, vouching, one
   forum) exists on the `ui` branch and deploys only when Ouri merges to `server-side`.
-- The waitlist is the YWF Buttondown account, username `YoungWorldFederalists` (Eston, 26 Oct 2026).
-  The page posts the email and the chosen door as a tag to Buttondown's embed-subscribe endpoint.
+- The waitlist is a list in the GDI Brevo account (28 Oct 2026, PR #3). The page posts the email and
+  the chosen doors (INTEREST attribute) to Brevo's form endpoint, with double opt-in to `/confirmed`.
 - Partners: Ouri Poupko builds the backend and node runtime; Eston McKeague (YWF) owns the product,
   copy and this page.
 - The page is reached from emails, WhatsApp groups and talks; it must work on a phone over mobile data.

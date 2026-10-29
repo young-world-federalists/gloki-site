@@ -272,3 +272,11 @@ details.history .inner { padding-top: 1rem; }
 .foot-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0 1.25rem; }
 .foot a { color: var(--ink-soft); min-height: 44px; display: inline-flex; align-items: center; }
 .foot-links { display: inline-flex; flex-wrap: wrap; gap: 0 1.25rem; }
+
+/* Phone: keep the email, the choices and the button in the first screen. */
+@media (max-width: 55.99rem) {
+  .hero { padding-block: .5rem 2rem; }
+  .hero-grid { gap: .6rem; }
+  .signup .form { gap: .6rem; }
+  .signup-h { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}

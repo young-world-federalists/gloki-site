@@ -11,9 +11,9 @@ GDI home page (`index.html`) plus the builder page (`build.html`), mode Persuade
 citizen or YWF chapter member from a WhatsApp link on a phone; a builder, researcher or funder on a
 laptop. Job: understand that GDI is building a network where each real person counts once, see
 honestly what works, and sign up for one of three ways to take part. Action: email plus choice of
-way to take part, sent to Buttondown. Proof: the four-link vouching mechanism shown, and the status
+way to take part, sent to the GDI Brevo list. Proof: the four-link vouching mechanism shown, and the status
 board. Copy: `docs/copy/draft-d-merged.md` (locked). Constraints: PRODUCT.md claims rules and
-`docs/positioning-gdi.md`; English only; under 200 KB; no third-party request; AA contrast with no
+`docs/positioning-gdi.md`; English only; under 200 KB; no third-party request except the waitlist's Brevo form script and Cloudflare Turnstile; AA contrast with no
 brand-blue exception; 360px first; one h1.
 
 ## Direction contract
@@ -33,14 +33,15 @@ global democracy needs this; what works today, as a figure legend; who we are; t
 ways to take part.
 
 FIRST VIEWPORT: Phone: the GDI mark and name; the h1 in Jost; a block of pictogram figures where a
-newcomer arrives in its gap between two linked pairs, the pairs' links move to it as four short
-lines, and the five turn blue;
+newcomer arrives in its gap, four short links draw to it from the people around it, and the five
+turn blue (29 Oct: the old links between pairs are no longer shown, since the page no longer
+describes the random-pairs rule);
 the caption "You get in when four people vouch for you."; then the email field, the three ways to
 take part and the Sign up button, all inside the first screen. Desktop: copy and form on the left,
 the figure block large on the right.
 
 FORM: Direction A "One figure, one person" (Isotype), position 1 of 7 on our ordered list, chosen by
-Eston. seed: none (roll blocked by the harness, not run; Eston told 26 Oct)
+Eston. seed: none (roll blocked by the harness, not run; Eston told 26 Oct; his acceptance is not recorded)
 
 SIGNATURE: Once, on load, the newcomer slides into its gap and the four links draw, then the four
 turn blue (about 1.4s, ease-out). Reduced motion shows the end state. The status board reuses the
@@ -51,7 +52,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 ## Unresolved
 
-- The waitlist still posts to the YWF Buttondown list. The separate GDI newsletter must exist
-  before launch (waitlist sign-ups must not get the YWF newsletter).
-- Buttondown's confirmation page and email carry the after-sign-up messages (draft D).
+- Done 28 Oct: the waitlist is its own GDI Brevo list (PR #3); Brevo's confirmation email and
+  `/confirmed` carry the after-sign-up messages.
+- The hero caption "You get in when four people who know you vouch for you." reads as present
+  fact while vouching is in test; Eston to decide (29 Oct).
+- Phone first screen (29 Oct): the email field and the three choices fit at 360×740 and 390×844, but
+  the Turnstile check (148px compact) pushes the button about 180px below the fold. Reordering the
+  button above the check would break focus order and is the waitlist session's call; left as is.
 - Ouri's problem list, status-board sign-off and the app licence; paper links checked in a browser.
