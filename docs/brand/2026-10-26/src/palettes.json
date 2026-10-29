@@ -1,0 +1,29 @@
+{
+ "a": {
+  "ink": "#22231A",
+  "ink_soft": "#45463C",
+  "blue": "#3b82f6",
+  "blue_text": "#165A99",
+  "verm": "#EC623E",
+  "verm_text": "#B93A13",
+  "go": "#2A7F35"
+ },
+ "b": {
+  "ink": "#111418",
+  "ink_soft": "#3b424b",
+  "blue": "#3b82f6",
+  "blue_text": "#1d4ed8",
+  "verm": "#e0412b",
+  "verm_text": "#b42318",
+  "go": null
+ },
+ "c": {
+  "ink": "#111418",
+  "ink_soft": "#3b424b",
+  "blue": "#3b82f6",
+  "blue_text": "#1d4ed8",
+  "verm": "#e0412b",
+  "verm_text": "#b42318",
+  "go": null
+ }
+}
