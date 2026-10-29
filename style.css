@@ -88,7 +88,9 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 .crowd { order: 2; }
 .signup { order: 3; }
 .hero .promise { order: 4; font-size: 1.125rem; color: var(--ink-soft); max-width: var(--measure); margin: .5rem 0 0; }
-.hero .honest { color: var(--ink-soft); max-width: var(--measure); margin: .5rem 0 0; }
+.hero .promise p { margin: 0 0 .6rem; }
+.hero .promise p:last-child { margin-bottom: 0; }
+.hero .promise strong { color: var(--ink); }
 .crowd { margin: 0; }
 .crowd svg { width: 100%; height: auto; }
 .crowd figcaption { font-family: var(--display); font-weight: 500; font-size: 1.05rem; line-height: 1.3; margin-top: .35rem; }
@@ -124,15 +126,34 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 @keyframes to-blue { from { fill: var(--verm); } to { fill: var(--blue); } }
 
 /* ---- Sign-up form -------------------------------------------------------- */
-.signup { max-width: 34rem; }
+/* The waitlist runs on Brevo. Its main.js toggles the sib-/entry__ classes; the look stays the site's own. */
+.signup { max-width: 34rem; min-width: 0; }
+.signup-h { font-size: 1.3rem; margin-bottom: .6rem; }
 .signup label.field { display: block; font-weight: 700; margin-bottom: .3rem; }
+.signup .form { display: grid; gap: .8rem; }
+.signup .form .fine { margin: 0; }
+.entry__field { display: grid; }
+.signup .entry__error { display: none; margin: .25rem 0 0; font-size: .95rem; color: var(--verm-text); }
+.entry_errored input[type="email"] { border-color: var(--verm-text); }
+.sib-captcha { min-height: 65px; }
+.input--hidden { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
+.sib-form-message-panel { display: none; margin: 0 0 .8rem; padding: .8rem 1rem; border: 2px solid var(--ink); border-radius: var(--radius); background: var(--field); }
+.sib-form-message-panel--active { display: block; }
+.sib-form-message-panel__text { margin: 0; }
+#error-message { border-color: var(--verm-text); background: #fff5f3; }
+.sib-form-block__button { gap: .5rem; }
+.sib-form-block__button .progress-indicator__icon { flex: none; animation: spin .9s linear infinite; }
+.sib-form-block__button .sib-hide-loader-icon { display: none; }
+.sib-form-block__button-disabled { cursor: progress; opacity: .75; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .sib-form-block__button .progress-indicator__icon { animation: none; } }
 .signup input[type="email"] {
   width: 100%; min-height: 48px; padding: .6rem .8rem;
   font: inherit; color: var(--ink); background: var(--paper);
   border: 2px solid var(--ink); border-radius: var(--radius);
 }
 .signup input[type="email"]::placeholder { color: #5b636d; }
-.signup fieldset { border: 0; padding: 0; margin: .8rem 0 0; }
+.signup fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .signup legend { font-weight: 700; padding: 0; margin-bottom: .35rem; }
 .ways { display: flex; flex-wrap: wrap; gap: .4rem; }
 .way { position: relative; display: inline-flex; align-items: center; gap: .45rem; min-height: 44px; padding: .35rem .8rem .35rem .6rem; border: 1px solid var(--rule); border-radius: 999px; cursor: pointer; background: var(--paper); }
@@ -142,7 +163,7 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 .way:has(input:checked) { border-color: var(--ink); background: var(--field); }
 .way:has(input:checked) .dot use { fill: var(--blue); stroke: var(--blue); }
 .way:has(input:focus-visible) { outline: 3px solid var(--blue-text); outline-offset: 2px; }
-.send { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-top: .9rem; }
+.send { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
 .button {
   display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 1.4rem;
   font: 600 1.05rem/1 var(--display); color: #fff; background: var(--ink);
@@ -159,8 +180,20 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 .lead { font-size: 1.125rem; }
 mark.todo { background: var(--todo); color: var(--ink); padding: 0 .2em; border-radius: 3px; font-size: .9em; }
 
-.cols { display: grid; gap: 2rem; }
-@media (min-width: 56rem) { .cols { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 4rem; } }
+.sub { max-width: var(--measure); }
+
+/* The story: a quote, then the count */
+.quote { margin: 0 0 1.5rem; padding-left: 1.1rem; border-left: 2px solid var(--ink); max-width: var(--measure); }
+.quote p { font-family: var(--display); font-weight: 500; font-size: clamp(1.15rem, 1rem + .6vw, 1.4rem); line-height: 1.35; margin-bottom: .5rem; }
+.quote footer { color: var(--ink-soft); font-size: .95rem; }
+
+/* What we're building: three parts, each with its status figure */
+.section > .wrap > .builds { max-width: none; }
+.builds { display: grid; gap: 1.5rem; padding: 0; margin: 1.5rem 0 0; list-style: none; }
+@media (min-width: 56rem) { .builds { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; } }
+.builds li { border-top: 2px solid var(--ink); padding-top: .9rem; }
+.builds h3 { display: flex; align-items: center; gap: .55rem; margin-bottom: .2rem; }
+.builds .state { color: var(--ink-soft); font-size: .95rem; margin-bottom: .5rem; }
 
 /* Status board: the figure legend */
 .board { background: var(--field); }
@@ -207,6 +240,7 @@ details.history .toggle { width: 20px; height: 20px; margin-left: auto; flex: no
 details.history .toggle path { stroke: var(--ink); stroke-width: 2; }
 details.history[open] .toggle .v { display: none; }
 details.history .inner { padding-top: 1rem; }
+.papers { font-weight: 700; }
 
 /* Ways to take part */
 .section > .wrap > .waylist { max-width: none; }
@@ -224,6 +258,7 @@ details.history .inner { padding-top: 1rem; }
 .doc ul { padding-left: 1.2rem; }
 .doc li { margin-bottom: .45rem; }
 .doc .updated { color: var(--ink-soft); }
+.doc address { font-style: normal; margin: 0 0 1rem; }
 .plan { list-style: none; padding: 0 !important; max-width: 46rem; }
 .plan li { display: grid; grid-template-columns: 20px 1fr; gap: .2rem .8rem; padding: .7rem 0; border-top: 1px solid var(--rule); margin: 0; }
 .plan .glyph { grid-row: span 2; margin-top: .15rem; }

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>For builders · Global Democracy Initiative</title>
-  <meta name="description" content="How the Global Democracy Initiative's network works today, its known gaps, the open problems, and the research behind it.">
+  <meta name="description" content="How Gloki, the foundation the Global Democracy Initiative is building, works today: its node, its known gaps, the open problems, and the research behind it.">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="assets/gdi-icon-16.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/Jost-600.woff2" as="font" type="font/woff2" crossorigin>
@@ -30,13 +30,13 @@
       <span class="long">Global Democracy Initiative</span><span class="short">GDI</span>
     </a>
     <nav class="nav" aria-label="Site">
-      <a class="optional" href="./#works">What works today</a>
-      <a class="nav--join" href="./#join">Sign up</a>
+      <a class="optional" href="./#works">Where it stands</a>
+      <a class="nav--join" href="./#join">Join</a>
     </nav>
   </header>
 
   <main id="main" tabindex="-1" class="wrap doc">
-    <h1>How the network works, and what is open</h1>
+    <h1>How Gloki works, and what is open</h1>
     <p class="lead">This page is for engineers and researchers. It says exactly what the code does today, so you can decide whether to help.</p>
 
     <h2 id="who-counts">How other tools decide who counts</h2>
@@ -52,12 +52,13 @@
     <p>Each answer fits the job it was made for. None of them lets people everywhere take part, one vote each, without a government, a company or money in the middle.</p>
 
     <h2 id="node">The node</h2>
-    <p>The network runs on the <strong>Identity Block Chain</strong>, Ouri Poupko's open-source node (GPL-3.0). It puts his research on self-sovereign digital agents into practice: software that holds one person's data and acts only for them. <a href="https://github.com/ouripoupko/ibc">Repository</a>.</p>
+    <p>Gloki runs on <strong>ibc</strong>, Ouri Poupko's open-source node (GPL-3.0). It puts his research on self-sovereign digital agents into practice: software that holds one person's data and acts only for them. <a href="https://github.com/ouripoupko/ibc">Repository</a>.</p>
+    <p>In this design each person keeps a personal ledger: their own record. A contract runs only among the people who are part of it, and is copied only between them. The design paper calls this subsidiarity. It is capital-free, and it is not a blockchain in the crypto sense: no coins, no mining. If you know Solid, it is in that family.</p>
     <ul>
       <li>Each person is an <strong>agent</strong>. An agent registers on a node and acts through it.</li>
       <li>Rules live in <strong>contracts</strong>: small Python programs. Every agent that joins a contract is a <strong>partner</strong> on it and keeps a copy of its state.</li>
       <li>A write to a contract goes through an agreement step among that contract's partners (a PBFT-style protocol), so the copies stay the same. There is no single global chain.</li>
-      <li>The node ships as a Docker image and listens only on your own computer by default.</li>
+      <li>The node ships as a Docker image for developers who build apps on it. It serves its API on your own computer, without HTTPS.</li>
     </ul>
 
     <h2 id="vouching">The vouching rule in the code</h2>
@@ -85,7 +86,7 @@
       <figcaption>Before and after a newcomer joins. Each member keeps exactly four links.</figcaption>
     </figure>
     <p>Ouri's community contract picks two existing links in the trust graph at random, which gives four members. All four must approve the newcomer, and the newcomer takes a place between them, so every member keeps exactly four links. Random choice matters: people making fake accounts cannot pick each other. The design comes from <a href="https://ieeexplore.ieee.org/document/9446607">Poupko, Shahaf, Shapiro and Talmon, "Building a Sybil-Resilient Digital Community Utilizing Trust-Graph Connectivity", IEEE/ACM Transactions on Networking, 2021</a> (<a href="https://arxiv.org/abs/1901.00752">free version on arXiv</a>).</p>
-    <p>The pilot app also tests vouching by people you choose. That version has no server code yet. Until we choose one rule, we make no claim about keeping out fake accounts.</p>
+    <p>The Gloki beta tests a different version: four people who know you vouch for you. The network does not enforce that version yet. Until we settle on one rule, we make no claim about keeping out fake accounts.</p>
 
     <h2 id="gaps">Known gaps</h2>
     <ul>
@@ -97,7 +98,7 @@
     </ul>
 
     <h2 id="open">Open problems</h2>
-    <p>The gaps above are where we would start: signed requests, signature checks in agreement, randomness no single node can steer, encryption, a safer contract language, and testing across machines. <mark class="todo">[Ouri's list of hard problems goes here]</mark></p>
+    <p>The gaps above are where we would start: signed requests, signature checks in agreement, randomness no single node can steer, encryption, a safer contract language, and testing across machines.</p>
 
     <h2 id="plan">The protections we plan</h2>
     <ul class="plan">
@@ -123,16 +124,16 @@
     </ul>
 
     <h2 id="brightid">BrightID and GDI</h2>
-    <p>BrightID also uses vouching. It lets people prove to other apps that they use only one account. GDI is building the whole foundation a democracy needs on one network its members run: who counts, where the record lives and, later, how votes are counted. The protections that would set it apart technically are still being built.</p>
+    <p>BrightID also uses vouching. It lets people prove to other apps that they use only one account. Gloki is meant to be the whole foundation a democracy needs, on one network its members carry: who counts, where the record lives and, later, how votes are counted. The protections that would set it apart technically are still being built.</p>
 
     <h2 id="licence">Licence and how we decide</h2>
     <p>The node is GPL-3.0. The Gloki app's licence is not set yet. For now Ouri and Eston make the decisions. Contributors are welcome in that discussion.</p>
-    <p><strong>Get in touch:</strong> <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>, or <a href="./#join">sign up</a> with "Build with us" and we will send you the open problems.</p>
+    <p><strong>Get in touch:</strong> <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>, or <a href="./#join">join the waitlist</a> with "Build digital democracy" and we will send you technical notes as we build.</p>
   </main>
 
   <footer class="foot">
     <div class="wrap">
-      <p>Built on Ouri Poupko's open-source node. GDI is a project of Young World Federalists, Inc.</p>
+      <p>Gloki is built on Ouri Poupko's open-source node. GDI is a project of Young World Federalists, Inc.</p>
       <div class="foot-row"><span>© 2026 Young World Federalists, Inc.</span><span class="foot-links"><a href="./">Home</a> <a href="imprint.html">Imprint</a> <a href="privacy.html">Privacy</a></span></div>
     </div>
   </footer>

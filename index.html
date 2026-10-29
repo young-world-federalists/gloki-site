@@ -3,115 +3,123 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gloki, from the Global Democracy Initiative</title>
-  <meta name="description" content="Gloki, from the Global Democracy Initiative, is a network for deciding things together across borders. Four people who know you confirm you are real: no ID papers, no face scans, nothing to pay. In test now. Pick your line and join the waitlist.">
-  <meta property="og:title" content="Gloki, from the Global Democracy Initiative">
-  <meta property="og:description" content="A network for deciding things together across borders. In test now. Pick your line and join the waitlist.">
+  <title>Global Democracy Initiative: one real person, one vote</title>
+  <meta name="description" content="There will be no global democracy without technology. The Global Democracy Initiative is building Gloki: one identity per person, vouched for by people who know you, on a network its members carry. In test now. Join the waitlist.">
+  <meta property="og:title" content="Global Democracy Initiative">
+  <meta property="og:description" content="We are building the part every democracy app is missing: one real person, one vote, on a network its members carry.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://globaldemocracyinitiative.org/">
-  <meta property="og:image" content="https://globaldemocracyinitiative.org/assets/gloki-icon.png">
-  <meta name="theme-color" content="#3b82f6">
-  <link rel="icon" href="assets/gdi-mark.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/HammersmithOne.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/Cabin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:image" content="https://globaldemocracyinitiative.org/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="There will be no global democracy without technology. Rows of people; a newcomer joins between four people who vouch for them.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/gdi-icon-16.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Jost-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/AtkinsonHyperlegible-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="person" viewBox="0 0 20 40">
+        <circle cx="10" cy="5.2" r="4.6"/>
+        <path d="M4.6 11.2H15.4Q17.4 11.2 17.6 13.4L18.6 25H15.8L15 17V39.2H10.9V27.5H9.1V39.2H5V17L4.2 25H1.4L2.4 13.4Q2.6 11.2 4.6 11.2Z"/>
+      </symbol>
+      <clipPath id="lower-half"><rect x="0" y="21" width="20" height="20"/></clipPath>
+    </defs>
+  </svg>
+
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="wrap top">
-    <a class="brand" href="#top" aria-label="Global Democracy Initiative, home">
-      <img src="assets/gdi-mark.svg" alt="" width="36" height="36">
+    <a class="brand" href="./" aria-label="Global Democracy Initiative, home">
+      <img src="assets/gdi-icon-32.svg" alt="" width="32" height="32">
       <span class="long">Global Democracy Initiative</span><span class="short">GDI</span>
     </a>
-    <nav class="nav" aria-label="Lines">
-      <a class="nav--solve" href="#line-solve"><span class="long">Solve global issues</span><span class="short">Solve</span></a>
-      <a class="nav--build" href="#line-build"><span class="long">Build digital democracy</span><span class="short">Build</span></a>
-      <a class="nav--contribute" href="#line-contribute"><span class="long">Contribute to a new internet</span><span class="short">Contribute</span></a>
-      <a class="nav--join" href="#join"><span>Join</span></a>
+    <nav class="nav" aria-label="Site">
+      <a class="optional" href="#works">Where it stands</a>
+      <a href="build.html"><span class="long">For builders</span><span class="short">Builders</span></a>
+      <a class="nav--join" href="#join">Join</a>
     </nav>
   </header>
 
   <main id="main" tabindex="-1">
-    <!-- First viewport: the diagram is the page -->
-    <section class="hero" id="top" aria-labelledby="hook">
-      <div class="wrap">
-        <p class="kicker"><img src="assets/gloki-icon.png" alt="" width="28" height="28"> Gloki <span class="plate">Line map · beta</span></p>
-        <h1 class="hook" id="hook">You get in because <em>people who know you</em> vouch for you.</h1>
-        <p class="lede"><strong>Gloki</strong> is a network for deciding things together across borders, built by the Global Democracy Initiative. Four people who know you confirm you are real: no ID papers, no face scans, nothing to pay. It is in test now. Pick your line and join the waitlist.</p>
-
-        <div class="diagram stage diagram--desktop" aria-hidden="true">
-          <svg viewBox="0 0 1200 600">
-            <rect x="0" y="0" width="1200" height="600" fill="#ffffff"/>
-            <rect x="640" y="0" width="560" height="600" fill="#eff6ff"/>
-            <text x="652" y="26" class="small">zone 2 · verified people</text>
-            <text x="12" y="588" class="small">zone 1 · the way in</text>
-            <path class="line line--solve draw" pathLength="1" d="M -600 150 H 440 L 520 230 H 600"/>
-            <path class="line line--build draw d2" pathLength="1" d="M -600 300 H 600"/>
-            <path class="line line--contribute draw d3" pathLength="1" d="M -600 450 H 440 L 520 370 H 600"/>
-            <path class="line line--trunk draw d4" pathLength="1" d="M 976 300 H 1200"/>
-            <g class="arrive">
-              <rect class="plate-rect plate-rect--solve" x="22" y="106" width="252" height="32" rx="3"/>
-              <text x="36" y="128" class="terminal">Solve global issues</text>
-              <rect class="plate-rect plate-rect--build" x="22" y="256" width="306" height="32" rx="3"/>
-              <text x="36" y="278" class="terminal">Build digital democracy</text>
-              <rect class="plate-rect plate-rect--contribute" x="22" y="406" width="372" height="32" rx="3"/>
-              <text x="36" y="428" class="terminal">Contribute to a new internet</text>
-              <text x="22" y="482" class="small">planned line · no node to run yet</text>
-            </g>
-            <g class="arrive">
-              <circle class="station" cx="330" cy="150" r="10"/>
-              <text x="330" y="182" class="label" text-anchor="middle">Create a key</text>
-              <circle class="station" cx="330" cy="300" r="10"/>
-              <text x="330" y="332" class="label" text-anchor="middle">Save your key</text>
-              <circle class="station" cx="330" cy="450" r="10"/>
-              <text x="330" y="482" class="label" text-anchor="middle">Say what you are</text>
-            </g>
-            <g class="arrive">
-              <circle class="station" cx="1050" cy="300" r="10"/>
-              <text x="1050" y="334" class="label" text-anchor="middle">Four people vouch</text>
-              <circle class="station" cx="1140" cy="300" r="10"/>
-              <text x="1140" y="276" class="label" text-anchor="middle">Verified</text>
-              <text x="1196" y="334" class="label" text-anchor="end">forum →</text>
-            </g>
-          </svg>
+    <section class="hero" aria-labelledby="h1">
+      <div class="wrap hero-grid">
+        <h1 id="h1">There will be no global democracy without technology.</h1>
+        <div class="promise">
+          <p>We are building the part every democracy app is missing: one real person, one vote, on a network its members carry.</p>
+          <p><strong>Gloki</strong> is the foundation we are building: one identity per person, vouched for by people who know you, with your own record that you control.</p>
         </div>
 
-        <p class="termrow" aria-hidden="true"><span class="plate plate--solve">Solve issues</span><span class="plate plate--build">Build democracy</span><span class="plate plate--contribute">Contribute</span></p>
-        <div class="diagram diagram--mobile" aria-hidden="true">
-          <svg viewBox="0 0 360 160">
-            <rect x="0" y="0" width="360" height="160" fill="#ffffff"/>
-            <path class="line line--solve draw" pathLength="1" d="M 50 0 V 65 L 120 135 V 160"/>
-            <path class="line line--build draw d2" pathLength="1" d="M 180 0 V 160"/>
-            <path class="line line--contribute draw d3" pathLength="1" d="M 310 0 V 65 L 240 135 V 160"/>
-            <g class="arrive">
-              <circle class="station" cx="50" cy="40" r="8"/>
-              <text x="66" y="45" class="label" style="font-size:12px">Create a key</text>
-              <circle class="station" cx="180" cy="75" r="8"/>
-              <text x="196" y="80" class="label" style="font-size:12px">Save your key</text>
-              <circle class="station" cx="310" cy="40" r="8"/>
-              <text x="294" y="45" class="label" text-anchor="end" style="font-size:12px">Say what you are</text>
-            </g>
-          </svg>
-        </div>
+        <figure class="crowd">
+          <svg viewBox="0 0 312 176" role="img" aria-labelledby="crowd-t">
+          <title id="crowd-t">Picture: rows of people. A newcomer joins the middle row, and four people around them turn blue and link to the newcomer.</title>
+          <g aria-hidden="true">
+          <line class="link-new" x1="149.3" y1="68.4" x2="137.9" y2="41.8"/>
+          <line class="link-new" x1="162.7" y1="68.4" x2="174.1" y2="41.8"/>
+          <line class="link-new" x1="149.3" y1="99.6" x2="137.9" y2="126.2"/>
+          <line class="link-new" x1="162.7" y1="99.6" x2="174.1" y2="126.2"/>
+          <use href="#person" class="p-ink" x="2" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="26" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="50" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="74" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="98" y="8" width="20" height="40"/>
+          <use href="#person" class="p-blue voucher" x="122" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="146" y="8" width="20" height="40"/>
+          <use href="#person" class="p-blue voucher" x="170" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="194" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="218" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="242" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="266" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="290" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="2" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="26" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="50" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="74" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="98" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="122" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="170" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="194" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="218" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="242" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="266" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="290" y="64" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="2" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="26" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="50" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="74" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="98" y="120" width="20" height="40"/>
+          <use href="#person" class="p-blue voucher" x="122" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="146" y="120" width="20" height="40"/>
+          <use href="#person" class="p-blue voucher" x="170" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="194" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="218" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="242" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="266" y="120" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="290" y="120" width="20" height="40"/>
+          <g class="newcomer"><use href="#person" class="p-blue" x="146" y="64" width="20" height="40"/></g>
+          </g></svg>
+          <figcaption>You get in when four people who know you vouch for you.</figcaption>
+        </figure>
 
-        <!-- The interchange: where the three lines meet. On desktop it is placed over the diagram. -->
         <!-- The waitlist runs on Brevo (GDI account, list "GDI waitlist"). Brevo's main.js needs the ids and the
-             sib-/entry__ classes below; keep them, the field names and the Turnstile sitekey as they are. -->
-        <div class="interchange sib-form" id="join">
-          <h2><span>You · interchange</span></h2>
+             sib-/entry__ classes below; keep them, the field names, the INTEREST values and the Turnstile sitekey as they are. -->
+        <div class="signup sib-form" id="join">
+          <h2 class="signup-h">Join the waitlist</h2>
           <div id="sib-form-container">
-            <div id="error-message" class="sib-form-message-panel" role="alert">
+            <div id="error-message" class="sib-form-message-panel" role="alert" tabindex="-1">
               <p class="sib-form-message-panel__text"><span class="sib-form-message-panel__inner-text">Something went wrong. Please try again, or write to <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>.</span></p>
             </div>
-            <div id="success-message" class="sib-form-message-panel" role="status">
+            <div id="success-message" class="sib-form-message-panel" role="status" tabindex="-1">
               <p class="sib-form-message-panel__text"><span class="sib-form-message-panel__inner-text">Almost there. Check your inbox and click the link to confirm your place.</span></p>
             </div>
             <div id="sib-container">
               <form id="sib-form" class="form" method="POST" action="https://a3e077e0.sibforms.com/serve/MUIFAHUj4finWtsnLObP3pkpRh8_iB7MLImmhGbLzT-9oHu40hodT5lJJ8-zigrAClrLqWwdv5RCE5VEL-V17qafPsP8lfJ00f_4-94QS_M6yu6FaL7ew_bomNpKA7_u4tkkBDMVANeqkhCreuYL0bNEY0xURuMP9MGEB2Egu2xSsr7R1SBARiCLPXFx4cyplnql6Pt05QwLYhleeg==" data-type="subscription">
                 <div class="sib-input sib-form-block">
-                  <div class="form__entry entry_block field">
-                    <label class="entry__label" for="EMAIL">Your email</label>
+                  <div class="form__entry entry_block">
+                    <label class="entry__label field" for="EMAIL">Your email</label>
                     <div class="entry__field">
                       <input class="input" id="EMAIL" name="EMAIL" type="email" inputmode="email" autocomplete="email" placeholder="you@example.org" data-required="true" required>
                     </div>
@@ -120,10 +128,12 @@
                 </div>
                 <div class="sib-checkbox-group sib-form-block">
                   <fieldset class="form__entry entry_mcq doors">
-                    <legend>Which lines are yours? Pick any.</legend>
-                    <label class="door"><input type="checkbox" name="INTEREST[]" value="Solve global issues" data-value="Solve global issues"><span class="swatch"></span>Solve global issues</label>
-                    <label class="door"><input type="checkbox" name="INTEREST[]" value="Build digital democracy" data-value="Build digital democracy"><span class="swatch swatch--build"></span>Build digital democracy</label>
-                    <label class="door"><input type="checkbox" name="INTEREST[]" value="Contribute a node" data-value="Contribute a node"><span class="swatch swatch--contribute"></span>Contribute a node <small>(planned)</small></label>
+                    <legend>How do you want to take part? Pick any.</legend>
+                    <div class="ways">
+                      <label class="way"><input type="checkbox" name="INTEREST[]" value="Solve global issues" data-value="Solve global issues"><svg class="dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Solve global issues</label>
+                      <label class="way"><input type="checkbox" name="INTEREST[]" value="Build digital democracy" data-value="Build digital democracy"><svg class="dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Build digital democracy</label>
+                      <label class="way"><input type="checkbox" name="INTEREST[]" value="Contribute a node" data-value="Contribute a node"><svg class="dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Carry the network</label>
+                    </div>
                     <label class="entry__error entry__error--primary"></label>
                   </fieldset>
                 </div>
@@ -133,10 +143,13 @@
                     <label class="entry__error entry__error--primary"></label>
                   </div>
                 </div>
-                <button class="button sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
-                  <svg class="progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="40 17"/></svg>
-                  Join the waitlist
-                </button>
+                <div class="send">
+                  <button class="button sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                    <svg class="progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="40 17"/></svg>
+                    Join the waitlist
+                  </button>
+                  <p class="fine">Free. Nothing to pay, no tokens.</p>
+                </div>
                 <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <input type="hidden" name="locale" value="en">
                 <p class="fine">We'll send one email to confirm. No spam, and you can leave any time. Your email stays with the Young World Federalists, and Brevo sends our emails. <a href="privacy.html">Privacy</a></p>
@@ -147,174 +160,202 @@
       </div>
     </section>
 
-    <!-- The stations: how you get in -->
-    <section id="stations" aria-labelledby="stations-h">
-      <div class="wrap">
-        <h2 id="stations-h">The stations: how you get in</h2>
-        <p class="sub">Every stop is a real screen in the test version. Nothing here asks for your papers, your face or your money.</p>
-        <ol class="route">
-          <li class="stop">
-            <h3><span class="n">1</span> Create a key</h3>
-            <p>Gloki has no passwords. One tap makes your key and signs you in.</p>
-            <p class="honest">Right now the key works like a password: whoever types it in is you. We say so on the screen where you make it.</p>
-          </li>
-          <li class="stop">
-            <h3><span class="n">2</span> Save your key</h3>
-            <p>It is the only way back into your account. Gloki cannot reset it, so you copy it or download it before you go on.</p>
-          </li>
-          <li class="stop">
-            <h3><span class="n">3</span> Say what you are</h3>
-            <p>A person, an organisation, or someone who will host a node. An organisation is declared, not checked, in this test.</p>
-          </li>
-          <li class="stop stop--proof">
-            <h3 class="text"><span class="n">4</span> Four people vouch for you</h3>
-            <p class="text">People who know you confirm you are a real person. That, and nothing you pay or upload, is what makes your voice count. You ask someone you know; a video call and a daily session are there for the rest.</p>
-            <figure>
-              <img src="assets/hub-light.png" alt="The Get verified screen: 0 of 4 approvals received, a progress bar with four segments, and one primary card, Ask someone who knows you." width="360" height="740" loading="lazy">
-              <figcaption>The verification screen in the test version.</figcaption>
-            </figure>
-          </li>
-          <li class="stop">
-            <h3><span class="n">5</span> Verified</h3>
-            <p>Verified everywhere on Gloki, and able to vouch for the next person. Four approvals is the whole of it.</p>
-          </li>
-          <li class="stop stop--proof">
-            <h3 class="text"><span class="n">6</span> The forum</h3>
-            <p class="text">One conversation shared by everyone in the test. Post, reply, like. Your name and your country's flag, not a code.</p>
-            <figure>
-              <img src="assets/forum-light.png" alt="The forum: a welcome post by Priya Nair with an Indian flag, a reply underneath it, and the reader's own post marked You." width="360" height="740" loading="lazy">
-              <figcaption>The forum in the test version.</figcaption>
-            </figure>
-          </li>
-        </ol>
+    <section class="section" aria-labelledby="story">
+      <div class="wrap prose">
+        <h2 id="story">We got the connection. We did not get the say.</h2>
+        <blockquote class="quote">
+          <p>“The Web is more a social creation than a technical one. I designed it for a social effect—to help people work together—and not as a technical toy.”</p>
+          <!-- [checked: Q2] Weaving the Web, HarperSanFrancisco 1999, p. 123, https://archive.org/details/weavingweborigin00bern_0/page/123 -->
+          <footer>Tim Berners-Lee, who invented the Web, in <cite>Weaving the Web</cite>, 1999</footer>
+        </blockquote>
+        <p>In the US, people reported losing $7.2 billion to crypto investment fraud in 2025. <!-- [checked: B1] FBI IC3 2025 report, p. 11 --> Many people believe feeds tuned for anger pulled us apart. The evidence is mixed. <!-- [checked: B3] Piccardi et al., Science 2025; Nyhan et al., Nature 2023 --></p>
+        <p>A vote only counts if it comes from one real person. Online, one person can make a hundred accounts.</p>
+        <svg class="count" viewBox="0 0 260 44" role="img" aria-labelledby="count-t"><title id="count-t">One real person, and a row of fake accounts made by the same person.</title><g aria-hidden="true"><use href="#person" class="p-ink" x="1" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="21" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="41" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="61" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="81" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="101" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="121" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="141" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="161" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="181" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="201" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="221" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="241" y="2" width="18" height="36"/></g></svg>
+        <p>Some online tools check that with an email address or a phone number. Others use iris scans, passports or crypto deposits. <!-- [checked: C] Decidim docs; world.org/orb; freedomtool.org; Proof of Humanity FAQ --> Across borders, none of these works for everyone.</p>
+        <p class="lead"><strong>Technology is not going away, and global problems do not stop at borders. So we are building the good version, starting from people.</strong></p>
       </div>
     </section>
 
-    <!-- Three lines in -->
-    <section id="lines" aria-labelledby="lines-h" style="background: var(--wash)">
+    <section class="section" aria-labelledby="building">
       <div class="wrap">
-        <h2 id="lines-h">Three lines in</h2>
-        <p class="sub">Pick the one that fits. They all arrive at the same place.</p>
-        <ul class="lines">
-          <li class="term term--solve" id="line-solve">
-            <span class="bar" aria-hidden="true"></span>
-            <div>
-              <h3>Solve global issues <span class="plate plate--solve">first invitees</span></h3>
-              <p><span class="who">Academics and world federalists</span> who already argue about problems no single country can fix, and want a place where a global “we” can decide something and say it out loud.</p>
-              <a class="button button--ghost" href="#join" data-door="solve-global-issues">Join this line</a>
-            </div>
+        <h2 id="building">What we're building</h2>
+        <p class="lead">Climate, pandemics and war do not stop at borders. People who work for a democratic world have proposed answers: a world parliament, global citizens' assemblies, worldwide votes on a question. Each one needs something first: a way to know that each voice belongs to one real person, counted once, in any country.</p>
+        <ul class="builds">
+          <li>
+            <h3><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg>One person, one vote</h3>
+            <p class="state">In test</p>
+            <p>You get in because four people who know you vouch for you. To vouch means to confirm that you are a real person. No ID papers, no face scans, no tokens, nothing to buy.</p>
           </li>
-          <li class="term term--build" id="line-build">
-            <span class="bar" aria-hidden="true"></span>
-            <div>
-              <h3>Build digital democracy</h3>
-              <p><span class="who">Civic-tech people, organisers, researchers.</span> One person, one vote. Vouching instead of ID. Talk before any vote. The mechanism is the product; help shape it while it is small.</p>
-              <a class="button button--ghost" href="#join" data-door="build-digital-democracy">Join this line</a>
-            </div>
+          <li>
+            <h3><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Your own record</h3>
+            <p class="state">Planned</p>
+            <p>We are building a record for each person that they control, not a company. A group will share only what belongs to the group.</p>
           </li>
-          <li class="term term--contribute" id="line-contribute">
-            <span class="bar" aria-hidden="true"></span>
-            <div>
-              <h3>Contribute to a new internet <span class="plate plate--contribute">planned line</span></h3>
-              <p><span class="who">People with a server.</span> A node is a small computer that keeps a copy of the network, so that no single company has to hold it. The node software is not ready yet. Joining this line records your interest, and we write when there is something to run.</p>
-              <a class="button button--ghost" href="#join" data-door="contribute-a-node">Join this line</a>
-            </div>
+          <li>
+            <h3><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>A network its members carry</h3>
+            <p class="state">Planned</p>
+            <p>We want nodes run by members, not by one company. A node is a small server that keeps a copy of the network. Later, where the internet fails, messages could travel over radio. That part is still research.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- Line status: what is in test, what comes later -->
-    <section id="status" aria-labelledby="status-h">
+    <section class="section board" id="works" aria-labelledby="works-h">
       <div class="wrap">
-        <h2 id="status-h">Line status</h2>
-        <p class="sub">What is running in the test, what is planned, and what comes later. We would rather say it here than have you find out.</p>
-        <div class="board">
-          <table>
-            <thead><tr><th scope="col">Service</th><th scope="col">Status</th><th scope="col">Notes</th></tr></thead>
-            <tbody>
-              <tr><td>Sign-up with a key, no passwords</td><td><span class="st st--test">In test</span></td><td class="why">The key is not yet signed on the network; it works like a password.</td></tr>
-              <tr><td>Four people who know you vouch</td><td><span class="st st--test">In test</span></td><td class="why">Ask someone, invitations, a video call, a daily session.</td></tr>
-              <tr><td>Three kinds of account</td><td><span class="st st--test">In test</span></td><td class="why">Person, organisation (declared, not checked), node contributor.</td></tr>
-              <tr><td>One shared forum</td><td><span class="st st--test">In test</span></td><td class="why">Post, reply, like. English only for now.</td></tr>
-              <tr><td>Your own agent holding your data</td><td><span class="st st--plan">Planned</span></td><td class="why">For now your data sits on the project's node. Your own agent comes with hosting.</td></tr>
-              <tr><td>Host a node</td><td><span class="st st--plan">Planned</span></td><td class="why">No runnable node yet. Joining the line records interest.</td></tr>
-              <tr><td>Problem → Discussion → Solutions → Vote → Mandate</td><td><span class="st st--later">Later</span></td><td class="why">Comes back once the network has verified people in it. <a href="https://young-world-federalists.github.io/gloki-engage/">See it in the demo</a>.</td></tr>
-            </tbody>
-          </table>
+        <h2 id="works-h">True today, and still being built</h2>
+        <p class="sub">Only the rows marked Live work today. If a row does not say Live, Gloki does not do it yet. We change this board when something changes.</p>
+        <p class="updated">Last updated: 29 October 2026.</p>
+        <ul class="legend" aria-label="What the figures mean">
+          <li><svg class="glyph g-solid" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Live</li>
+          <li><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg>In test</li>
+          <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Planned</li>
+          <li><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Research</li>
+        </ul>
+
+        <!-- Rows wait on Ouri's sign-off (docs/positioning-gdi.md §5). Do not upgrade a status without it. -->
+        <div class="groups">
+          <div class="group">
+            <h3><svg class="glyph g-solid" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Live</h3>
+            <ul>
+              <li><strong>A demo of the democracy app.</strong> Seeded data, runs in your browser. <a href="https://young-world-federalists.github.io/gloki-engage/">Open the demo</a>.</li>
+              <li><strong>A node developers can run on their own computer.</strong> For building and testing apps. It is not safe to run in public yet. <a href="build.html#node">How the node works</a>.</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg>In test</h3>
+            <ul>
+              <li><strong>Sign-up with a key, three kinds of account, one shared forum.</strong> <span class="notyet">Not yet:</span> today the key works like a password: whoever types it in is you.</li>
+              <li><strong>Getting in through four people who know you.</strong> Built in the app: ask someone, an invitation, a video call. The network does not enforce it yet.</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Planned</h3>
+            <ul>
+              <li><strong>Your own record, which you control.</strong> For now, records are kept on the project's servers.</li>
+              <li><strong>Nodes hosted by members.</strong> The node is not safe to run in public yet.</li>
+              <li><strong>Nobody can act as you.</strong> Every action will be signed with a key only you hold. <span class="notyet">Not yet:</span> today the network does not check who sends a request.</li>
+              <li><strong>Nobody can quietly rewrite the record.</strong> Copies will be kept by many members, so a change gets caught.</li>
+              <li><strong>Nobody can read your ballot.</strong> Voting is not part of the beta.</li>
+              <li><strong>You can leave and take your identity with you.</strong></li>
+              <li><strong>Losing your phone doesn't lose your vote.</strong> The people who vouched for you will be able to help you back in.</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Research</h3>
+            <ul>
+              <li><strong>Messages over radio where there is no internet.</strong> We are still finding out if it can work.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rule-box">
+          <h3>A rule we keep today</h3>
+          <p><strong>There will be no binding vote on this network before an independent security audit.</strong> A binding vote is any vote whose result we present as a decision of the members. We will publish the full audit report, including any problems not yet fixed.</p>
         </div>
       </div>
     </section>
 
-    <!-- Who: the Global Democracy Initiative -->
-    <section id="who" aria-labelledby="who-h" style="background: var(--wash)">
-      <div class="wrap who-grid">
-        <div>
-          <h2 id="who-h">The Global Democracy Initiative</h2>
-          <p class="motto"><span class="plate">Assume global responsibility</span></p>
-          <p>The Global Democracy Initiative began in 2021, when seven organisations working for global democracy agreed on a plan. People anywhere would name the problems no single country can fix, propose solutions, debate them and vote: one person, one vote. The results would be public, so that the people in power can be held to them.</p>
-          <p>A plan like that needs one thing first: knowing that each vote belongs to one real person, without asking any government for papers. In 2023 the Initiative's identity working group wrote that up as Gloki, a global voter identity.</p>
-          <p><strong>Gloki is that plan, being built.</strong> The test version starts with the simplest part: people who know you vouch for you.</p>
-          <ul class="values">
-            <li><strong>Global democracy.</strong> Citizens can take part directly in global decisions.</li>
-            <li><strong>Global citizenship.</strong> Our common humanity binds us together, as one diverse human species.</li>
-            <li><strong>Open source innovation.</strong> We build new ways for people to cooperate, decide and act on global issues, and we share them with the world.</li>
-          </ul>
-          <p class="papers">Where it started: <a href="https://cdn.prod.website-files.com/61224ee76eeedd60f18adcad/61b0a40eb85d51496ad438f3_Concept%20of%20the%20GDI_20210524.pdf">the 2021 concept</a> and <a href="https://cdn.prod.website-files.com/61224ee76eeedd60f18adcad/659d9cdeacf14c0072b83c0e_GloKi%20White%20Paper.pdf">the 2023 Gloki white paper</a> (PDF). The test version has moved on from some of the paper's ideas, and the status board above is the current word.</p>
-          <p>The Global Democracy Initiative is a project of the <a href="https://www.ywf.world/">Young World Federalists</a>, a nonprofit registered in the United States that hosts it legally and financially.</p>
-        </div>
-        <div>
-          <h2>Where to look</h2>
-          <p><a href="https://young-world-federalists.github.io/gloki-engage/">The full demo</a>, with the democracy pipeline that comes back later.<br>
-          <a href="https://github.com/young-world-federalists/gloki-engage">The source on GitHub</a>.</p>
-          <p>Questions, or an organisation that wants in? Write to <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>, or reply to the first email the waitlist sends you. A person reads it.</p>
-          <p><a class="button" href="#join">Join the waitlist</a></p>
-        </div>
+    <section class="section" id="beta" aria-labelledby="beta-h">
+      <div class="wrap">
+        <h2 id="beta-h">The beta</h2>
+        <p class="lead">The beta is the first group of people on Gloki. It is <strong>free</strong>: nothing to pay, no tokens, nothing to buy.</p>
+        <ul class="facts">
+          <li><strong>Who it is for:</strong> world citizens, starting with the Young World Federalists' chapters and others who already work across borders. Anyone can join the waitlist.</li>
+          <li><strong>What you do:</strong> make a key, get vouched for by four people who know you, and post in one shared forum. Discussing and voting together come later.</li>
+          <li><strong>Who vouches first:</strong> the first few members vouch for each other, starting with the two of us.</li>
+          <li><strong>When it opens:</strong> once your phone can sign what you do, so nobody else can act as you. We will write to everyone on the waitlist then.</li>
+        </ul>
+        <p class="warn"><strong>Before you join.</strong> Ouri Poupko runs the beta's node on Google Cloud. Until encryption is built, the project team can see your data.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ways">
+      <div class="wrap">
+        <h2 id="ways">Three ways to take part</h2>
+        <ul class="waylist">
+          <li>
+            <h3>Solve global issues</h3>
+            <p>For world federalists, academics and anyone who wants a say in problems no single country can solve. We write when the beta opens, and you can ask people you know to vouch for you.</p>
+            <a class="more" href="#join" data-way="Solve global issues">Join as a member</a>
+          </li>
+          <li>
+            <h3>Build digital democracy</h3>
+            <p>For people building democracy apps, civic tech teams and researchers who run assemblies. Technical notes as we build, and a way to tell us what your app needs.</p>
+            <a class="more" href="build.html">How it works and what is open</a>
+          </li>
+          <li>
+            <h3>Carry the network</h3>
+            <p>For people with a server, a spare computer or a Raspberry Pi. Developers can run the node on their own computer today. A node in public is not safe yet, so we record your interest and write when it is.</p>
+            <a class="more" href="#join" data-way="Contribute a node">Register interest</a>
+          </li>
+        </ul>
+        <p><strong>Funders:</strong> to talk about supporting this work, write to <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="who">
+      <div class="wrap">
+        <h2 id="who">Who we are</h2>
+        <ul class="people">
+          <li class="person">
+            <svg viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>
+            <div><h3>Eston McKeague</h3><p>Leads the project and builds the Gloki app. President of the Young World Federalists.</p></div>
+          </li>
+          <li class="person">
+            <svg viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>
+            <div><h3>Ouri Poupko</h3><p>Wrote the node Gloki runs on, and <a href="build.html#research">the research behind it</a>.</p></div>
+          </li>
+        </ul>
+        <p>We are two volunteers, and for now the two of us make the decisions. Builders who join are welcome in that discussion.</p>
+        <p>GDI is a project of <a href="https://www.ywf.world/">Young World Federalists, Inc.</a>, a nonprofit registered in the United States. It is GDI's legal and financial home.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Where this comes from">
+      <div class="wrap">
+        <details class="history">
+          <summary>GDI began in 2021. Read where this comes from.<svg class="toggle" viewBox="0 0 20 20" aria-hidden="true"><path class="h" d="M3 10H17"/><path class="v" d="M10 3V17"/></svg></summary>
+          <div class="inner prose">
+            <p>GDI began in 2021 as a coalition of organisations working toward global democracy. That coalition is no longer active. Its motto still holds: “Assume global responsibility.”</p>
+            <p>In 2024 we published a white paper, <cite>Gloki: Global Digital Voter Identity</cite>. Some of its ideas have changed as we built it. The paper describes some things the app does not do, and the beta now tests vouching by people who know you. Where the paper and this page differ, this page tells you what is true now.</p>
+            <p class="papers">Read <a href="assets/papers/gdi-concept-2021.pdf">the 2021 concept</a> and <a href="assets/papers/gloki-white-paper-2024.pdf">the 2024 white paper</a> (PDF).</p>
+          </div>
+        </details>
       </div>
     </section>
   </main>
 
   <footer class="foot">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Young World Federalists, Inc. The Global Democracy Initiative is a project of the Young World Federalists.</span>
-      <a href="imprint.html">Imprint</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="https://github.com/young-world-federalists/gloki-engage">GitHub</a>
-      <span>No analytics, no ad trackers. The waitlist runs on Brevo.</span>
+      <p>No analytics, no ad trackers. The waitlist runs on Brevo. Gloki is built on Ouri Poupko's open-source node. GDI is a project of Young World Federalists, Inc.</p>
+      <div class="foot-row"><span>© 2026 Young World Federalists, Inc.</span><span class="foot-links"><a href="build.html">For builders</a> <a href="imprint.html">Imprint</a> <a href="privacy.html">Privacy</a> <a href="https://github.com/young-world-federalists/gloki-engage">GitHub</a></span></div>
     </div>
   </footer>
 
   <script>
-    // Stations light as they come into view; the door buttons preselect the line and go to the form.
-    (function () {
-      var stops = document.querySelectorAll('.stop');
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('lit'); io.unobserve(e.target); } });
-        }, { rootMargin: '0px 0px -30% 0px' });
-        stops.forEach(function (s) { io.observe(s); });
-      } else {
-        stops.forEach(function (s) { s.classList.add('lit'); });
-      }
-      // "Join this line" is a plain anchor to the form; with script it also ticks the line and focuses the field.
-      var interest = {
-        'solve-global-issues': 'Solve global issues',
-        'build-digital-democracy': 'Build digital democracy',
-        'contribute-a-node': 'Contribute a node'
-      };
-      document.querySelectorAll('[data-door]').forEach(function (b) {
-        b.addEventListener('click', function () {
-          var r = document.querySelector('input[name="INTEREST[]"][value="' + interest[b.getAttribute('data-door')] + '"]');
-          if (r) r.checked = true;
-          setTimeout(function () { document.getElementById('EMAIL').focus({ preventScroll: true }); }, 450);
-        });
+    // "Join" links in the ways section tick their choice and focus the email field.
+    document.querySelectorAll('[data-way]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        var box = document.querySelector('input[name="INTEREST[]"][value="' + a.getAttribute('data-way') + '"]');
+        if (box) box.checked = true;
+        setTimeout(function () { document.getElementById('EMAIL').focus({ preventScroll: true }); }, 400);
       });
-    })();
+    });
+    // Brevo hides the form on success (AUTOHIDE) while focus is still on the button. Move focus to whichever
+    // message panel it shows, so keyboard and screen reader users land on the result.
+    if ('MutationObserver' in window) {
+      ['success-message', 'error-message'].forEach(function (id) {
+        var panel = document.getElementById(id);
+        new MutationObserver(function () {
+          if (panel.classList.contains('sib-form-message-panel--active')) panel.focus();
+        }).observe(panel, { attributes: true, attributeFilter: ['class'] });
+      });
+    }
   </script>
 
   <!-- Brevo form script and Cloudflare Turnstile, as Brevo's embed code sets them up. -->
   <script>
-    // Turnstile's full widget needs 300px; on narrow phones that pushes the interchange past the edge.
+    // Turnstile's full widget needs 300px; on narrow phones that pushes the form past the edge.
     if (window.matchMedia('(max-width: 400px)').matches) {
       document.getElementById('sib-captcha').setAttribute('data-size', 'compact');
     }

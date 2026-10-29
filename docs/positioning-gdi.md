@@ -1,0 +1,220 @@
+# GDI positioning one-pager
+
+**Locked by Eston, 27 Oct 2026:** naming B (Gloki = the foundation); door order keeps world
+federalists first; promise = the lead line in §3; Ouri's rows go to him in an email Eston sends
+(drafted 27 Oct). Still open: the Web5/blockchain rule (§6, waits on Ouri) and the democracy
+app's name.
+
+Draft, 27 Oct 2026. Written from `docs/brief-gdi-positioning.md`, `PRODUCT.md`, the gloki-engage
+sovereignty spec (§1, §2, §6) and `docs/FOR_OURI_blind_servers.md` on `origin/ui`, the 15 and
+23 Oct "Plan for Gloki beta" emails, Ouri's December 2025 PWP deck ("Gloki PWP_9 December 2025",
+Drive) and Ouri's paper *Self-Sovereign Digital Agents for a Grassroots Digital Society*
+(Poupko, Shapiro, Talmon; Drive, `The_Personal_Digital_Agent.pdf`).
+Research sources for the story and the landscape: `docs/research-gdi-positioning.md`.
+
+**Built 29 Oct 2026** into PR #1's Isotype page on branch `claude/gdi-redesign` (supersedes PR #1 and
+#2). The status board there follows §5, with the developer node row added from Ouri's own README.
+
+Nothing in here is page copy. Each section ends with what needs deciding and who decides it.
+
+---
+
+## 1. Decision first: what is "Gloki"?
+
+The brief proposes **GDI = the commons, Gloki = the first app on it** (the Matrix/Element pattern).
+Re-grounding turned up a problem with that split. Every source uses "Gloki" for the foundation,
+not for the app:
+
+- The 2024 white paper (written 2023) is titled *Gloki: Global Digital Voter Identity*.
+- Ouri's December 2025 deck: "What is Gloki ID? A personal voter identity on your own device".
+- The beta you agreed with Ouri on 15 Oct has **no democracy pipeline**. It is getting in
+  (vouching), your own agent, hosting a node and one forum. The beta *is* the foundation.
+- The democracy app already has its own name in the code: the repo is `gloki-engage`.
+
+So there are two ways to split the names:
+
+| | GDI | Gloki | The democracy app |
+|---|---|---|---|
+| **A. Brief** | The foundation | The app | (= Gloki) |
+| **B. Recommended** | The mission and the people behind it | The foundation: one identity per person, your agent, a network members carry | **Gloki Engage** (or another name, later) |
+
+**Recommendation: B.** It keeps the name the white paper, the deck and the beta already use for
+the same thing. "Join Gloki" stays true: the beta is joining the network. It gives builders of
+other democracy apps something with a name to build on ("works with Gloki"). And it doesn't
+waste a brand on a pipeline that won't ship for months. The Matrix pattern still holds, with
+Gloki in Matrix's position.
+
+Under B, GDI is also the right name to be the face: an initiative, not a product, hosted by
+YWF. That matches what PRODUCT.md already says it legally is.
+
+**Decided (Eston, 27 Oct): B.** The app's own name (Gloki Engage or other) is open.
+
+---
+
+## 2. Who the page is for, in order
+
+1. **People building democracy apps** (civic tech, deliberation platforms, researchers who run
+   assemblies). What they need is what most of them don't have: a way to know each voice is one
+   real person, with no ID papers, no face scans and no company in the middle. *Ask: follow the
+   build, join the developer list.*
+2. **People who can carry the network** (someone with a server, a Raspberry Pi, or later a radio).
+   The FlightRadar24 model. *Ask: register interest. The node image doesn't exist yet, so this door
+   only records interest, and the page says so.*
+3. **Funders and researchers.** Proof that the team is honest about status counts for a lot here
+   (see §5). *Ask: read the status board and the white paper, write to hello@.*
+4. **Future members.** People who want a say in global problems: academics and world federalists
+   first, then the pilot sites. *Ask: join the waitlist.*
+
+This reverses PRODUCT.md's current door order (solve global issues first). That follows from
+positioning on the backend. If you'd rather keep "solve global issues" first because your first
+invitees are world federalists, the story still works; the hero then has to explain the backend
+in one line.
+
+**Decided (Eston, 27 Oct): world federalists first.** The page order is 4 → 1 → 2 → 3: future
+members ("solve global issues") lead, then builders, then node hosts; funders read the status
+board. So the hero must explain the foundation in one line under the promise. Three doors or four: open.
+
+### The gap the evidence shows (research file, C)
+
+No tool in the landscape combines one person one vote across borders, no central operator and a
+secret ballot. Hosted tools (Decidim, Loomio, Polis, Helios) identify people by email, SMS or an
+organiser's list, and run on one server. Decentralised proof-of-personhood relies on iris scans
+(World ID), government ID (Holonym, Rarimo) or vouching tied to crypto deposits (Proof of
+Humanity). The vouching projects without tokens (BrightID) show small or stale user bases.
+That's the space Gloki aims at: vouching by people who know you, no tokens, no biometrics.
+**Careful:** Gloki doesn't combine the three either, yet (status board, §5). The page can name
+the gap and say "we are building toward it". It can't say "the only one that does".
+
+---
+
+## 3. The one-sentence promise
+
+The mission, stated as a mission, not as a product claim:
+
+> **There will be no global democracy without technology. We are building the part every
+> democracy app is missing: one real person, one vote, on a network its members carry.**
+
+Two alternates, depending on how §1 and §2 land:
+
+- "The internet was supposed to bring us together. We are building the part that can: a way for
+  every person on Earth to have one voice, on a network nobody owns." (*"Nobody owns" is a claim.
+  Use it only as a goal, e.g. "built so that no company or government owns it".*)
+- "Global democracy needs a foundation. We're building it in the open: identity without ID papers,
+  one person one vote, and a network carried by the people who use it."
+
+**Decided (Eston, 27 Oct): the lead line.** The alternates are kept for the copy drafts to borrow from.
+
+---
+
+## 4. The story, in four beats
+
+1. **The hope.** In the 1990s, people believed the internet would bring the world together.
+   Strongest candidates (research file, A; each must be checked word for word on its page first):
+   - Al Gore, Buenos Aires, 1994: "Our goal is a kind of global conversation, in which everyone
+     who wants can have his or her say." and "the distributed intelligence of the GII will spread
+     participatory democracy." The closest match to GDI's own aim.
+   - John Perry Barlow, 1996: "We are creating a world that all may enter without privilege or
+     prejudice accorded by race, economic power, military force, or station of birth."
+   - Nicholas Negroponte, *Being Digital*, 1995: "decentralizing, globalizing, harmonizing, and
+     empowering."
+   Don't use the Negroponte "nation-state" line, Gates's *Road Ahead* paraphrase or "new
+   Athenian Age": none traced to a primary source.
+2. **What happened.** It divided us instead: feeds tuned for outrage, crypto that became a byword
+   for scams, AI that people fear more than they trust. (One sourced fact per clause, from the
+   research file. Where the evidence is contested, such as social media and polarisation, the copy
+   says "many people believe" or cites the study's own wording. It does not overstate.)
+   Usable facts (research file, B): crypto investment fraud was the biggest single source of
+   reported losses to Americans in 2025, $7.2 billion (FBI IC3, April 2026); 52% of Americans
+   are more concerned than excited about AI, up from 37% in 2021 (Pew, Aug 2026). Both are
+   US-only, so say so, or frame them as examples. On social media, cite one experiment
+   (Piccardi et al., *Science*, Nov 2025: one week of re-ranked feeds shifted feelings toward
+   the other party) and say plainly that studies disagree.
+3. **The turn.** Technology is not going away, and global problems don't stop at borders. There
+   will be no global democracy without technology of some kind. So build the good version: fight
+   fire with fire.
+4. **What we build.** Three things, each with its status beside it (§5):
+   - **One person, one vote.** You get in because people who know you vouch for you. No ID papers,
+     no face scans, no tokens, nothing to buy.
+   - **Your data stays yours.** Each person has their own agent that keeps their records. Groups
+     share only what belongs to the group. (Ouri's paper calls this subsidiarity: each contract is
+     copied only between the people who are part of it.)
+   - **A network its members carry.** Nodes are run by people, not one company. Later, where the
+     internet fails, messages can travel over radio.
+
+The history section (2021 coalition, 2024 white paper, old motto "Assume global responsibility")
+goes below the fold as "Where this comes from". It's context, not the plan.
+
+---
+
+## 5. True today vs. being built (needs Ouri's sign-off line by line)
+
+This is the status board. It goes on the page as-is, in plain words. Every row marked **?** is
+something the `ui` repo can't see; only Ouri can say.
+
+| What | Status | Basis |
+|---|---|---|
+| A demo of the full democracy app (seeded data, runs in your browser) | **Live** | young-world-federalists.github.io/gloki-engage |
+| Sign-up with a key instead of a password; three account kinds; one shared forum | **Built, in test** | Beta UI on `ui`. Today the key works like a password: whoever types it in is you |
+| Getting in through four people who know you | **Built in the app, in test** | Verification hub and calls (S37–S38). **?** Whether the server enforces it |
+| Your own agent that holds your records | **? Running on GDI's servers** | Agents ran for ~20 PWP members in Dec 2025 ("you are welcome to use ours"). Members don't run their own yet |
+| A node developers can run on their own computer | **Live** (for developers) | 29 Oct: `ouripoupko/ibc` README, "Run with Docker": "For developers who build apps on top of ibc and need a local node", served on localhost:2611 with no HTTPS. **?** Ouri to confirm the wording |
+| Nodes hosted by members | **Planned** | Not safe to run in public yet: no authentication, no HTTPS |
+| 1. Nobody can act as you (signed writes) | **Planned** (H1) | `ui` has no client-side signing. **?** What `server-side` does |
+| 2. Nobody can quietly rewrite the record | **Planned** (H3) | Ouri's paper: contracts replicate between their participants; the paper itself notes that participants who collude can rewrite a contract's history |
+| 3. Nobody can read your ballot | **Planned** (H4) | Blind-server proposal; nothing built |
+| 4. You can leave and take your identity with you | **Planned** | **?** |
+| 5. Losing your phone doesn't lose your vote | **Planned** (H2) | Recovery through your vouchers; nothing built |
+| Messages over radio where there's no internet (Reticulum) | **Research** | Spec H7 |
+
+Rule for copy: a property can be described as **what we are building** at any status. It can be
+described as **what Gloki does** only when its row says Live and Ouri has signed the row.
+
+**Asked (Ouri), email drafted 27 Oct for Eston to send:** each **?** row, and whether any "Planned" row is further along than this repo
+shows.
+
+---
+
+## 6. Words
+
+| Use | Avoid in headlines | Why |
+|---|---|---|
+| one person, one vote | "Sybil-resistant" | Jargon |
+| people who know you vouch for you | "web of trust" (fine in the technical section) | Plain first |
+| your agent / your own record | "self-sovereign identity", "personal ledger" | Plain first; both can appear once in the builders' section |
+| a network its members carry | "decentralized" as a finished fact | Claims rule (PRODUCT.md, P12 H0) |
+| a new internet (as a goal) | **"Web5"**, **"blockchain"** | Both read as crypto to the audience in beat 2. See below |
+
+**Web5 and blockchain.** Ouri uses both: the December deck says "This is not a Web3 blockchain,
+but Web5" and "Our unique blockchain", and compares the design to Jack Dorsey's Web5 and Tim
+Berners-Lee's Solid. The ideas belong on the page (each person keeps their own record; no
+mining, no tokens; Ouri's paper calls it capital-free). The words are the question.
+Recommendation: no "Web5" or "blockchain" in a headline or the first screen. In the builders'
+section, one honest paragraph: "Technically, each person runs their own small ledger, and
+contracts run only among the people in them. There are no coins, no mining and no
+speculation. If you know Solid, it is in that family."
+
+**New fact (research file, D): drop the word "Web5".** Block wound down TBD, the unit behind
+Jack Dorsey's Web5, on 7 Nov 2024 (Q3 2024 shareholder letter; TechCrunch the same day). The
+code moved to the Decentralized Identity Foundation and has had no commits since October 2024.
+Naming it would tie GDI to an abandoned project. Solid is still alive through W3C (First Public
+Working Draft of Linked Web Storage Protocol 1.0, 31 Mar 2026), so it's the safer comparison.
+This should go to Ouri with question 6.
+
+**Decide (Eston + Ouri):** the Web5/blockchain rule, and the name of the foundation if B is chosen.
+
+---
+
+## 7. Waitlist
+
+**Superseded 28 Oct 2026:** the waitlist is a separate list in the GDI Brevo account (PR #3), not
+Buttondown. Waitlist sign-ups never receive the YWF newsletter. `privacy.html` names Brevo and
+Cloudflare Turnstile.
+
+---
+
+## Next steps once this is locked
+
+1. Three copy drafts in parallel (the brief's angles a/b/c), each given this page, the PRODUCT.md
+   voice rules and the claims rule.
+2. Eston picks or merges.
+3. New page concept (the network, not the sign-up line diagram), build, claims audit against §5.
