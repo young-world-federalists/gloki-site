@@ -74,6 +74,27 @@
 
     <h2 id="node">The node</h2>
     <p>Gloki runs on <strong>ibc</strong>, Ouri Poupko's open-source node (MIT licence). The current version is written in Go. It puts his research on self-sovereign digital agents into practice: software that holds one person's data and acts only for them. <a href="https://github.com/ouripoupko/ibc-go">Repository and documentation</a>.</p>
+    <figure class="diagram diagram--node">
+      <svg viewBox="0 0 340 146" role="img" aria-labelledby="node-t">
+        <title id="node-t">You sign with a passkey. Your node passes what you signed to a contract. The contract's two other partners each keep a copy on their own node.</title>
+        <g aria-hidden="true">
+          <path class="wire" d="M36 60H98M130 60H168M200 60 248 30M200 60 248 94M280 28H298M280 92H298"/>
+          <use href="#person" class="p-blue" x="14" y="40" width="20" height="40"/>
+          <use href="#i-key" class="ico-u" x="58" y="36" width="16" height="16"/>
+          <use href="#i-node" class="ico-u" x="100" y="46" width="28" height="28"/>
+          <use href="#i-record" class="ico-u" x="170" y="46" width="28" height="28"/>
+          <use href="#i-node" class="ico-u" x="250" y="14" width="28" height="28"/>
+          <use href="#i-node" class="ico-u" x="250" y="78" width="28" height="28"/>
+          <use href="#person" class="p-ink" x="302" y="8" width="20" height="40"/>
+          <use href="#person" class="p-ink" x="302" y="72" width="20" height="40"/>
+          <text x="24" y="96">You</text>
+          <text x="114" y="96">Your node</text>
+          <text x="184" y="96">A contract</text>
+          <text x="286" y="134">Its other partners</text>
+        </g>
+      </svg>
+      <figcaption>You sign with your passkey. Your node carries what you signed to the contract, and only that contract's partners keep a copy.</figcaption>
+    </figure>
     <p>A contract runs only among the people who are part of it, and is copied only between them. The design paper calls this subsidiarity. There are no coins and no mining, and there is no single global chain. If you know Solid, it is in that family.</p>
     <ul>
       <li>Each person is an <strong>agent</strong>. An agent lives on a node it chooses and acts through it.</li>

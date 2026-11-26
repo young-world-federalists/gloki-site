@@ -311,6 +311,10 @@ details.history .inner { padding-top: 1rem; }
 .toc a { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--display); font-weight: 500; }
 .plan .how { color: var(--ink-soft); font-size: .95rem; }
 .diagram { max-width: 30rem; margin: 1.25rem 0 1.5rem; }
+.diagram--node { max-width: 38rem; }
+.diagram .ico-u { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.diagram .wire { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.diagram text { font: 400 9px var(--text); fill: var(--ink-soft); text-anchor: middle; }
 .diagram figcaption { color: var(--ink-soft); font-size: .95rem; margin-top: .4rem; }
 
 /* ---- Footer -------------------------------------------------------------- */
