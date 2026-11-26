@@ -228,6 +228,8 @@ The system is flat. There are no shadows anywhere, at rest or on hover. Depth is
 ### Named Rules
 **The Flat Sheet Rule.** No box-shadow, no gradient, no glow, no blur. If something needs to stand out, give it an ink border or the field tint.
 
+**The Dither Rule.** (26 Nov 2026.) Pictures may carry tone, but only as a 1-bit ordered dither in ink on the page ground: every pixel is ink or nothing. They are drawn small and shown at whole multiples (1x on phones, 2x from 56rem or 70rem) with `image-rendering: pixelated`, so each dot stays a square. There are two: the globe beside the story, and the crowd of figures that stands on the footer rule. Both come from `docs/brand/2026-11-26-dither/make.py`; change them there, not in an image editor. No photographs, no smooth gradients, no colour in a dithered picture.
+
 ## Shapes
 
 Corners are gently rounded at one radius (6px) for buttons, nav links, the email field and the rule box; sign-up choices are full pills. The focus ring rounds at 2px. Rules are straight hairlines: 1px ink for section tops and the footer, 1px hairline grey between list items, 2px ink as the top edge of each "way to take part" and as the border of the rule box and email field.

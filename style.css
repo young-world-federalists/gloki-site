@@ -186,7 +186,21 @@ mark.todo { background: var(--todo); color: var(--ink); padding: 0 .2em; border-
 
 .sub { max-width: var(--measure); }
 
-/* The story: a quote, then the count */
+/* Dithered pictures: 1-bit ink, drawn small and shown at whole multiples so every dot stays square. */
+.story-grid { display: grid; gap: 1.25rem; }
+.globe { width: 240px; height: 240px; image-rendering: pixelated; order: -1; }
+@media (min-width: 56rem) {
+  .story-grid { grid-template-columns: minmax(0, 38rem) 240px; justify-content: space-between; align-items: center; column-gap: 3rem; }
+  .globe { order: 0; }
+}
+@media (min-width: 70rem) {
+  .story-grid { grid-template-columns: minmax(0, 34rem) 480px; }
+  .globe { width: 480px; height: 480px; }
+}
+.crowd-band { height: 128px; background: url("assets/dither-crowd.png") center bottom / 552px 128px repeat-x; image-rendering: pixelated; }
+@media (min-width: 56rem) { .crowd-band { height: 256px; background-size: 1104px 256px; } }
+
+/* The story: the count, then the checks */
 .quote { margin: 0 0 1.5rem; padding-left: 1.1rem; border-left: 2px solid var(--ink); max-width: var(--measure); }
 .quote p { font-family: var(--display); font-weight: 500; font-size: clamp(1.15rem, 1rem + .6vw, 1.4rem); line-height: 1.35; margin-bottom: .5rem; }
 .quote footer { color: var(--ink-soft); font-size: .95rem; }
