@@ -121,6 +121,8 @@
           <figcaption>You'll get in when four people who know you vouch for you.</figcaption>
         </figure>
 
+        <!-- Turnstile runs with appearance "interaction-only": it checks in the background and only shows its box when it
+             needs the visitor to do something, so the Join button stays on the first screen. -->
         <!-- The waitlist runs on Brevo (GDI account, list "GDI waitlist"). Brevo's main.js needs the ids and the
              sib-/entry__ classes below; keep them, the field names, the INTEREST values and the Turnstile sitekey as they are. -->
         <div class="signup sib-form" id="join">
@@ -156,7 +158,7 @@
                 </div>
                 <div class="sib-captcha sib-form-block">
                   <div class="form__entry entry_block">
-                    <div class="cf-turnstile g-recaptcha" id="sib-captcha" data-sitekey="0x4AAAAAAFqCnrqcYK-xXckD" data-callback="handleCaptchaResponse" data-language="en" data-theme="light" data-size="flexible"></div>
+                    <div class="cf-turnstile g-recaptcha" id="sib-captcha" data-sitekey="0x4AAAAAAFqCnrqcYK-xXckD" data-callback="handleCaptchaResponse" data-language="en" data-theme="light" data-size="flexible" data-appearance="interaction-only"></div>
                     <label class="entry__error entry__error--primary"></label>
                   </div>
                 </div>

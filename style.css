@@ -139,7 +139,8 @@ symbol#person { overflow: visible; } /* outlined figures: the stroke runs 0.4 pa
 .entry__field { display: grid; }
 .signup .entry__error { display: none; margin: .25rem 0 0; font-size: .95rem; color: var(--verm-text); }
 .entry_errored input[type="email"] { border-color: var(--verm-text); }
-.sib-captcha { min-height: 65px; }
+/* The check is invisible unless Turnstile needs the visitor, so no height is reserved for it. */
+.sib-captcha { min-height: 0; }
 .input--hidden { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
 .sib-form-message-panel { display: none; margin: 0 0 .8rem; padding: .8rem 1rem; border: 2px solid var(--ink); border-radius: var(--radius); background: var(--field); }
 .sib-form-message-panel--active { display: block; }
@@ -326,3 +327,6 @@ details.history .inner { padding-top: 1rem; }
   .signup .form { gap: .6rem; }
   .signup-h { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 }
+
+/* Small phones (360 wide, 740 tall): a slightly smaller figure block keeps Join on the first screen. */
+@media (max-width: 24rem) { .crowd svg { width: 80%; } }
