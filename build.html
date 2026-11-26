@@ -19,6 +19,23 @@
         <path d="M4.6 11.2H15.4Q17.4 11.2 17.6 13.4L18.6 25H15.8L15 17V39.2H10.9V27.5H9.1V39.2H5V17L4.2 25H1.4L2.4 13.4Q2.6 11.2 4.6 11.2Z"/>
       </symbol>
       <clipPath id="lower-half"><rect x="0" y="21" width="20" height="20"/></clipPath>
+      <!-- Object icons: 24 unit box, 2 unit ink stroke, no fill. Figures are people; these are things. -->
+      <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="16.5" r="4.5"/><path d="M10.7 13.3 20 4M16.5 7.5l3 3M13.5 10.5l2.5 2.5"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><circle cx="5.5" cy="12" r="3"/><circle cx="18.5" cy="12" r="3"/><path d="M8.5 12h7"/></symbol>
+      <symbol id="i-record" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+      <symbol id="i-node" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+      <symbol id="i-radio" viewBox="0 0 24 24"><circle cx="12" cy="9" r="2"/><path d="M12 11v10M7.5 13.5a6.4 6.4 0 0 1 0-9M16.5 4.5a6.4 6.4 0 0 1 0 9"/></symbol>
+      <symbol id="i-ballot" viewBox="0 0 24 24"><path d="M4 12h16v8H4zM9 12V4h6v8M9 16h6"/></symbol>
+      <symbol id="i-forum" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4 4v-4H4z"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6.5 8.5 7 8.5-7"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18h2"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-passport" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><circle cx="12" cy="10" r="3"/><path d="M9 17h6"/></symbol>
+      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.5H11a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3H9.5"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v6c0 4.5 3.2 7.6 7.5 9 4.3-1.4 7.5-4.5 7.5-9V6z"/><path d="m9 12 2.2 2.2L15 10.5"/></symbol>
     </defs>
   </svg>
 
@@ -39,26 +56,32 @@
     <h1>How Gloki works, and what is open</h1>
     <p class="lead">This page is for engineers and researchers. It says exactly what the code does today, so you can decide whether to help.</p>
 
+    <nav class="toc" aria-label="On this page">
+      <a href="#who-counts">Who counts</a> <a href="#node">The node</a> <a href="#vouching">Vouching</a> <a href="#gaps">Known gaps</a> <a href="#plan">Planned protections</a> <a href="#research">Research</a> <a href="#licence">Licence</a>
+    </nav>
+
     <h2 id="who-counts">How other tools decide who counts</h2>
-    <p>Democracy software has to decide who may take part. Tools made for one city, country or organisation use one of these answers:</p>
+    <p>Democracy software has to decide who may take part. Other tools use one of these answers:</p>
     <ul>
-      <li><strong>A list of residents</strong> from a city or a government, as many city participation platforms do. It works inside one country and stops at the border.</li>
+      <li><strong>A list of residents</strong> from a city or a government, which only works inside one country.</li>
       <li><strong>A list from the organiser.</strong> The people running the vote decide who is on it.</li>
-      <li><strong>Random selection.</strong> A small group is chosen by lot, as citizens' assemblies do. It is good for deep discussion, but most people never take part.</li>
-      <li><strong>Tokens.</strong> People who hold more of a digital token get more say.</li>
-      <li><strong>Tools that do not hold votes.</strong> Some tools gather opinions from anyone, without a check, and are not built to count one vote per person.</li>
-      <li><strong>Proof-of-person services</strong> that other apps can query, built on vouching, credentials or biometrics.</li>
+      <li><strong>Random selection</strong>, as in citizens' assemblies, where a small group takes part and most people do not.</li>
+      <li><strong>Tokens</strong>, where people who hold more get more say.</li>
+      <li><strong>No check at all</strong>, which is fine for gathering opinions but cannot count one vote per person.</li>
+      <li><strong>Proof-of-person services</strong> built on vouching, credentials or biometrics. BrightID is one: it uses vouching to show other apps that a person has one account.</li>
     </ul>
-    <p>Each answer fits the job it was made for. None of them lets people everywhere take part, one vote each, without depending on a government, an organiser or money. That is the gap we are building toward.</p>
+    <p>None of them lets people everywhere take part, one vote each, without depending on a government, an organiser or money. Gloki is meant to be that whole foundation: who counts, where the record lives and, later, how votes are counted. The protections that would set it apart are still being built.</p>
 
     <h2 id="node">The node</h2>
-    <p>Gloki runs on <strong>ibc</strong>, Ouri Poupko's open-source node (GPL-3.0). It puts his research on self-sovereign digital agents into practice: software that holds one person's data and acts only for them. <a href="https://github.com/ouripoupko/ibc">Repository</a>.</p>
-    <p>In this design each person keeps a personal ledger: their own record. A contract runs only among the people who are part of it, and is copied only between them. The design paper calls this subsidiarity. It is capital-free, and it is not a blockchain in the crypto sense: no coins, no mining. If you know Solid, it is in that family.</p>
+    <p>Gloki runs on <strong>ibc</strong>, Ouri Poupko's open-source node (MIT licence). The current version is written in Go. It puts his research on self-sovereign digital agents into practice: software that holds one person's data and acts only for them. <a href="https://github.com/ouripoupko/ibc-go">Repository and documentation</a>.</p>
+    <p>A contract runs only among the people who are part of it, and is copied only between them. The design paper calls this subsidiarity. There are no coins and no mining, and there is no single global chain. If you know Solid, it is in that family.</p>
     <ul>
-      <li>Each person is an <strong>agent</strong>. An agent registers on a node and acts through it.</li>
-      <li>Rules live in <strong>contracts</strong>: small Python programs. Every agent that joins a contract is a <strong>partner</strong> on it and keeps a copy of its state.</li>
-      <li>A write to a contract goes through an agreement step among that contract's partners (a PBFT-style protocol), so the copies stay the same. There is no single global chain.</li>
-      <li>The node ships as a Docker image for developers who build apps on it. It serves its API on your own computer, without HTTPS.</li>
+      <li>Each person is an <strong>agent</strong>. An agent lives on a node it chooses and acts through it.</li>
+      <li>Rules live in <strong>contracts</strong>, written in Solidity and run on the EVM inside the node. Every agent that joins a contract is a <strong>partner</strong> on it and keeps a copy of its state.</li>
+      <li>Partners agree on each write with <strong>Cordial Miners</strong>, a Byzantine fault-tolerant consensus protocol. It runs separately for each contract, among that contract's partners.</li>
+      <li>You sign with a <strong>passkey</strong>: a key kept in the security hardware of your phone or computer. The node never holds it. Other nodes accept a write only if your passkey signed it, or if your node signed it under a permission your passkey signed.</li>
+      <li>Apps act through your node. It does without asking only what you allowed, function by function. Everything else goes to an approval page, where you sign.</li>
+      <li>A node is a single program with its own database. You can run it on your own computer, or on a Linux server with HTTPS. GDI runs one public node today.</li>
     </ul>
 
     <h2 id="vouching">The vouching rule in the code</h2>
@@ -85,34 +108,36 @@
       </svg>
       <figcaption>Before and after a newcomer joins. Each member keeps exactly four links.</figcaption>
     </figure>
-    <p>Ouri's community contract picks two existing links in the trust graph at random, which gives four members. All four must approve the newcomer, and the newcomer takes a place between them, so every member keeps exactly four links. Random choice matters: people making fake accounts cannot pick each other. The design comes from <a href="https://ieeexplore.ieee.org/document/9446607">Poupko, Shahaf, Shapiro and Talmon, "Building a Sybil-Resilient Digital Community Utilizing Trust-Graph Connectivity", IEEE/ACM Transactions on Networking, 2021</a> (<a href="https://arxiv.org/abs/1901.00752">free version on arXiv</a>).</p>
-    <p>The Gloki beta tests a different version: four people who know you vouch for you. The network does not enforce that version yet. Until we settle on one rule, we make no claim about keeping out fake accounts.</p>
+    <p>Ouri's design picks two existing links in the trust graph at random, which gives four members. All four must approve the newcomer, and the newcomer takes a place between them, so every member keeps exactly four links. Random choice matters: people making fake accounts cannot pick each other. The design comes from <a href="https://ieeexplore.ieee.org/document/9446607">Poupko, Shahaf, Shapiro and Talmon, "Building a Sybil-Resilient Digital Community Utilizing Trust-Graph Connectivity", IEEE/ACM Transactions on Networking, 2021</a> (<a href="https://arxiv.org/abs/1901.00752">free version on arXiv</a>).</p>
+    <p>The Gloki beta tests a different version: four people who know you vouch for you. The network does not enforce either version yet. Until we settle on one rule, we make no claim about keeping out fake accounts.</p>
 
     <h2 id="gaps">Known gaps</h2>
     <ul>
-      <li><strong>No signatures.</strong> The node does not check who signed a request, and anyone can deploy contract code to it.</li>
-      <li><strong>No authentication.</strong> Anyone who knows an agent's identity string and node address can send requests as that agent. Identity strings are visible to other partners.</li>
-      <li><strong>Agreement does not check signatures</strong> yet, and has no view change. It has not been run across separate machines.</li>
-      <li><strong>The random pick can be steered.</strong> It is seeded with a timestamp set by the node that receives the request, so whoever runs that node can influence which four members are chosen.</li>
-      <li><strong>Contracts are plain Python</strong> in a sandbox, not a language designed for safe contracts.</li>
-      <li><strong>No encryption</strong> of stored data yet.</li>
+      <li><strong>Whoever hosts your agent can read its data.</strong> Nothing stored on a node is encrypted yet. The host's node can also make, in your name, the calls you allowed an app to make without asking. It can sign nothing else as you.</li>
+      <li><strong>No way back from a lost passkey</strong> yet. The plan is recovery through people you trust.</li>
+      <li><strong>Your passkey belongs to your node's web address.</strong> There is no separate app for the key yet, so that address must not change.</li>
+      <li><strong>No personal ledger yet.</strong> The paper's single record per person, linking what you do across contracts, is not built.</li>
+      <li><strong>Guests trust their hosts.</strong> A guest uses a contract through a partner's node, and takes that node's answers as they are.</li>
+      <li><strong>Consensus is unfinished.</strong> There is no timeout for slow networks, and how long to wait before a result is final is an open question.</li>
+      <li><strong>No independent security audit.</strong></li>
     </ul>
+    <p>The node keeps its own full list: <a href="https://github.com/ouripoupko/ibc-go/blob/main/docs/architecture.md#not-implemented-yet">what is not implemented yet</a>.</p>
 
     <h2 id="open">Open problems</h2>
-    <p>Closing these gaps is the core of the work, and it needs more builders than we have. The gaps above are where we would start: signed requests, signature checks in agreement, randomness no single node can steer, encryption, a safer contract language, and testing across machines.</p>
+    <p>Closing these gaps is the core of the work, and it needs more builders than we have. This is where we would start: encryption so that a host stores data without reading it, recovery of a lost passkey, the vouching rule enforced by the network, secret ballots, and an independent audit.</p>
 
     <h2 id="plan">The protections we plan</h2>
     <ul class="plan">
-      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Your phone signs everything you do.</strong><span class="how">Keys made on the device, unlocked with a passkey. Planned.</span></li>
-      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Lose your phone, and your vouchers can let you back in.</strong><span class="how">Vouchers confirm you again, after a waiting period. Planned.</span></li>
-      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Nobody can change records quietly.</strong><span class="how">Signed append-only logs copied across nodes. Planned.</span></li>
-      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Servers store your data without reading it.</strong><span class="how">Encryption, blind servers. Planned.</span></li>
-      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Prove you may vote without saying who you are.</strong><span class="how">Semaphore. Planned.</span></li>
-      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Votes counted while still locked.</strong><span class="how">ElectionGuard threshold keys. Planned.</span></li>
-      <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Check that the app you run is the code we published.</strong><span class="how">Signed releases, CSP and SRI. Planned.</span></li>
-      <li><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Nodes can hide where they are.</strong><span class="how">Tor onion services. Research.</span></li>
-      <li><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Reaching places without internet.</strong><span class="how">Reticulum over LoRa radio. Research.</span></li>
-      <li><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg><strong>Text messages for reminders, never for votes.</strong><span class="how">SMS and USSD. Research.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-key"/></svg><strong>Your phone signs what you do.</strong><span class="how">A passkey made on your device, which the node never holds. In test.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-link"/></svg><strong>Lose your phone, and people you trust can let you back in.</strong><span class="how">They confirm you again, after a waiting period. Planned.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-record"/></svg><strong>Nobody can change records quietly.</strong><span class="how">Signed records copied across the nodes of everyone in a contract. Planned.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-lock"/></svg><strong>Servers store your data without reading it.</strong><span class="how">Encryption, blind servers. Planned.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-eye"/></svg><strong>Prove you may vote without saying who you are.</strong><span class="how">Semaphore. Planned.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ballot"/></svg><strong>Votes counted while still locked.</strong><span class="how">ElectionGuard threshold keys. Planned.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg><strong>Check that the app you run is the code we published.</strong><span class="how">Signed releases, CSP and SRI. Planned.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-node"/></svg><strong>Nodes can hide where they are.</strong><span class="how">Tor onion services. Research.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-radio"/></svg><strong>Reaching places without internet.</strong><span class="how">Reticulum over LoRa radio. Research.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg><strong>Text messages for reminders, never for votes.</strong><span class="how">SMS and USSD. Research.</span></li>
     </ul>
 
     <h2 id="research">The research</h2>
@@ -121,14 +146,11 @@
       <li><a href="https://ieeexplore.ieee.org/document/9912178">Self-Sovereign Digital Agents for a Grassroots Digital Society</a>. ICDCS 2022. What the node implements.</li>
       <li><a href="https://arxiv.org/abs/1901.00752">Building a Sybil-Resilient Digital Community Utilizing Trust-Graph Connectivity</a>. IEEE/ACM Transactions on Networking, 2021. The four-link vouching rule.</li>
       <li><a href="https://arxiv.org/abs/2007.15536">Sybil-Resilient Coin Minting</a>. arXiv, 2020. Who answers for a fake account that gets in.</li>
-      <li><a href="https://arxiv.org/abs/2205.09174">Cordial Miners</a>. DISC 2023. A consensus protocol from the same group; the node runs a different, PBFT-style protocol today.</li>
+      <li><a href="https://arxiv.org/abs/2205.09174">Cordial Miners</a>. DISC 2023. The consensus protocol the node runs.</li>
     </ul>
 
-    <h2 id="brightid">BrightID and GDI</h2>
-    <p>BrightID also uses vouching. It lets people prove to other apps that they use only one account. Gloki is meant to be the whole foundation a democracy needs, on one network its members carry: who counts, where the record lives and, later, how votes are counted. The protections that would set it apart technically are still being built.</p>
-
     <h2 id="licence">Licence and how we decide</h2>
-    <p>The node is GPL-3.0. The Gloki app's licence is not set yet. For now Ouri and Eston make the decisions. Contributors are welcome in that discussion.</p>
+    <p>The node and the Gloki app are open source under the MIT licence. For now Ouri and Eston make the decisions. Contributors are welcome in that discussion.</p>
     <p><strong>Get in touch:</strong> <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>, or <a href="./#join">join the waitlist</a> with "Build digital democracy" and we will send you technical notes as we build.</p>
   </main>
 

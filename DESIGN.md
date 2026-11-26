@@ -242,7 +242,7 @@ The recurring silhouette is the person pictogram: a 20 by 40 unit figure with a 
 In the hero, figures stand in rows of thirteen on a 24-unit pitch and 56-unit row step; links between figures are lines (new links 2px brand blue with round caps; old links 1.4px ink, gone in the end state).
 
 ### Named Rules
-**The One Glyph Rule.** The person pictogram is the only illustration and the only icon. Legend, radio marker, team avatar and diagram all reuse the same symbol; the only other drawn marks are the GDI mark and the plus/minus of the history disclosure. No icon library, no second figure drawing, no faces.
+**The People and Things Rule.** (26 Nov 2026, replaces the One Glyph Rule.) A person is always the person pictogram: legend, radio marker, team avatar and diagrams reuse that one symbol, and nothing else stands for a person. Things (a key, a node, a record, a radio, a ballot, a link, and the checks other tools use) are drawn as object icons: a 24-unit box, a 2-unit ink stroke with round caps and joins, no fill, defined as `#i-…` symbols in each page's sprite. Icons name a thing beside its words; they never carry status and never take colour. No icon library, no second figure drawing, no faces.
 
 **The Four States Rule.** Status is shown by how a figure is filled, never by a new colour. Solid, half, outline, dotted: four states, in that order, always with a word beside them.
 
@@ -298,7 +298,8 @@ A row of figures at a smaller size: one ink figure, then twelve Counterfeit Grey
 - **Don't** set text in brand blue or put white text on brand blue; that pairing is the app's exception, not the page's.
 - **Don't** add shadows, gradients, glows, or a glowing node-network illustration; the world refuses the crypto page.
 - **Don't** use cream grounds, serif display type or stock photography; the world refuses the NGO brochure.
-- **Don't** give figures faces, outlines on solid fills, or a second drawing style; there is one pictogram.
+- **Don't** give figures faces, outlines on solid fills, or a second drawing style; there is one pictogram for people.
+- **Don't** fill or colour an object icon, or use one to show status; status belongs to the figures.
 - **Don't** use grey figures for anything but fake accounts in a count.
 - **Don't** use hairline grey as a section divider; section rules are ink.
 - **Don't** thicken the warning note's vermilion side rule beyond 1px or turn it into a coloured stripe on other containers.

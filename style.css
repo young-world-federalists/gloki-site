@@ -105,6 +105,7 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 }
 
 /* The figures */
+symbol#person { overflow: visible; } /* outlined figures: the stroke runs 0.4 past the 20x40 box at head and feet */
 .p-ink { fill: var(--ink); }
 .p-blue { fill: var(--blue); }
 .link-old { stroke: var(--ink); stroke-width: 1.4; opacity: 0; } /* end state: the old links are gone */
@@ -124,6 +125,9 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 @keyframes draw { from { stroke-dashoffset: 60; } to { stroke-dashoffset: 0; } }
 @keyframes to-blue-fill { from { fill: var(--ink); } to { fill: var(--blue); } }
 @keyframes to-blue { from { fill: var(--verm); } to { fill: var(--blue); } }
+
+/* Object icons: things, drawn in the figure's line. People stay figures. */
+.ico { width: 28px; height: 28px; flex: none; fill: none; stroke: var(--ink); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; overflow: visible; }
 
 /* ---- Sign-up form -------------------------------------------------------- */
 /* The waitlist runs on Brevo. Its main.js toggles the sib-/entry__ classes; the look stays the site's own. */
@@ -158,7 +162,7 @@ h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; margin-bottom: .4re
 .ways { display: flex; flex-wrap: wrap; gap: .4rem; }
 .way { position: relative; display: inline-flex; align-items: center; gap: .45rem; min-height: 44px; padding: .35rem .8rem .35rem .6rem; border: 1px solid var(--rule); border-radius: 999px; cursor: pointer; background: var(--paper); }
 .way input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
-.way .dot { width: 14px; height: 28px; flex: none; }
+.way .dot { width: 14px; height: 28px; flex: none; overflow: visible; }
 .way .dot use { fill: none; stroke: var(--ink); stroke-width: 2; }
 .way:has(input:checked) { border-color: var(--ink); background: var(--field); }
 .way:has(input:checked) .dot use { fill: var(--blue); stroke: var(--blue); }
@@ -187,33 +191,59 @@ mark.todo { background: var(--todo); color: var(--ink); padding: 0 .2em; border-
 .quote p { font-family: var(--display); font-weight: 500; font-size: clamp(1.15rem, 1rem + .6vw, 1.4rem); line-height: 1.35; margin-bottom: .5rem; }
 .quote footer { color: var(--ink-soft); font-size: .95rem; }
 
+/* The checks other tools use: a row of things, not people */
+.checks { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; padding: 0; margin: 0 0 1rem; list-style: none; }
+.checks li { display: inline-flex; align-items: center; gap: .5rem; }
+
+/* The beta in three steps */
+.section > .wrap > .steps { max-width: none; }
+.steps { display: grid; gap: 1rem; padding: 0; margin: 1.5rem 0; list-style: none; counter-reset: step; }
+@media (min-width: 40rem) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; max-width: 56rem; } }
+.steps li { display: grid; grid-template-columns: 36px 1fr; grid-template-rows: auto 1fr; column-gap: .9rem; align-items: start; border-top: 2px solid var(--ink); padding-top: .9rem; }
+.steps .ico { width: 36px; height: 36px; grid-row: span 2; }
+.steps strong { font-family: var(--display); font-weight: 500; font-size: 1.2rem; line-height: 1.25; }
+.steps span { color: var(--ink-soft); }
+
 /* What we're building: three parts, each with its status figure */
 .section > .wrap > .builds { max-width: none; }
 .builds { display: grid; gap: 1.5rem; padding: 0; margin: 1.5rem 0 0; list-style: none; }
 @media (min-width: 56rem) { .builds { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; } }
 .builds li { border-top: 2px solid var(--ink); padding-top: .9rem; }
-.builds h3 { display: flex; align-items: center; gap: .55rem; margin-bottom: .2rem; }
+.builds .ico, .waylist .ico { width: 36px; height: 36px; margin-bottom: .6rem; }
+.builds h3 { margin-bottom: .2rem; }
 .builds .state { color: var(--ink-soft); font-size: .95rem; margin-bottom: .5rem; }
 
 /* Status board: the figure legend */
 .board { background: var(--field); }
 .board .updated { color: var(--ink-soft); margin-top: -.4rem; }
-.legend { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; padding: 0; margin: 0 0 1.75rem; list-style: none; color: var(--ink-soft); font-size: .95rem; }
+/* The key is a key, not a fifth group: smaller figures; each group below opens with its own ink rule. */
+.legend { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1.5rem; padding: 0; margin: 0 0 2.25rem; list-style: none; color: var(--ink-soft); font-size: .95rem; }
 .legend li { display: inline-flex; align-items: center; gap: .4rem; }
-.groups { display: grid; gap: 1.25rem 3rem; }
-@media (min-width: 56rem) { .groups { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
-.group h3 { display: flex; align-items: center; gap: .55rem; font-size: 1.15rem; margin-bottom: .35rem; }
+.legend .legend-h { font-family: var(--display); font-weight: 600; color: var(--ink); }
+.legend .glyph { width: 12px; height: 24px; }
+.groups { display: grid; gap: 2rem 3rem; }
+/* Wide: Planned is the long list, so Research and the rule share the column beside it. */
+@media (min-width: 56rem) {
+  .groups { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto auto 1fr; grid-template-areas: "live test" "planned research" "planned rule"; }
+  .group--live { grid-area: live; }
+  .group--test { grid-area: test; }
+  .group--planned { grid-area: planned; }
+  .group--research { grid-area: research; }
+  .groups .rule-box { grid-area: rule; align-self: start; }
+}
+.group h3 { display: flex; align-items: center; gap: .55rem; font-size: 1.15rem; margin-bottom: .35rem; padding-top: .9rem; border-top: 2px solid var(--ink); }
 .group ul { list-style: none; padding: 0; margin: 0; }
 .group li { padding: .5rem 0; border-top: 1px solid var(--rule); }
 .group li:first-child { border-top: 0; }
 .group li strong { display: block; }
-.glyph { width: 20px; height: 40px; flex: none; }
+.glyph { width: 20px; height: 40px; flex: none; overflow: visible; } /* the outline stroke sits just outside the 20x40 box */
 .glyph.g-solid use { fill: var(--ink); }
 .glyph.g-out use, .glyph.g-half use.o { fill: none; stroke: var(--ink); stroke-width: 2; }
 .glyph.g-half use.f { fill: var(--ink); }
 .glyph.g-dot use { fill: none; stroke: var(--ink); stroke-width: 1.8; stroke-dasharray: 2.4 3.2; }
 .notyet { color: var(--verm-text); font-weight: 700; }
-.rule-box { margin-top: 2.25rem; padding: 1.25rem 1.25rem 1rem; background: var(--paper); border: 2px solid var(--ink); border-radius: var(--radius); max-width: 44rem; }
+.rule-box { padding: 1.25rem 1.25rem 1rem; background: var(--paper); border: 2px solid var(--ink); border-radius: var(--radius); max-width: 44rem; }
+.rule-box p:last-child { margin-bottom: 0; }
 .rule-box h3 { font-size: 1.25rem; }
 
 /* People */
@@ -260,8 +290,10 @@ details.history .inner { padding-top: 1rem; }
 .doc .updated { color: var(--ink-soft); }
 .doc address { font-style: normal; margin: 0 0 1rem; }
 .plan { list-style: none; padding: 0 !important; max-width: 46rem; }
-.plan li { display: grid; grid-template-columns: 20px 1fr; gap: .2rem .8rem; padding: .7rem 0; border-top: 1px solid var(--rule); margin: 0; }
-.plan .glyph { grid-row: span 2; margin-top: .15rem; }
+.plan li { display: grid; grid-template-columns: 28px 1fr; gap: .2rem .9rem; padding: .7rem 0; border-top: 1px solid var(--rule); margin: 0; }
+.plan .ico { grid-row: span 2; margin-top: .15rem; }
+.toc { display: flex; flex-wrap: wrap; gap: 0 1.25rem; margin: 0 0 .5rem; padding: .25rem 0; border-block: 1px solid var(--rule); max-width: 46rem; }
+.toc a { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--display); font-weight: 500; }
 .plan .how { color: var(--ink-soft); font-size: .95rem; }
 .diagram { max-width: 30rem; margin: 1.25rem 0 1.5rem; }
 .diagram figcaption { color: var(--ink-soft); font-size: .95rem; margin-top: .4rem; }
