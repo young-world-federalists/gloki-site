@@ -16,7 +16,7 @@ PR #5 (squash `df398b9`, Eston's yes): removed the "Open the demo" row from the 
 link went to the gloki-engage Pages site, which since 20 Nov is the real beta sign-up with the
 founder slot open. Read back: no "Open the demo" and no link to that address on the live page.
 
-## Waiting in draft PR #6 (`claude/co-leads-board-polish`), not published
+## PR #6 (`claude/co-leads-board-polish`): published 27 Nov on Eston's yes
 
 - Who we are: Eston and Ouri as co-leads.
 - Accuracy: builders page and status board describe ibc-go (MIT, Solidity on the EVM, Cordial
