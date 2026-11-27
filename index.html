@@ -27,6 +27,23 @@
         <path d="M4.6 11.2H15.4Q17.4 11.2 17.6 13.4L18.6 25H15.8L15 17V39.2H10.9V27.5H9.1V39.2H5V17L4.2 25H1.4L2.4 13.4Q2.6 11.2 4.6 11.2Z"/>
       </symbol>
       <clipPath id="lower-half"><rect x="0" y="21" width="20" height="20"/></clipPath>
+      <!-- Object icons: 24 unit box, 2 unit ink stroke, no fill. Figures are people; these are things. -->
+      <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="16.5" r="4.5"/><path d="M10.7 13.3 20 4M16.5 7.5l3 3M13.5 10.5l2.5 2.5"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><circle cx="5.5" cy="12" r="3"/><circle cx="18.5" cy="12" r="3"/><path d="M8.5 12h7"/></symbol>
+      <symbol id="i-record" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+      <symbol id="i-node" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+      <symbol id="i-radio" viewBox="0 0 24 24"><circle cx="12" cy="9" r="2"/><path d="M12 11v10M7.5 13.5a6.4 6.4 0 0 1 0-9M16.5 4.5a6.4 6.4 0 0 1 0 9"/></symbol>
+      <symbol id="i-ballot" viewBox="0 0 24 24"><path d="M4 12h16v8H4zM9 12V4h6v8M9 16h6"/></symbol>
+      <symbol id="i-forum" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4 4v-4H4z"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6.5 8.5 7 8.5-7"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18h2"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-passport" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><circle cx="12" cy="10" r="3"/><path d="M9 17h6"/></symbol>
+      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.5H11a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3H9.5"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v6c0 4.5 3.2 7.6 7.5 9 4.3-1.4 7.5-4.5 7.5-9V6z"/><path d="m9 12 2.2 2.2L15 10.5"/></symbol>
     </defs>
   </svg>
 
@@ -101,9 +118,11 @@
           <use href="#person" class="p-ink" x="290" y="120" width="20" height="40"/>
           <g class="newcomer"><use href="#person" class="p-blue" x="146" y="64" width="20" height="40"/></g>
           </g></svg>
-          <figcaption>You get in when four people who know you vouch for you.</figcaption>
+          <figcaption>You'll get in when four people who know you vouch for you.</figcaption>
         </figure>
 
+        <!-- Turnstile runs with appearance "interaction-only": it checks in the background and only shows its box when it
+             needs the visitor to do something, so the Join button stays on the first screen. -->
         <!-- The waitlist runs on Brevo (GDI account, list "GDI waitlist"). Brevo's main.js needs the ids and the
              sib-/entry__ classes below; keep them, the field names, the INTEREST values and the Turnstile sitekey as they are. -->
         <div class="signup sib-form" id="join">
@@ -139,7 +158,7 @@
                 </div>
                 <div class="sib-captcha sib-form-block">
                   <div class="form__entry entry_block">
-                    <div class="cf-turnstile g-recaptcha" id="sib-captcha" data-sitekey="0x4AAAAAAFqCnrqcYK-xXckD" data-callback="handleCaptchaResponse" data-language="en" data-theme="light" data-size="flexible"></div>
+                    <div class="cf-turnstile g-recaptcha" id="sib-captcha" data-sitekey="0x4AAAAAAFqCnrqcYK-xXckD" data-callback="handleCaptchaResponse" data-language="en" data-theme="light" data-size="flexible" data-appearance="interaction-only"></div>
                     <label class="entry__error entry__error--primary"></label>
                   </div>
                 </div>
@@ -161,40 +180,51 @@
     </section>
 
     <section class="section" aria-labelledby="story">
-      <div class="wrap prose">
-        <h2 id="story">We got the connection. We did not get the say.</h2>
-        <blockquote class="quote">
-          <p>“The Web is more a social creation than a technical one. I designed it for a social effect—to help people work together—and not as a technical toy.”</p>
-          <!-- [checked: Q2] Weaving the Web, HarperSanFrancisco 1999, p. 123, https://archive.org/details/weavingweborigin00bern_0/page/123 -->
-          <footer>Tim Berners-Lee, who invented the Web, in <cite>Weaving the Web</cite>, 1999</footer>
-        </blockquote>
-        <p>In the US, people reported losing $7.2 billion to crypto investment fraud in 2025. <!-- [checked: B1] FBI IC3 2025 report, p. 11 --> Many people believe feeds tuned for anger pulled us apart. The evidence is mixed. <!-- [checked: B3] Piccardi et al., Science 2025; Nyhan et al., Nature 2023 --></p>
-        <p>A vote only counts if it comes from one real person. Online, one person can make a hundred accounts.</p>
+      <div class="wrap">
+        <h2 id="story">The internet connected us. It did not let us decide together.</h2>
+        <div class="story-grid">
+        <div class="prose">
+        <p class="lead">A vote only counts if it comes from one real person. Online, one person can make a hundred accounts.</p>
         <svg class="count" viewBox="0 0 260 44" role="img" aria-labelledby="count-t"><title id="count-t">One real person, and a row of fake accounts made by the same person.</title><g aria-hidden="true"><use href="#person" class="p-ink" x="1" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="21" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="41" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="61" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="81" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="101" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="121" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="141" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="161" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="181" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="201" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="221" y="2" width="18" height="36"/><use href="#person" class="p-fake" x="241" y="2" width="18" height="36"/></g></svg>
-        <p>Some online tools check that with an email address or a phone number. Others use iris scans, passports or crypto deposits. <!-- [checked: C] Decidim docs; world.org/orb; freedomtool.org; Proof of Humanity FAQ --> Across borders, none of these works for everyone.</p>
-        <p class="lead"><strong>Technology is not going away, and global problems do not stop at borders. So we are building the good version, starting from people.</strong></p>
+        <p>Other online tools check who you are with one of these:</p>
+        <!-- [checked: C] Decidim docs; world.org/orb; freedomtool.org; Proof of Humanity FAQ -->
+        <ul class="checks">
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg>An email address</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>A phone number</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-eye"/></svg>An iris scan</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-passport"/></svg>A passport</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-coin"/></svg>A crypto deposit</li>
+        </ul>
+        <p>Across borders, none of these works for everyone.</p>
+        <p class="lead"><strong>So we are building the good version, starting from people.</strong></p>
+        </div>
+        <img class="globe" src="assets/dither-globe.png" alt="" width="240" height="240" loading="lazy" decoding="async">
+        </div>
       </div>
     </section>
 
     <section class="section" aria-labelledby="building">
       <div class="wrap">
         <h2 id="building">What we're building</h2>
-        <p class="lead">Climate, pandemics and war do not stop at borders. People who work for a democratic world have proposed answers: a world parliament, global citizens' assemblies, worldwide votes on a question. Each one needs something first: a way to know that each voice belongs to one real person, counted once, in any country.</p>
+        <p class="lead">A world parliament, global citizens' assemblies, a worldwide vote: each one first needs a way to know that every voice is one real person, counted once, in any country.</p>
         <ul class="builds">
           <li>
-            <h3><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg>One person, one vote</h3>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-link"/></svg>
+            <h3>One person, one vote</h3>
             <p class="state">Vouching in test. Voting planned.</p>
-            <p>You will get in when four people who know you vouch for you. To vouch means to confirm that you are a real person. No ID papers, no face scans, no tokens, nothing to buy.</p>
+            <p>Four people who know you vouch for you: they confirm you are a real person. No ID papers, no face scans, nothing to buy.</p>
           </li>
           <li>
-            <h3><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Your own record</h3>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-record"/></svg>
+            <h3>Your own record</h3>
             <p class="state">Planned</p>
-            <p>We are building a record for each person that they control, not a company. A group will share only what belongs to the group.</p>
+            <p>A record for each person, which they control and no company does.</p>
           </li>
           <li>
-            <h3><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>A network its members carry</h3>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-node"/></svg>
+            <h3>A network run by its members</h3>
             <p class="state">Planned</p>
-            <p>We want nodes run by members, not by one company. A node is a small server that keeps a copy of the network. Later, where the internet fails, messages could travel over radio. That part is still research.</p>
+            <p>A node is a small server that keeps a copy of the network. Members will run the nodes, not one company.</p>
           </li>
         </ul>
       </div>
@@ -203,9 +233,10 @@
     <section class="section board" id="works" aria-labelledby="works-h">
       <div class="wrap">
         <h2 id="works-h">True today, and still being built</h2>
-        <p class="sub">Only the rows marked Live work today. If a row does not say Live, Gloki does not do it yet. We change this board when something changes.</p>
-        <p class="updated">Last updated: 29 October 2026.</p>
+        <p class="sub">Only the rows marked Live work today. We change this board when something changes.</p>
+        <p class="updated">Last updated: 27 November 2026.</p>
         <ul class="legend" aria-label="What the figures mean">
+          <li class="legend-h" aria-hidden="true">Key:</li>
           <li><svg class="glyph g-solid" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Live</li>
           <li><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg>In test</li>
           <li><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Planned</li>
@@ -214,43 +245,43 @@
 
         <!-- Rows wait on Ouri's sign-off (docs/positioning-gdi.md §5). Do not upgrade a status without it. -->
         <div class="groups">
-          <div class="group">
+          <div class="group group--live">
             <h3><svg class="glyph g-solid" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Live</h3>
             <ul>
-              <li><strong>A node developers can run on their own computer.</strong> For building and testing apps. It is not safe to run in public yet. <a href="build.html#node">How the node works</a>.</li>
+              <li><strong>A node developers can run on their own computer or server.</strong> For building and testing apps. It is early software and has not had a security audit. <a href="build.html#node">How the node works</a>.</li>
             </ul>
           </div>
-          <div class="group">
+          <div class="group group--test">
             <h3><svg class="glyph g-half" viewBox="0 0 20 40" aria-hidden="true"><use class="o" href="#person"/><g clip-path="url(#lower-half)"><use class="f" href="#person"/></g></svg>In test</h3>
             <ul>
-              <li><strong>Sign-up with a key, three kinds of account, one shared forum.</strong> <span class="notyet">Not yet:</span> today the key works like a password: whoever types it in is you.</li>
-              <li><strong>Getting verified by people who know you.</strong> In the test version you ask someone who is already verified. The aim is four people who know you; the network does not enforce that yet.</li>
-              <li><strong>Joining a community.</strong> Works in the test version, in a technical way for now.</li>
+              <li><strong>Sign-up with a passkey, three kinds of account, one shared forum.</strong> A passkey is a key kept inside your phone or computer. There is no password.</li>
+              <li><strong>Nobody else can act as you.</strong> Your passkey signs what you do, and other servers check it. <span class="notyet">Not yet:</span> the server that hosts you can still do what you let an app do without asking.</li>
+              <li><strong>Getting verified by people who know you.</strong> Today you ask someone who is already verified. The aim is four people who know you. The network does not check that yet.</li>
+              <li><strong>Joining a community.</strong> Works in the test version. It is not easy to use yet.</li>
             </ul>
           </div>
-          <div class="group">
+          <div class="group group--planned">
             <h3><svg class="glyph g-out" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Planned</h3>
             <ul>
-              <li><strong>Your own record, which you control.</strong> For now, records are kept on the project's servers.</li>
-              <li><strong>Nodes hosted by members.</strong> The node is not safe to run in public yet.</li>
-              <li><strong>Nobody can act as you.</strong> Every action will be signed with a key only you hold. <span class="notyet">Not yet:</span> today the network checks no signatures. This needs more builders. <a href="build.html#gaps">The known gaps</a>.</li>
+              <li><strong>Your own record, which you control.</strong> For now, records are kept on our servers.</li>
+              <li><strong>Nodes hosted by members.</strong> Today we host the node ourselves.</li>
+              <li><strong>Servers store your data without reading it.</strong> <span class="notyet">Not yet:</span> today whoever runs your server can read your data. <a href="build.html#gaps">The known gaps</a>.</li>
               <li><strong>Nobody can quietly rewrite the record.</strong> Copies will be kept by many members, so a change gets caught.</li>
               <li><strong>Nobody can read your ballot.</strong> Voting is not part of the beta.</li>
               <li><strong>You can leave and take your identity with you.</strong></li>
-              <li><strong>Losing your phone doesn't lose your vote.</strong> The people who vouched for you will be able to help you back in.</li>
+              <li><strong>Losing your phone doesn't lose your vote.</strong> People you trust will help you back in.</li>
             </ul>
           </div>
-          <div class="group">
+          <div class="group group--research">
             <h3><svg class="glyph g-dot" viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>Research</h3>
             <ul>
               <li><strong>Messages over radio where there is no internet.</strong> We are still finding out if it can work.</li>
             </ul>
           </div>
-        </div>
-
-        <div class="rule-box">
-          <h3>A rule we keep today</h3>
-          <p><strong>There will be no binding vote on this network before an independent security audit.</strong> A binding vote is any vote whose result we present as a decision of the members. We will publish the full audit report, including any problems not yet fixed.</p>
+          <div class="rule-box">
+            <h3>A rule we keep today</h3>
+            <p><strong>There will be no binding vote on this network before an independent security audit.</strong> A binding vote is any vote whose result we present as a decision of the members. We will publish the full audit report, including any problems not yet fixed.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -258,14 +289,19 @@
     <section class="section" id="beta" aria-labelledby="beta-h">
       <div class="wrap">
         <h2 id="beta-h">The beta</h2>
-        <p class="lead">The beta is the first group of people on Gloki. It is <strong>free</strong>: nothing to pay, no tokens, nothing to buy.</p>
+        <p class="lead">The beta is the first group of people on Gloki. It is <strong>free</strong>: nothing to pay, no tokens.</p>
+        <ol class="steps">
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-key"/></svg><strong>Make a passkey</strong><span>A key kept inside your phone or computer.</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-link"/></svg><strong>Get vouched for</strong><span>By four people who know you.</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-forum"/></svg><strong>Post in the forum</strong><span>One forum, shared by everyone.</span></li>
+        </ol>
+        <p>Discussing and voting together come later.</p>
         <ul class="facts">
-          <li><strong>Who it is for:</strong> world citizens, starting with the Young World Federalists' chapters and others who already work across borders. Anyone can join the waitlist.</li>
-          <li><strong>What you do:</strong> make a key, get vouched for by four people who know you, and post in one shared forum. Discussing and voting together come later.</li>
+          <li><strong>Who it is for:</strong> world citizens, starting with world federalists and others who already work across borders. Anyone can join the waitlist.</li>
           <li><strong>Who vouches first:</strong> the first few members vouch for each other, starting with the two of us.</li>
-          <li><strong>When it opens:</strong> once your phone can sign what you do, so nobody else can act as you. We will write to everyone on the waitlist then.</li>
+          <li><strong>When it opens:</strong> after the two of us have tested it on our own node. We will write to everyone on the waitlist then.</li>
         </ul>
-        <p class="warn"><strong>Before you join.</strong> Ouri Poupko runs the beta's node on Google Cloud. Until encryption is built, the project team can see your data.</p>
+        <p class="warn"><strong>Before you join.</strong> The beta runs on a node hosted by the Young World Federalists, on a rented server in Germany. Until encryption is built, the project team can see your data.</p>
       </div>
     </section>
 
@@ -274,22 +310,25 @@
         <h2 id="ways">Three ways to take part</h2>
         <ul class="waylist">
           <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-globe"/></svg>
             <h3>Solve global issues</h3>
-            <p>For world federalists, academics and anyone who wants a say in problems no single country can solve. We write when the beta opens, and you can ask people you know to vouch for you.</p>
+            <p>For world federalists, academics and anyone who wants a say in problems no single country can solve.</p>
             <a class="more" href="#join" data-way="Solve global issues">Join as a member</a>
           </li>
           <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-code"/></svg>
             <h3>Build digital democracy</h3>
-            <p>For people building democracy apps, civic tech teams and researchers who run assemblies. Technical notes as we build, and a way to tell us what your app needs.</p>
+            <p>For civic tech teams, people building democracy apps and researchers who run assemblies.</p>
             <a class="more" href="build.html">How it works and what is open</a>
           </li>
           <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-node"/></svg>
             <h3>Carry the network</h3>
-            <p>For people with a server, a spare computer or a Raspberry Pi. Developers can run the node on their own computer today. A node in public is not safe yet, so we record your interest and write when it is.</p>
+            <p>For people with a server, a spare computer or a Raspberry Pi. We are not asking members to host yet, so we record your interest.</p>
             <a class="more" href="#join" data-way="Contribute a node">Register interest</a>
           </li>
         </ul>
-        <p><strong>Funders:</strong> to talk about supporting this work, write to <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>.</p>
+        <p><strong>Support the work:</strong> give through <a href="https://opencollective.com/gloki">our Open Collective page</a>, where every expense is public. Funders can also write to <a href="mailto:hello@globaldemocracyinitiative.org">hello@globaldemocracyinitiative.org</a>.</p>
       </div>
     </section>
 
@@ -299,15 +338,16 @@
         <ul class="people">
           <li class="person">
             <svg viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>
-            <div><h3>Eston McKeague</h3><p>Leads the project and builds the Gloki app. President of the Young World Federalists.</p></div>
+            <div><h3>Eston McKeague</h3><p>Co-leads the project. Looks after the product, the community and this site. President of the Young World Federalists.</p></div>
           </li>
           <li class="person">
             <svg viewBox="0 0 20 40" aria-hidden="true"><use href="#person"/></svg>
-            <div><h3>Ouri Poupko</h3><p>Wrote the node Gloki runs on, and <a href="build.html#research">the research behind it</a>.</p></div>
+            <div><h3>Ouri Poupko</h3><p>Co-leads the project and builds Gloki. He wrote the node it runs on, and <a href="build.html#research">the research behind it</a>.</p></div>
           </li>
         </ul>
-        <p>We are two volunteers, and for now the two of us make the decisions. Builders who join are welcome in that discussion.</p>
+        <p>We are two volunteers who lead this together, and for now the two of us make the decisions. Builders who join are welcome in that discussion.</p>
         <p>GDI is a project of <a href="https://www.ywf.world/">Young World Federalists, Inc.</a>, a nonprofit registered in the United States. It is GDI's legal and financial home.</p>
+        <p><a class="button" href="#join">Join the waitlist</a></p>
       </div>
     </section>
 
@@ -325,6 +365,7 @@
     </section>
   </main>
 
+  <div class="crowd-band" aria-hidden="true"></div>
   <footer class="foot">
     <div class="wrap">
       <p>No analytics, no ad trackers. The waitlist runs on Brevo. Gloki is built on Ouri Poupko's open-source node. GDI is a project of Young World Federalists, Inc.</p>
