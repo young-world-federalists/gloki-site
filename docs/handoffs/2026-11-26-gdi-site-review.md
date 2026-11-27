@@ -1,5 +1,7 @@
 # GDI site review and draft update (26 Nov 2026)
 
+> **Superseded by `2026-11-27-gdi-site-shipped.md`.** Everything below was published on 27 Nov.
+
 Paste everything below the line into a new Claude Code session to pick up.
 
 ---
